@@ -1,5 +1,5 @@
+import type { LinkItem } from "@navbarPublic/Links/item/types";
 import React from "react";
-import type { LinkItem } from "./types";
 const Item: React.FC<LinkItem> = ({ title, url, icon, isActive }) => {
     return (
         <li className={`rd-nav-item ${isActive ? 'active' : ''}`}>

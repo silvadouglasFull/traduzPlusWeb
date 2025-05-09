@@ -1,4 +1,4 @@
-import type { LogLinkProps } from "./types"
+import type { LogLinkProps } from "@navbarPublic/LogLink/types"
 
 const LogLink: React.FC<LogLinkProps> = ({ urlLogo, width = 246, height = 44 }) => {
     return (

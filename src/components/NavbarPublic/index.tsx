@@ -1,5 +1,5 @@
+import { MainOter } from '@navbarPublic/MainOter';
 import { useState } from 'react';
-import { MainOter } from './MainOter';
 import './styles.css';
 /**
  * Render a Navbar.

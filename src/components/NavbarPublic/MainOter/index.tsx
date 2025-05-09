@@ -1,12 +1,9 @@
+import { LanguageDropdown } from "@navbarPublic/LanguageDropdown";
+import { LinksHeader } from "@navbarPublic/Links";
+import { LogLink } from "@navbarPublic/LogLink";
+import type { MainOterProps } from "@navbarPublic/MainOter/types";
 import React from "react";
-import { LanguageDropdown } from "../LanguageDropdown";
-import { LinksHeader } from "../Links";
-import { LogLink } from "../LogLink";
-import type { MainOterProps } from "./types";
-/**
- * Render a MainOter.
- * @returns {JSX.Element}
- */
+
 export const MainOter: React.FC<MainOterProps> = ({ toggleMenu, isMenuOpen }) => {
     return (
         <div className="rd-navbar-main-outer">
