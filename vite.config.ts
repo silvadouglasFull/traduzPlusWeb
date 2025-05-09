@@ -14,6 +14,7 @@ export default defineConfig({
     alias: {
       "@": root,
       "@components": `${root}/components`,
+      "@styles": `${root}/styles`,
     } as AliasOptions,
   },
 })
