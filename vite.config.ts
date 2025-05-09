@@ -14,7 +14,18 @@ export default defineConfig({
     alias: {
       "@": root,
       "@components": `${root}/components`,
-      "@styles": `${root}/styles`,
+      "@assets/*": `${root}/assets/*`,
+      "@components/*": `${root}/components/*`,
+      "@features/*": `${root}/features/*`,
+      "@hooks/*": `${root}/hooks/*`,
+      "@layouts/*": `${root}/layouts/*`,
+      "@pages/*": `${root}/pages/*`,
+      "@routes/*": `${root}/routes/*`,
+      "@services/*": `${root}/services/*`,
+      "@store/*": `${root}/store/*`,
+      "@types/*": `${root}/types/*`,
+      "@utils/*": `${root}/utils/*`,
+      "@styles/*": `${root}/styles/*`
     } as AliasOptions,
   },
 })
