@@ -1,10 +1,6 @@
 import { MainOter } from '@components/navbarPublic/mainOter';
 import { useState } from 'react';
 import './styles.css';
-/**
- * Render a Navbar.
- * @returns {JSX.Element}
- */
 export const Header: React.FC = () => {
     const [isMenuOpen, setMenuOpen] = useState(false);
 

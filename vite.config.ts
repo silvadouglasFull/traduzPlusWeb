@@ -28,7 +28,7 @@ export default defineConfig({
       "@styles/*": `${root}/styles/*`,
       "@navbarPublic/*": `${root}/components/NavbarPublic/*`,
       "@router/*": `${root}/router/*`,
-
+      "@flavor/*": `${root}/flavor/*`
     } as AliasOptions,
   },
 })
