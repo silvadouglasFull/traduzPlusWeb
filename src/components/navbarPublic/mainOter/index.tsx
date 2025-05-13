@@ -1,8 +1,8 @@
 import logo from "@assets/images/logo-inverse-246x44.png";
-import { LanguageDropdown } from "@navbarPublic/LanguageDropdown";
-import { LinksHeader } from "@navbarPublic/Links";
-import { LogLink } from "@navbarPublic/LogLink";
-import type { MainOterProps } from "@navbarPublic/MainOter/types";
+import { LanguageDropdown } from "@components/navbarPublic/languageDropdown";
+import { LinksHeader } from "@components/navbarPublic/links";
+import { LogLink } from "@components/navbarPublic/logLink";
+import type { MainOterProps } from "@components/navbarPublic/mainOter/types";
 import { links } from "@utils/linksHeader";
 import React from "react";
 

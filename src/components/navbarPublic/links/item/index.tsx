@@ -1,4 +1,4 @@
-import type { LinkItem } from "@navbarPublic/Links/item/types";
+import type { LinkItem } from "@components/navbarPublic/links/item/types";
 import React from "react";
 const Item: React.FC<LinkItem> = ({ title, url, icon, isActive }) => {
     return (

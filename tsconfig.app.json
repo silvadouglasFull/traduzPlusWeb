@@ -13,7 +13,7 @@
       "@types/*": ["./src/types/*"],
       "@utils/*": ["./src/utils/*"],
       "@styles/*": ["./src/styles/*"],
-      "@navbarPublic/*": ["./src/components/NavbarPublic/*"],
+      "@navbarPublic/*": ["src/components/navbarPublic/*"],
       "@publicRouter/*": ["./src/routes/public/*"],
       "@router/*": ["./src/routes/*"],
       "@core/*": ["./src/utils/core/*"]

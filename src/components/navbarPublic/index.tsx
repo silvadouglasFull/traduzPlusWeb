@@ -1,4 +1,4 @@
-import { MainOter } from '@navbarPublic/MainOter';
+import { MainOter } from '@components/navbarPublic/mainOter';
 import { useState } from 'react';
 import './styles.css';
 /**

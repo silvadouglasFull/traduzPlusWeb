@@ -1,4 +1,4 @@
-import type { LanguageItemProps } from "@components/NavbarPublic/LanguageDropdown/Languages/item/types";
+import type { LanguageItemProps } from "@components/navbarPublic/languageDropdown/languages/item/types";
 
 export const languages: Array<LanguageItemProps> = [
     {

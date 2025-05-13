@@ -1,5 +1,5 @@
-import { Item } from "@navbarPublic/LanguageDropdown/Languages/item";
-import type { LanguagesProps } from "@navbarPublic/LanguageDropdown/Languages/types";
+import { Item } from "@components/navbarPublic/languageDropdown/languages/item";
+import type { LanguagesProps } from "@components/navbarPublic/languageDropdown/languages/types";
 import React from "react";
 export const Lenguages: React.FC<LanguagesProps> = ({ items }) => {
     return (

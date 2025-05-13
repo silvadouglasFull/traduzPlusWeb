@@ -1,4 +1,4 @@
-import type { LinkItem } from "@components/NavbarPublic/Links/item/types";
+import type { LinkItem } from "@components/navbarPublic/links/item/types";
 
 export const links: LinkItem[] = [
     {
