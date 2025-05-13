@@ -25,7 +25,10 @@ export default defineConfig({
       "@store/*": `${root}/store/*`,
       "@types/*": `${root}/types/*`,
       "@utils/*": `${root}/utils/*`,
-      "@styles/*": `${root}/styles/*`
+      "@styles/*": `${root}/styles/*`,
+      "@navbarPublic/*": `${root}/components/NavbarPublic/*`,
+      "@router/*": `${root}/router/*`,
+
     } as AliasOptions,
   },
 })

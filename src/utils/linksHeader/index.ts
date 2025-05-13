@@ -1,0 +1,34 @@
+import type { LinkItem } from "@components/NavbarPublic/Links/item/types";
+
+export const links: LinkItem[] = [
+    {
+        id: 0,
+        title: "Home",
+        url: "/",
+        isActive: true,
+    },
+    {
+        id: 1,
+        title: "About",
+        url: "/about",
+        isActive: false,
+    },
+    {
+        id: 2,
+        title: "Services",
+        url: "/services",
+        isActive: false,
+    },
+    {
+        id: 3,
+        title: "Contact",
+        url: "/contact",
+        isActive: false,
+    },
+    {
+        id: 4,
+        title: "Blog",
+        url: "/blog",
+        isActive: false,
+    }
+]

@@ -1,7 +1,9 @@
+import logo from "@assets/images/logo-inverse-246x44.png";
 import { LanguageDropdown } from "@navbarPublic/LanguageDropdown";
 import { LinksHeader } from "@navbarPublic/Links";
 import { LogLink } from "@navbarPublic/LogLink";
 import type { MainOterProps } from "@navbarPublic/MainOter/types";
+import { links } from "@utils/linksHeader";
 import React from "react";
 
 export const MainOter: React.FC<MainOterProps> = ({ toggleMenu, isMenuOpen }) => {
@@ -16,13 +18,13 @@ export const MainOter: React.FC<MainOterProps> = ({ toggleMenu, isMenuOpen }) =>
                     >
                         <span></span>
                     </button>
-                    <LogLink urlLogo="" />
+                    <LogLink urlLogo={logo} />
                 </div>
                 <div className="rd-navbar-main-element">
                     <div
                         className={`rd-navbar-nav-wrap toggle-original-elements ${isMenuOpen ? 'open' : ''}`}
                     >
-                        <LinksHeader items={[]} />
+                        <LinksHeader items={links} />
                     </div>
 
                     <div className="rd-navbar-search toggle-original-elements" id="rd-navbar-search-1">

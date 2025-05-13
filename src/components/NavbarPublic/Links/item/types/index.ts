@@ -1,5 +1,5 @@
 type LinkItem = {
-    id: string;
+    id: number;
     title: string;
     url: string;
     icon?: string;

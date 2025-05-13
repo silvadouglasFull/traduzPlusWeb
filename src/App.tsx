@@ -1,8 +1,7 @@
+import { Router } from "@router/index"
 import type React from 'react'
-import { BrowserRouter } from 'react-router-dom'
-export default function App(): React.JSX.Element {
+export const App: React.FC = () => {
   return (
-    <BrowserRouter>
-    </BrowserRouter>
+    <Router />
   )
 }
