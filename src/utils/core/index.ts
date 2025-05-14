@@ -6,6 +6,7 @@
 import type { IDefinePlugins } from "@core/definePlugins/IDefinePlugins"
 import type { IMain } from "@core/IMain"
 import type { IDetectUserAgentEnv } from "@utils/detectUserAgentEnv/IDetectUserAgentEnv.ts"
+import type { ILazyInitService } from "@utils/lazzy/lazyInitService/ILazyInitService"
 import type { IScrollElement } from "@utils/scrollElement/IScrollElement"
 
 /**
@@ -15,13 +16,16 @@ export class Main implements IMain {
     private detectUserAgente: IDetectUserAgentEnv
     private definePlugins: IDefinePlugins
     private scrollElement: IScrollElement
+    private readonly lazyInitService: ILazyInitService
     constructor(
         detectUserAgente: IDetectUserAgentEnv,
         definePlugins: IDefinePlugins,
-        scrollElement: IScrollElement) {
+        scrollElement: IScrollElement,
+        lazyInitService: ILazyInitService) {
         this.detectUserAgente = detectUserAgente
         this.definePlugins = definePlugins
         this.scrollElement = scrollElement
+        this.lazyInitService = lazyInitService
     }
     public execute(): boolean {
         try {
