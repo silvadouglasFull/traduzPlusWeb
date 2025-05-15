@@ -6,6 +6,8 @@
 import type { IDefinePlugins } from "@core/definePlugins/IDefinePlugins"
 import type { IMain } from "@core/IMain"
 import type { IDetectUserAgentEnv } from "@utils/detectUserAgentEnv/IDetectUserAgentEnv.ts"
+import { LazyDOMElement } from "@utils/lazzy"
+import type { ILazyElement } from "@utils/lazzy/ILazzy"
 import type { ILazyInitService } from "@utils/lazzy/lazyInitService/ILazyInitService"
 import type { IScrollElement } from "@utils/scrollElement/IScrollElement"
 
@@ -31,8 +33,14 @@ export class Main implements IMain {
         try {
             const userAgente = this.detectUserAgente.detect()
             const definePlugins = this.definePlugins.getPlugins()
-            // const scrollElement = this.scrollElement.isScrolledIntoView()
-            return true
+            const element = document.querySelector('.lazy-component') as HTMLElement;
+            if (element) {
+                const lazyElement: ILazyElement = new LazyDOMElement(element, this.scrollElement);
+                this.lazyInitService.observe(lazyElement, () => {
+                    console.log("Lazy element in view! Initializing plugin...");
+                });
+            }
+            return (userAgente !== null) && (definePlugins !== null)
         } catch (error) {
             console.error("Main operation failed:", error)
             return false

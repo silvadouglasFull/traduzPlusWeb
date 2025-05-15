@@ -22,6 +22,10 @@ export class LazyDOMElement implements ILazyElement {
     }
 
     public isInView(): boolean {
-        return this.scrollDetector.isScrolledIntoView(new DOMElement(this.element));
+        const elementWrapper = {
+            getOffsetTop: () => this.element.offsetTop,
+            getOuterHeight: () => this.element.offsetHeight
+        };
+        return this.scrollDetector.isScrolledIntoView(elementWrapper);
     }
 }
