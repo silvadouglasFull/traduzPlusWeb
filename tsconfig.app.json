@@ -16,8 +16,7 @@
       "@navbarPublic/*": ["./src/components/navbarPublic/*"],
       "@publicRouter/*": ["./src/routes/public/*"],
       "@router/*": ["./src/routes/*"],
-      "@flavor/*": ["./src/flavor/*"],
-      "@core/*": ["./src/utils/core/*"]
+      "@flavor/*": ["./src/flavor/*"]
     },
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2020",
