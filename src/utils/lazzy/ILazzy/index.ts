@@ -4,5 +4,5 @@
 export interface ILazyElement {
     isAlreadyLoaded(): boolean;
     markAsLoaded(): void;
-    isInView(): boolean;
+    isInView(isNoviBuilder: boolean): boolean;
 }

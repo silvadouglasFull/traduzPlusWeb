@@ -21,7 +21,10 @@ export class LazyDOMElement implements ILazyElement {
         this.element.classList.add(this.loadedClass);
     }
 
-    public isInView(): boolean {
+    public isInView(isNoviBuilder: boolean): boolean {
+        if (isNoviBuilder) {
+            return true
+        }
         const elementWrapper = {
             getOffsetTop: () => this.element.offsetTop,
             getOuterHeight: () => this.element.offsetHeight

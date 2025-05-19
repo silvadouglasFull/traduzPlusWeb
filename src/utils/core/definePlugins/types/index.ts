@@ -39,4 +39,6 @@ export type Plugins = {
     vide: NodeListOf<HTMLElement>;
     progressLinear: NodeListOf<HTMLElement>;
     countdown: NodeListOf<HTMLElement>;
+    lazyComponent: HTMLElement | Element | null
 };
+const a = document.querySelector('.lazy-component')

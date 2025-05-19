@@ -1,9 +1,10 @@
+import type { ILazyInitService } from "@utils/lazzy/ILazyInitService";
 import type { ILazyElement } from "@utils/lazzy/ILazzy";
 
 /**
  * Service responsible for lazy initialization of elements when they enter the viewport.
  */
-export class LazyInitService {
+export class LazyInitService implements ILazyInitService {
     private window: Window;
 
     constructor(window: Window) {
@@ -16,9 +17,9 @@ export class LazyInitService {
      * @param {ILazyElement} element - The lazy-loadable element.
      * @param {() => void} callback - The callback to execute.
      */
-    public observe(element: ILazyElement, callback: () => void): void {
+    public observe(element: ILazyElement, callback: () => void, isNoviBuilder: boolean): void {
         const handler = (): void => {
-            if (!element.isAlreadyLoaded() && element.isInView()) {
+            if (!element.isAlreadyLoaded() && element.isInView(isNoviBuilder)) {
                 callback();
                 element.markAsLoaded();
             }

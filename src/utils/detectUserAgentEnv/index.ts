@@ -4,12 +4,17 @@
  */
 
 import type { IDetectUserAgentEnv } from "@utils/detectUserAgentEnv/IDetectUserAgentEnv.ts";
+import type { IPlataform } from "@utils/detectUserAgentEnv/plataform/IPlataform";
 import type { UserAgentEnv } from "@utils/detectUserAgentEnv/types";
 
 /**
  * Class responsible for detecting user agent and environment information.
  */
 export class DetectUserAgentEnv implements IDetectUserAgentEnv {
+    private readonly plataform: IPlataform
+    constructor(plataform: IPlataform) {
+        this.plataform = plataform
+    }
     public detect(): UserAgentEnv | null {
         try {
             const userAgent: string = navigator.userAgent.toLowerCase();
@@ -33,7 +38,7 @@ export class DetectUserAgentEnv implements IDetectUserAgentEnv {
             const pageTransitionAnimationDuration: number = 500;
             let windowReady: boolean = false;
             let loaderTimeoutId: number | undefined;
-
+            const plataform = this.plataform.get()
             return {
                 userAgent,
                 initialDate,
@@ -46,6 +51,7 @@ export class DetectUserAgentEnv implements IDetectUserAgentEnv {
                 isIE,
                 windowReady,
                 loaderTimeoutId,
+                plataform,
             };
         } catch (error) {
             console.error(error);

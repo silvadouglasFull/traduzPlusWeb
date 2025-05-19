@@ -53,6 +53,7 @@ export class DefinePlugins implements IDefinePlugins {
                 vide: document.querySelectorAll(".vide_bg"),
                 progressLinear: document.querySelectorAll(".progress-linear"),
                 countdown: document.querySelectorAll(".countdown"),
+                lazyComponent: document.querySelector('.lazy-component')
             };
         } catch (error) {
             console.error("Plugin detection failed:", error);
