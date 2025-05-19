@@ -1,6 +1,6 @@
 /**
  * IMain.ts
- * @description Interface for the main operation with a boolean return value.
+ * @description Interface for the main operation with a void return value.
  */
 
 /**
@@ -8,8 +8,8 @@
  */
 export interface IMain {
     /**
-     * Executes the main operation and returns a boolean result.
-     * @returns {boolean}
+     * Executes the main operation and returns a void result.
+     * @returns {void}
      */
-    execute(): boolean;
+    execute(): void;
 }

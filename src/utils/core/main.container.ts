@@ -8,10 +8,12 @@ import { PageTransitionInitializer } from "@utils/pageEfects"
 import { PageTransitionService } from "@utils/pageEfects/smooth"
 import { PopoverService } from "@utils/popouver"
 import { ScrollDetection } from "@utils/scrollElement"
+import { ToTop } from "@utils/scrollElement/scrollPage/toTop"
 import { AddClassName } from "@utils/styling/addClassName"
 import { StatefulButtonService } from "@utils/styling/buttonsEfect"
 import { CreateElementHml } from "@utils/styling/createElementHtml"
-import { RadioButon } from "@utils/styling/radionButton"
+import { CustomStyling } from "@utils/styling/customStyling"
+import { ResponsiveNavbar } from "@utils/styling/responsiveNavBar"
 import { TabHandler } from "@utils/tabsHandler"
 import { DefinePlugins } from "./definePlugins"
 
@@ -32,7 +34,13 @@ const statefulButtons = definePlugins.getPlugins()?.statefulButton as NodeListOf
 const butonsEfect = statefulButtons ? new StatefulButtonService(statefulButtons) : null
 const tabHandler = new TabHandler({ isBuilderMode: detectUserAgentEnv.detect()?.isNoviBuilder || false })
 const createElement = new CreateElementHml()
-const stylingRadiosButons = new RadioButon(createElement)
+const customStyling = new CustomStyling(createElement)
+const scrollPage = new ToTop({
+    easingType: 'easeOutQuad',
+    containerClass: 'ui-to-top'
+})
+const rdNavbarElements = definePlugins.getPlugins()?.rdNavbar as NodeListOf<HTMLElement> | undefined
+const responsiveNavbar = rdNavbarElements ? new ResponsiveNavbar(rdNavbarElements, detectUserAgentEnv.detect()?.isNoviBuilder || false) : null
 export const container: Container = {
     detectUserAgentEnv,
     definePlugins,
@@ -43,5 +51,7 @@ export const container: Container = {
     popouver,
     butonsEfect,
     tabHandler,
-    stylingRadiosButons
+    customStyling,
+    scrollPage,
+    responsiveNavbar
 }

@@ -14,9 +14,11 @@ import type { ILazyInitService } from "@utils/lazzy/lazyInitService/ILazyInitSer
 import type { IPageTransitionInitializer } from "@utils/pageEfects/IPageTransitionInitializer"
 import type { IPopoverInitializer } from "@utils/popouver/IPopoverInitializer"
 import type { IScrollElement } from "@utils/scrollElement/IScrollElement"
+import type { IScrollPage } from "@utils/scrollElement/scrollPage/IScrollPage"
 import type { IAddClassName } from "@utils/styling/addClassName/IAddClassName"
 import type { IButtonsEfect } from "@utils/styling/buttonsEfect/IButtonsEfect"
-import type { IRadioButon } from "@utils/styling/radionButton/IRadionButon"
+import type { ICustomStyling } from "@utils/styling/customStyling/ICustomStyling"
+import type { IResponsiveNavBar } from "@utils/styling/responsiveNavBar/IResponsiveNavBar"
 import type { ITabHandler } from "@utils/tabsHandler/ITabsHandler"
 /**
  * Service responsible for executing the main operation.
@@ -31,7 +33,9 @@ export class Main implements IMain {
     private popouver: IPopoverInitializer
     private buttonsEfect: IButtonsEfect
     private tabHandler: ITabHandler
-    private stylingRadiosButons: IRadioButon
+    private customStyling: ICustomStyling
+    private scrollPage: IScrollPage
+    private responsiveNavBar: IResponsiveNavBar
     constructor(
         detectUserAgente: IDetectUserAgentEnv,
         definePlugins: IDefinePlugins,
@@ -42,7 +46,9 @@ export class Main implements IMain {
         popouver: IPopoverInitializer,
         buttonsEfect: IButtonsEfect,
         tabHandler: ITabHandler,
-        stylingRadiosButons: IRadioButon
+        customStyling: ICustomStyling,
+        scrollPage: IScrollPage,
+        resposiveNavBar: IResponsiveNavBar
     ) {
         this.detectUserAgente = detectUserAgente
         this.definePlugins = definePlugins
@@ -53,9 +59,11 @@ export class Main implements IMain {
         this.popouver = popouver
         this.buttonsEfect = buttonsEfect
         this.tabHandler = tabHandler
-        this.stylingRadiosButons = stylingRadiosButons
+        this.customStyling = customStyling
+        this.scrollPage = scrollPage
+        this.responsiveNavBar = resposiveNavBar
     }
-    public execute(): boolean {
+    public execute(): void {
         try {
             const userAgente = this.detectUserAgente.detect()
             const definePlugins = this.definePlugins.getPlugins()
@@ -78,14 +86,31 @@ export class Main implements IMain {
             if (definePlugins?.copyrightYear) {
                 new CopyRight(definePlugins?.copyrightYear)
             }
-            console.log('initiliazed')
             if (definePlugins?.radio) {
-                this.stylingRadiosButons.set(definePlugins.radio)
+                this.customStyling.set({
+                    className: 'radio-custom',
+                    classNameNewElement: 'radio-custom-dummy',
+                    elements: definePlugins.radio,
+                    tagNameNewElement: 'span',
+                    where: 'afterend'
+                })
             }
-            return (userAgente !== null) && (definePlugins !== null)
+            if (definePlugins?.checkbox) {
+                this.customStyling.set({
+                    className: 'checkbox-custom',
+                    classNameNewElement: 'checkbox-custom-dummy',
+                    elements: definePlugins.checkbox,
+                    tagNameNewElement: 'span',
+                    where: 'afterend'
+                })
+            }
+            if (userAgente?.isDesktop && !userAgente.isNoviBuilder) {
+                this.scrollPage.init()
+            }
+            this.responsiveNavBar.initialize()
+            console.log('initiliazed')
         } catch (error) {
             console.error("Main operation failed:", error)
-            return false
         }
     }
 }
@@ -100,6 +125,8 @@ const main = new Main(
     container.popouver,
     container.butonsEfect as IButtonsEfect,
     container.tabHandler,
-    container.stylingRadiosButons
+    container.customStyling,
+    container.scrollPage,
+    container.responsiveNavbar as IResponsiveNavBar
 )
 export { main }
