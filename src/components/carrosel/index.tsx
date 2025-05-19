@@ -1,7 +1,8 @@
 import { Item } from "@components/carrosel/item";
+import type { CarroselProps } from "@components/carrosel/types";
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import type { CarroselProps } from "./types";
+import './styles.css';
 export const ControlledCarousel: React.FC<CarroselProps> = ({ items }) => {
     const [index, setIndex] = useState(1);
 
@@ -13,7 +14,7 @@ export const ControlledCarousel: React.FC<CarroselProps> = ({ items }) => {
         <Carousel style={{
             position: 'fixed',
             top: 0
-        }} activeIndex={index} onSelect={handleSelect} nextLabel='' prevLabel=''>
+        }} activeIndex={index} onSelect={handleSelect} controls={false} indicators={true}>
             {items.length ? items.map(item => (
                 <Carousel.Item key={item.id}>
                     <Item

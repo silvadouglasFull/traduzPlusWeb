@@ -5,5 +5,5 @@ export const styles: React.CSSProperties = {
     right: 'auto',
     top: '20%',
     textAlign: 'left',
-    padding: '1rem',
+    padding: '4rem'
 }

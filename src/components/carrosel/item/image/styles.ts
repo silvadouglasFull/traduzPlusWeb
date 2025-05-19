@@ -5,4 +5,5 @@ export const styles: React.CSSProperties = {
     height: '100vh',
     objectFit: 'cover',
     objectPosition: 'center',
+    filter: 'brightness(50%)'
 }
