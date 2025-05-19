@@ -1,16 +1,18 @@
-import logo from "@assets/images/logo-inverse-246x44.png";
 import { LinksHeader } from "@components/navbarPublic/links";
 import { LogLink } from '@components/navbarPublic/logLink';
+import { logo } from "@flavor/index";
 import { links } from "@utils/linksHeader";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from "react-router-dom";
 import { LanguageDropdown } from "./languageDropdown";
+import './styles.css';
 export const Header: React.FC = () => {
     return (
-        <Navbar sticky="top" collapseOnSelect expand="lg" className="bg-body-tertiary">
+        <Navbar sticky="top" collapseOnSelect expand="lg" className="bg-sm-only">
             <Container fluid>
-                <Navbar.Brand href="#">
+                <Navbar.Brand as={Link} to={'#'}>
                     <LogLink urlLogo={logo} />
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />

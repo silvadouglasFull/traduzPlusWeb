@@ -4,11 +4,9 @@ import { Nav } from "react-bootstrap";
 import { Link } from "react-router-dom";
 const Item: React.FC<LinkItem> = ({ title, url, icon, isActive }) => {
     return (
-        <Link to={url}>
-            <Nav.Link href="#" active={isActive}>
-                {icon ? icon : null} {title}
-            </Nav.Link>
-        </Link>
+        <Nav.Link as={Link} to={url} active={isActive}>
+            {icon ? icon : null} {title}
+        </Nav.Link>
     )
 }
 export { Item };
