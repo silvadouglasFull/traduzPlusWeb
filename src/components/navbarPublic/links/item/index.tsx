@@ -1,13 +1,14 @@
 import type { LinkItem } from "@components/navbarPublic/links/item/types";
 import React from "react";
+import { Nav } from "react-bootstrap";
+import { Link } from "react-router-dom";
 const Item: React.FC<LinkItem> = ({ title, url, icon, isActive }) => {
     return (
-        <li className={`rd-nav-item ${isActive ? 'active' : ''}`}>
-            <a className="rd-nav-link" href={url}>
-                {icon && <i className={icon}></i>}
-                {title}
-            </a>
-        </li>
+        <Link to={url}>
+            <Nav.Link href="#" active={isActive}>
+                {icon ? icon : null} {title}
+            </Nav.Link>
+        </Link>
     )
 }
 export { Item };

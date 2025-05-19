@@ -1,4 +1,6 @@
 import React from "react";
+import { NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import type { LanguageItemProps } from "./types";
 export const Item: React.FC<LanguageItemProps> = ({
     icon,
@@ -7,14 +9,10 @@ export const Item: React.FC<LanguageItemProps> = ({
     onClick
 }) => {
     return (
-        <li>
-            <a
-                className={`dropdown-item ${isActive ? 'active' : ''}`}
-                href="#"
-                onClick={onClick}
-            >
-                {icon ?? ''} {label}
-            </a>
-        </li>
+        <Link to={'#'} onClick={onClick}>
+            <NavDropdown.Item href="#" active={isActive}>
+                {icon ? icon : null} {label}
+            </NavDropdown.Item>
+        </Link>
     )
 } 

@@ -5,9 +5,8 @@ import React from 'react'
 
 export const LanguageDropdown: React.FC = () => {
     return (
-        <div className="dropdown ms-auto">
-            <Button />
+        <Button>
             <Lenguages items={languages} />
-        </div>
+        </Button>
     )
 }

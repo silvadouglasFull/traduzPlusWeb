@@ -1,15 +1,10 @@
 import React from "react";
-export const Button: React.FC = () => {
+import { NavDropdown } from "react-bootstrap";
+export const Button: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
     return (
-        <button
-            className="btn btn-outline-secondary dropdown-toggle"
-            type="button"
-            id="languageDropdown"
-            data-bs-toggle="dropdown"
-            aria-expanded="true"
-        >
-            🌐 Language
-        </button>
+        <NavDropdown title={`🌐 Languages`} id="collapsible-nav-dropdown">
+            {children}
+        </NavDropdown>
 
     )
 }
