@@ -1,1 +1,0 @@
-export type TPlataforms = string | undefined
