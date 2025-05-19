@@ -1,5 +1,5 @@
-import type { IButtonsEfect } from "@utils/buttonsEfect/IButtonsEfect";
-import type { ButtonState, InnerHtml } from "@utils/buttonsEfect/types";
+import type { IButtonsEfect } from "@utils/styling/buttonsEfect/IButtonsEfect";
+import type { ButtonState, InnerHtml } from "@utils/styling/buttonsEfect/types";
 export class StatefulButtonService implements IButtonsEfect {
     private readonly buttons: NodeListOf<HTMLButtonElement> | null
     constructor(buttons: NodeListOf<HTMLButtonElement> | null) {

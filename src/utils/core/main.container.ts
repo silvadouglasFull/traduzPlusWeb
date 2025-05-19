@@ -1,6 +1,4 @@
 import type { Container } from "@core/types"
-import { AddClassName } from "@utils/addClassName"
-import { StatefulButtonService } from "@utils/buttonsEfect"
 import { DetectUserAgentEnv } from "@utils/detectUserAgentEnv"
 import { PlataForms } from "@utils/detectUserAgentEnv/plataform"
 import { IsTagerOs } from "@utils/detectUserAgentEnv/plataform/isTargetOs"
@@ -10,6 +8,10 @@ import { PageTransitionInitializer } from "@utils/pageEfects"
 import { PageTransitionService } from "@utils/pageEfects/smooth"
 import { PopoverService } from "@utils/popouver"
 import { ScrollDetection } from "@utils/scrollElement"
+import { AddClassName } from "@utils/styling/addClassName"
+import { StatefulButtonService } from "@utils/styling/buttonsEfect"
+import { CreateElementHml } from "@utils/styling/createElementHtml"
+import { RadioButon } from "@utils/styling/radionButton"
 import { TabHandler } from "@utils/tabsHandler"
 import { DefinePlugins } from "./definePlugins"
 
@@ -29,6 +31,8 @@ const popouver = new PopoverService(720, windowDimensions)
 const statefulButtons = definePlugins.getPlugins()?.statefulButton as NodeListOf<HTMLButtonElement> | undefined
 const butonsEfect = statefulButtons ? new StatefulButtonService(statefulButtons) : null
 const tabHandler = new TabHandler({ isBuilderMode: detectUserAgentEnv.detect()?.isNoviBuilder || false })
+const createElement = new CreateElementHml()
+const stylingRadiosButons = new RadioButon(createElement)
 export const container: Container = {
     detectUserAgentEnv,
     definePlugins,
@@ -38,5 +42,6 @@ export const container: Container = {
     addClassName,
     popouver,
     butonsEfect,
-    tabHandler
+    tabHandler,
+    stylingRadiosButons
 }
