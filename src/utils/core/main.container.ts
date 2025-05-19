@@ -6,7 +6,6 @@ import { ScrollDetection } from "@utils/scrollElement"
 import { DefinePlugins } from "./definePlugins"
 const detectUserAgentEnv = new DetectUserAgentEnv()
 const definePlugins = new DefinePlugins()
-// Use the global window object directly
 const isNoviBuilder = false
 const scrollElement = new ScrollDetection(window, isNoviBuilder)
 const lazzy = new LazyInitService(window)
