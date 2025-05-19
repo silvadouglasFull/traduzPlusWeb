@@ -5,19 +5,13 @@
 
 import type { IDefinePlugins } from "@core/definePlugins/IDefinePlugins"
 import type { IMain } from "@core/IMain"
-import { DetectUserAgentEnv } from "@utils/detectUserAgentEnv"
+import { container } from "@core/main.container"
 import type { IDetectUserAgentEnv } from "@utils/detectUserAgentEnv/IDetectUserAgentEnv.ts"
 import { LazyDOMElement } from "@utils/lazzy"
 import type { ILazyElement } from "@utils/lazzy/ILazzy"
-import { LazyInitService } from "@utils/lazzy/lazyInitService"
 import type { ILazyInitService } from "@utils/lazzy/lazyInitService/ILazyInitService"
-import { PageTransitionInitializer } from "@utils/pageEfects"
 import type { IPageTransitionInitializer } from "@utils/pageEfects/IPageTransitionInitializer"
-import { PageTransitionService } from "@utils/pageEfects/smooth"
-import { ScrollDetection } from "@utils/scrollElement"
 import type { IScrollElement } from "@utils/scrollElement/IScrollElement"
-import { DefinePlugins } from "./definePlugins"
-
 /**
  * Service responsible for executing the main operation.
  */
@@ -59,20 +53,12 @@ export class Main implements IMain {
         }
     }
 }
-const detectUserAgentEnv = new DetectUserAgentEnv()
-const definePlugins = new DefinePlugins()
-// Use the global window object directly
-const isNoviBuilder = false
-const scrollElement = new ScrollDetection(window, isNoviBuilder)
-const lazzy = new LazyInitService(window)
-const preloader = document.querySelectorAll(".preloader")
-const pageTransitionService = new PageTransitionService()
-const pageTransitionInitializer = new PageTransitionInitializer(preloader, false, 1000, pageTransitionService)
+
 const main = new Main(
-    detectUserAgentEnv,
-    definePlugins,
-    scrollElement,
-    lazzy,
-    pageTransitionInitializer
+    container.detectUserAgentEnv,
+    container.definePlugins,
+    container.scrollElement,
+    container.lazzy,
+    container.pageTransitionInitializer
 )
 export { main }
