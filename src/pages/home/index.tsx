@@ -1,3 +1,4 @@
+import { FifthSession } from "@pagesHome/layouts/fifthSession";
 import { FirstSection } from "@pagesHome/layouts/firstSection";
 import { FourthSession } from "@pagesHome/layouts/fourthSession";
 import { SecoundSection } from "@pagesHome/layouts/secoundSection";
@@ -11,6 +12,7 @@ export const PageHome: React.FC = () => {
             <SecoundSection />
             <ThirdSession />
             <FourthSession />
+            <FifthSession />
         </>
     )
 }
