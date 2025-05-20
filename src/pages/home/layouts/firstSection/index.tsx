@@ -4,12 +4,13 @@ import { useInView } from "@hooks/useInView";
 import { Image } from "@pagesHome/components/image";
 import { Paragraph } from "@pagesHome/components/paragraph";
 import { SubTitle } from "@pagesHome/components/subTitle";
+import '@pagesHome/styles/index.css';
 import type React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 export const FirstSection: React.FC = () => {
     const [imageRef, isVisible] = useInView<HTMLDivElement>();
     return (
-        <section className="p-3">
+        <section className="section section-lg">
             <Container>
                 <Row className="justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
                     <Col md={10} className="mb-3" lg={6} xxl={5} sm={12}>
