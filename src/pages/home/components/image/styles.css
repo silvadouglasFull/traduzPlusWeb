@@ -1,0 +1,11 @@
+/* animation.css */
+.image-slide-in {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s ease-out;
+}
+
+.image-slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
