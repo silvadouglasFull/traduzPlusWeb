@@ -1,3 +1,4 @@
+import { Icon } from "@components/icons"
 import type { Item as TItem } from "@components/list/services/item/types"
 import React from "react"
 import { Card } from "react-bootstrap"
@@ -7,7 +8,7 @@ import './styles.css'
 export const Item: React.FC<TItem> = ({ descriptions, icon, name, link, textButon, }) => {
     return (
         <Card className="m-2 card-services-list rounded-4">
-            <i className={icon}></i>
+            <Icon name={icon} />
             <Card.Body>
                 <Card.Title style={{
                     color: '#fff'
