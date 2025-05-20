@@ -10,13 +10,12 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 export const FirstSection: React.FC = () => {
     const [imageRef, isVisible] = useInView<HTMLDivElement>();
     return (
-        <section className="section section-lg">
+        <section>
             <Container>
                 <Row className="justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
                     <Col md={10} className="mb-3" lg={6} xxl={5} sm={12}>
                         <SubTitle text="A Few Words About us" />
                         <Paragraph items={paragraphs} />
-
                         <Button variant="primary" className="w-100" size="lg">
                             Learn More
                         </Button>

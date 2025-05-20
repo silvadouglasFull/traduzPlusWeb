@@ -5,7 +5,7 @@ export const servicesList: Array<Item> = [
         id: 0,
         name: 'Translation Services',
         link: '#',
-        icon: 'icon mdi mdi-file-document',
+        icon: 'fa-solid fa-book fa-beat fa-2xl',
         textButon: 'Order',
         descriptions: [
             { description: 'Advertising translation', id: 0, },
@@ -18,7 +18,7 @@ export const servicesList: Array<Item> = [
         id: 1,
         name: 'Interpreting services',
         link: '#',
-        icon: 'icon mdi mdi-briefcase-check',
+        icon: 'fa-solid fa-briefcase fa-beat fa-2xl',
         textButon: 'Order',
         descriptions: [
             { description: 'On-site interpreting', id: 4, },
@@ -31,7 +31,7 @@ export const servicesList: Array<Item> = [
         id: 2,
         name: 'Content Services',
         link: '#',
-        icon: 'icon mdi mdi-map',
+        icon: 'fa-solid fa-map fa-beat fa-2xl',
         textButon: 'Order',
         descriptions: [
             { description: 'Transcription', id: 8, },
@@ -44,7 +44,7 @@ export const servicesList: Array<Item> = [
         id: 3,
         name: 'Other',
         link: '#',
-        icon: 'icon mdi mdi-web',
+        icon: 'fa-solid fa-globe fa-beat fa-2xl',
         textButon: 'Order',
         descriptions: [
             { description: 'App translation', id: 12, },

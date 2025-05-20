@@ -1,4 +1,4 @@
 import '@assets/fontawesome/css/all.css';
-import type { NameIcon } from "@components/icons/types";
+import type { IConProps, NameIcon } from "@components/icons/types";
 import React from 'react';
-export const Icon: React.FC<NameIcon> = ({ name }) => (<i className={name}></i>)
+export const Icon: React.FC<NameIcon & IConProps> = ({ name, className, style }) => (<i style={style} className={`${name} ${className}`}></i>)
