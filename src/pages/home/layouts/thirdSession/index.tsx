@@ -12,7 +12,7 @@ import { ParagraphLight } from "./components";
 export const ThirdSession: React.FC = () => {
     const [imageRef, isVisible] = useInView<HTMLDivElement>();
     return (
-        <section className="section section-xl">
+        <section className="p-3 mb-3">
             <Container>
                 <Row className='row section-indie-row justify-content-center justify-content-lg-end'>
                     <Col md={10} lg={1} sm={12} className="mb-3">

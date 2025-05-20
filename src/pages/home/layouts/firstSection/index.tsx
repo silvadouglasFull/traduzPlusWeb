@@ -10,7 +10,7 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 export const FirstSection: React.FC = () => {
     const [imageRef, isVisible] = useInView<HTMLDivElement>();
     return (
-        <section>
+        <section className="mb-3 p-3">
             <Container>
                 <Row className="justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
                     <Col md={10} className="mb-3" lg={6} xxl={5} sm={12}>

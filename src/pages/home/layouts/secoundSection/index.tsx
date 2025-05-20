@@ -8,7 +8,7 @@ import React from "react";
 import { Container } from 'react-bootstrap';
 export const SecoundSection: React.FC = () => {
     return (
-        <section className="text-center bg-primary-gradient">
+        <section className="p-3 text-center bg-primary-gradient mb-3">
             <Container>
                 <SubTitle text='What we offer' />
                 <Paragraph items={paragraphs} />

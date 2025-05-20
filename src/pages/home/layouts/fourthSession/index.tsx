@@ -9,7 +9,7 @@ import { Col, Container, Row } from "react-bootstrap";
 export const FourthSession: React.FC = () => {
     const [imageRef, isVisible] = useInView<HTMLDivElement>();
     return (
-        <section>
+        <section className="p-3 mb-3">
             <Container>
                 <Row className="justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
                     <Col lg={7} xl={6}>
