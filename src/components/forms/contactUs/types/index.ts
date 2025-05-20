@@ -1,3 +1,3 @@
 export type FormProps = {
-    onSubmit: void
-}
+    onSubmit?: (event: React.FormEvent<HTMLFormElement>) => void;
+};
