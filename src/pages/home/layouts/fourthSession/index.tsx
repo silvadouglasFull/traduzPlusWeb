@@ -1,7 +1,9 @@
 import imageFromFourthSection from "@assets/traduzPlus/images/accordions-1-470x368.jpg";
+import { accordions } from "@flavor/constants/texts/fourthSection";
 import { useInView } from "@hooks/useInView";
 import { Image } from "@pagesHome/components/image";
 import { SubTitle } from "@pagesHome/components/subTitle";
+import { Accordion } from "@pagesHome/layouts/fourthSession/components/accordion";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 export const FourthSession: React.FC = () => {
@@ -12,6 +14,7 @@ export const FourthSession: React.FC = () => {
                 <Row className="justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
                     <Col lg={7} xl={6}>
                         <SubTitle text="Frequently Asked Questions" />
+                        <Accordion items={accordions} />
                     </Col>
                     <Col>
                         <div
