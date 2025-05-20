@@ -20,6 +20,7 @@ export default defineConfig({
       "@hooks/*": `${root}/hooks/*`,
       "@layouts/*": `${root}/layouts/*`,
       "@pages/*": `${root}/pages/*`,
+      "@pagesHome/*": `${root}/pages/home/*`,
       "@routes/*": `${root}/routes/*`,
       "@services/*": `${root}/services/*`,
       "@store/*": `${root}/store/*`,
