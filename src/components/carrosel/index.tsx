@@ -5,11 +5,9 @@ import Carousel from 'react-bootstrap/Carousel';
 import './styles.css';
 export const ControlledCarousel: React.FC<CarroselProps> = ({ items }) => {
     const [index, setIndex] = useState(1);
-
     const handleSelect = (selectedIndex: number) => {
         setIndex(selectedIndex);
     };
-
     return (
         <Carousel style={{
             position: 'fixed',
