@@ -3,7 +3,7 @@ import "@pagesHome/layouts/fourthSession/components/accordion/toggle/styles.css"
 import type { AccordionProps } from "@pagesHome/layouts/fourthSession/components/accordion/types";
 import React from "react";
 import { Accordion as ReactBootstrapAccordion } from 'react-bootstrap';
-export const Accordion: React.FC<AccordionProps & React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>
+export const Accordion: React.FC<AccordionProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>
 > = ({ items }) => {
     return (
         <ReactBootstrapAccordion>

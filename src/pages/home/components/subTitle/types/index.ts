@@ -1,4 +1,4 @@
 export type TextSubTitle = {
     text: string
 }
-export type SubTitleProps = TextSubTitle & React.DetailedHTMLProps<React.ImgHTMLAttributes<HTMLImageElement>, HTMLImageElement>
+export type SubTitleProps = TextSubTitle & React.DetailedHTMLProps<React.HTMLAttributes<HTMLHeadingElement>, HTMLHeadingElement>
