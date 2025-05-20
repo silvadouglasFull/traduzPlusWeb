@@ -1,8 +1,8 @@
-import type { Item as TItem } from "@pagesHome/components/paragraph/item/types";
-export const Item: React.FC<TItem> = (propsItem: TItem) => {
+import type { Paragraph } from "@pagesHome/components/paragraph/item/types";
+export const Item: React.FC<Paragraph> = ({ text }) => {
     return (
-        <p {...propsItem}>
-            {propsItem.text}
+        <p >
+            {text}
         </p>
     )
 }
