@@ -17,5 +17,4 @@ export type FormContextType = {
     state: States
     onChange: (event: Event) => void
     onChangePhone: (event: Event) => void
-    onChangeEmail: (event: Event) => void
 }

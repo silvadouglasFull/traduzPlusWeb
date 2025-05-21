@@ -1,3 +1,4 @@
+import { Provider as ContactUsProvider } from "@components/forms/contactUs/context";
 import { FifthSession } from "@pagesHome/layouts/fifthSession";
 import { FirstSection } from "@pagesHome/layouts/firstSection";
 import { FourthSession } from "@pagesHome/layouts/fourthSession";
@@ -13,7 +14,9 @@ export const PageHome: React.FC = () => {
             <ThirdSession />
             <FourthSession />
             <FifthSession />
-            <SixthSession />
+            <ContactUsProvider>
+                <SixthSession />
+            </ContactUsProvider>
         </>
     )
 }
