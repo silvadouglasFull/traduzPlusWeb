@@ -10,7 +10,6 @@ export const ControlledCarousel: React.FC<CarroselProps> = ({ items }) => {
     };
     return (
         <Carousel style={{
-            position: 'fixed',
             top: 0
         }} activeIndex={index} onSelect={handleSelect} controls={false} indicators={true}>
             {items.length ? items.map(item => (

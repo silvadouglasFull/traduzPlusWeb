@@ -19,7 +19,7 @@ export const Item: React.FC<TItem> = ({ id, title, descriptions }) => {
                     </Row>
                 </Toggle>
             </Card.Header>
-            <ReactBootstrapAccordion.Collapse eventKey="0">
+            <ReactBootstrapAccordion.Collapse eventKey={String(id)}>
                 <Card.Body>
                     {descriptions.map(({ description, id }) => (
                         <Card.Text key={id}>

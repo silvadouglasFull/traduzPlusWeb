@@ -4,9 +4,7 @@ import { useAccordionButton } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export const Toggle: React.FC<ToggleProps> = ({ children, eventKey }) => {
-    const decoratedOnClick = useAccordionButton(eventKey, () =>
-        console.log('totally custom!'),
-    );
+    const decoratedOnClick = useAccordionButton(eventKey);
 
     return (
         <Link to={'#'}
