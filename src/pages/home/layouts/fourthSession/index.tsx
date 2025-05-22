@@ -12,7 +12,7 @@ export const FourthSession: React.FC = () => {
         <section className="p-3 mb-3">
             <Container>
                 <Row className="justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
-                    <Col lg={7} xl={6}>
+                    <Col lg={7} xl={6} className="mt-5">
                         <SubTitle text="Frequently Asked Questions" />
                         <Accordion items={accordions} />
                     </Col>

@@ -13,7 +13,7 @@ export const ThirdSession: React.FC = () => {
     const [imageRef, isVisible] = useInView<HTMLDivElement>();
     return (
         <section className="p-3 mb-3">
-            <Container className="d-block d-md-none">
+            <Container className="d-block d-lg-none">
                 <Row className='row section-indie-row justify-content-center justify-content-lg-end'>
                     <Col md={12} lg={1} sm={12} className="mb-3">
                         <div
@@ -26,7 +26,7 @@ export const ThirdSession: React.FC = () => {
                     </Col>
                     <Col md={12} lg={11} sm={12}>
                         <ParagraphLight style={{
-                            fontSize: '.875rem'
+                            fontSize: '1.125rem'
                         }} text="providing quality Translation since 1999" />
                         <SubTitle text="Great Industry Expertise" />
                         <Paragraph items={paragraphs} />
@@ -36,8 +36,8 @@ export const ThirdSession: React.FC = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container style={styles} className="d-none d-md-flex justify-content-end">
-                <div className="w-50 p-3">
+            <Container style={styles} className="d-none d-lg-flex justify-content-end">
+                <div className="w-50 p-5">
                     <ParagraphLight style={{
                         fontSize: '.875rem'
                     }} text="providing quality Translation since 1999" />

@@ -10,7 +10,7 @@ export const fontSizeMobile: React.CSSProperties = {
     fontSize: '.875rem'
 }
 export const stylesDesktop: React.CSSProperties = {
-    top: '20%',
+    top: '45%',
     textAlign: 'left',
 }
 export const fontSizeDesktop: React.CSSProperties = {

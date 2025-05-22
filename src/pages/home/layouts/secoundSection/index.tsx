@@ -9,7 +9,7 @@ import { Container } from 'react-bootstrap';
 export const SecoundSection: React.FC = () => {
     return (
         <section className="p-3 text-center bg-primary-gradient mb-3">
-            <Container>
+            <Container className='mt-5'>
                 <SubTitle text='What we offer' />
                 <Paragraph items={paragraphs} />
                 <ServicesList items={servicesList} />
