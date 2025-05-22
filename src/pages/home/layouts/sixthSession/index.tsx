@@ -14,18 +14,21 @@ export const SixthSession: React.FC = () => {
 
     return (
         <section className="bg-gray-100">
-            <Container>
-                <Row className='justify-content-center'>
-                    <Col md={12}>
+            <Container fluid className="p-0 m-0">
+                <Row className='justify-content-center align-items-center'>
+                    <Col md={12} lg={6} className="p-5">
                         <FormContactUs onSubmit={onSubmit} />
                     </Col>
-                    <Col md={12}>
+                    <Col md={12} lg={6}>
                         <div
                             ref={imageRef}
                             className={`image-slide-in ${isVisible ? "visible" : ""}`}
                             id="imageFromSixSetion"
                         >
-                            <Image src={imageFromSixSetion} />
+                            <Image style={{
+                                width: '100vh',
+                                height: '100vh'
+                            }} src={imageFromSixSetion} />
                         </div>
                     </Col>
                 </Row>

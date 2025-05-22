@@ -7,8 +7,7 @@ export const Toggle: React.FC<ToggleProps> = ({ children, eventKey }) => {
     const decoratedOnClick = useAccordionButton(eventKey);
 
     return (
-        <Link to={'#'}
-            className="mr-2 btn btn-sm"
+        <Link to={'#'} className="text-decoration-none"
             onClick={decoratedOnClick}
         >
             {children}
