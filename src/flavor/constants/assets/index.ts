@@ -1,4 +1,4 @@
-import logo from "@assets/images/logo-inverse-246x44.png";
+import logo from "@assets/greatNewSoluctions/logo.png";
 import slide1 from "@assets/traduzPlus/swiper/slider-minimal-slide-1-1920x888.jpg";
 import slide2 from "@assets/traduzPlus/swiper/slider-minimal-slide-2-1920x888.jpg";
 import slide3 from "@assets/traduzPlus/swiper/slider-minimal-slide-3-1920x888.jpg";

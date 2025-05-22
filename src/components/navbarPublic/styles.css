@@ -1,6 +1,9 @@
 @media (max-width: 576px) {
   /* sm: telas menores que 576px */
   .bg-sm-only {
-    background-color: #333;
+    background-color: #fff;
   }
+}
+.bg-transparent {
+  background-color: transparent !important;
 }

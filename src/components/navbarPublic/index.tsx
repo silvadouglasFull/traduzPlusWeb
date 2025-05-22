@@ -1,16 +1,18 @@
+import { useNavbarBackground } from "@components/navbarPublic/hooks/useNavbarBackground";
+import { LanguageDropdown } from "@components/navbarPublic/languageDropdown";
 import { LinksHeader } from "@components/navbarPublic/links";
 import { LogLink } from '@components/navbarPublic/logLink';
+import '@components/navbarPublic/styles.css';
 import { logo } from "@flavor/index";
 import { links } from "@utils/linksHeader";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-router-dom";
-import { LanguageDropdown } from "./languageDropdown";
-import './styles.css';
 export const Header: React.FC = () => {
+    const { hasBackground } = useNavbarBackground()
     return (
-        <Navbar sticky="top" collapseOnSelect expand="lg" className="bg-sm-only">
+        <Navbar collapseOnSelect expand="lg" className={`fixed-top ${hasBackground ? 'bg-light' : 'bg-transparent'}`}>
             <Container fluid>
                 <Navbar.Brand as={Link} to={'#'}>
                     <LogLink urlLogo={logo} />
