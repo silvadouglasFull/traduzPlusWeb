@@ -36,7 +36,7 @@ export const ThirdSession: React.FC = () => {
                     </Col>
                 </Row>
             </Container>
-            <Container style={styles} className="d-flex justify-content-end">
+            <Container style={styles} className="d-none d-md-flex justify-content-end">
                 <div className="w-50 p-3">
                     <ParagraphLight style={{
                         fontSize: '.875rem'

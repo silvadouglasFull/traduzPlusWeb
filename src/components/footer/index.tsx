@@ -8,11 +8,11 @@ export const Footer: React.FC = () => {
     return (
         <footer className="bg-primary-gradient mt-3">
             <Container className="p-3">
-                <Row className="justify-content-between align-items-center align-self-stretch flex-wrap">
-                    <Col sm={12}>
+                <Row>
+                    <Col sm={12} md={6}>
                         <QuickLinks />
                     </Col>
-                    <Col>
+                    <Col sm={12} md={6}>
                         <ContactInformation {...contacts} />
                     </Col>
                 </Row>

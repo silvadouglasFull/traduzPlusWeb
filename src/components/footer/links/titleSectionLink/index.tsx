@@ -2,7 +2,7 @@ import type { TTitleSectionLink } from "@components/footer/links/titleSectionLin
 import React from "react";
 export const TitleSectionLink: React.FC<TTitleSectionLink> = ({ title, ...props }) => {
     return (
-        <h5 {...props} className="text-uppercase font-weight-bold mb-3">
+        <h5 {...props} className="text-uppercase font-weight-bold">
             {title}
         </h5>
     )
