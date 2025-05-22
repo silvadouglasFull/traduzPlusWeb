@@ -5,9 +5,9 @@ import { SubTitleHighLighted } from './components/subTitleHighLighted';
 export const FifthSession: React.FC = () => {
     return (
         <section className="p-3 text-center bg-primary-gradient mb-3">
-            <Container>
+            <Container className='p-5'>
                 <SubTitleHighLighted text='Professional' hightLightedText='Translation services' />
-                <Button className='text-uppercase'>
+                <Button className='text-uppercase mt-3' size='lg'>
                     order now
                 </Button>
             </Container>

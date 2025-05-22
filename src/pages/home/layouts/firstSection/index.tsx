@@ -13,14 +13,14 @@ export const FirstSection: React.FC = () => {
         <section className="mb-3 p-3">
             <Container>
                 <Row className="justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
-                    <Col md={10} className="mb-3" lg={6} xxl={5} sm={12}>
+                    <Col md={12} className="mb-3" lg={6} xxl={5} sm={12}>
                         <SubTitle text="A Few Words About us" />
                         <Paragraph items={paragraphs} />
-                        <Button variant="primary" className="w-100" size="lg">
+                        <Button variant="primary" className="w-100 mb-5" size="lg">
                             Learn More
                         </Button>
                     </Col>
-                    <Col md={2} lg={6} xxl={7} sm={12}>
+                    <Col md={12} lg={6} xxl={7} sm={12}>
                         <div
                             ref={imageRef}
                             className={`image-slide-in ${isVisible ? "visible" : ""}`}

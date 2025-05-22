@@ -16,10 +16,10 @@ export const SixthSession: React.FC = () => {
         <section className="bg-gray-100">
             <Container>
                 <Row className='justify-content-center'>
-                    <Col lg={8} xl={6}>
+                    <Col md={12}>
                         <FormContactUs onSubmit={onSubmit} />
                     </Col>
-                    <Col lg={8} xl={6}>
+                    <Col md={12}>
                         <div
                             ref={imageRef}
                             className={`image-slide-in ${isVisible ? "visible" : ""}`}
