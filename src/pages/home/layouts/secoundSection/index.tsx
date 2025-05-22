@@ -3,12 +3,13 @@ import { servicesList } from '@flavor/constants/servicesList';
 import { paragraphs } from "@flavor/constants/texts/secoundSection";
 import { Paragraph } from '@pages/home/components/paragraph';
 import { SubTitle } from '@pages/home/components/subTitle';
-import '@pagesHome/styles/index.css';
+import { styles } from '@pages/home/styles';
+
 import React from "react";
 import { Container } from 'react-bootstrap';
 export const SecoundSection: React.FC = () => {
     return (
-        <section className="p-3 text-center bg-primary-gradient mb-3">
+        <section className="p-3 text-center mb-3" style={styles.bgPrimaryGradient}>
             <Container className='mt-5'>
                 <SubTitle text='What we offer' />
                 <Paragraph items={paragraphs} />

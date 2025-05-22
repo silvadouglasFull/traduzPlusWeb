@@ -1,7 +1,7 @@
 .bg-primary-gradient {
   background-repeat: repeat-x;
-  background-image: -webkit-linear-gradient(24deg, #262a5e, #353da1);
-  background-image: linear-gradient(24deg, #262a5e, #353da1);
+  background-image: -webkit-linear-gradient(24deg, #051138, #081a48);
+  background-image: linear-gradient(24deg, #051138, #081a48);
   color: #fff;
 }
 .bg-gray-100 {
