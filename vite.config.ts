@@ -14,6 +14,7 @@ export default defineConfig({
     alias: {
       "@": root,
       "@components": `${root}/components`,
+      "@constants/*": `${root}/constants/*`,
       "@assets/*": `${root}/assets/*`,
       "@components/*": `${root}/components/*`,
       "@features/*": `${root}/features/*`,

@@ -1,0 +1,1 @@
+export const linkDSWeb = "https://www.instagram.com/dswebdev"
