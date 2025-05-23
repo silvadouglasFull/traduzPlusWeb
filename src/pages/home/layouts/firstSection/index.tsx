@@ -1,6 +1,5 @@
 import imageFromFirstSection from "@assets/traduzPlus/images/large-features-3-570x368.jpg";
 import { paragraphs } from "@flavor/constants/texts";
-import { useInView } from "@hooks/useInView";
 import { Image } from "@pagesHome/components/image";
 import { Paragraph } from "@pagesHome/components/paragraph";
 import { SubTitle } from "@pagesHome/components/subTitle";
@@ -8,7 +7,6 @@ import { SubTitle } from "@pagesHome/components/subTitle";
 import type React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 export const FirstSection: React.FC = () => {
-    const [imageRef, isVisible] = useInView<HTMLDivElement>();
     return (
         <section className="mb-3 p-3">
             <Container>
@@ -21,13 +19,7 @@ export const FirstSection: React.FC = () => {
                         </Button>
                     </Col>
                     <Col md={12} lg={6} xxl={7} sm={12}>
-                        <div
-                            ref={imageRef}
-                            className={`image-slide-in ${isVisible ? "visible" : ""}`}
-                            id="imageFromFirstSection"
-                        >
-                            <Image src={imageFromFirstSection} />
-                        </div>
+                        <Image src={imageFromFirstSection} />
                     </Col>
                 </Row>
             </Container>
