@@ -15,13 +15,13 @@ export const SixthSession: React.FC = () => {
             <Container fluid>
                 <Row className='justify-content-between align-items-center'>
                     <Col md={12} lg={6}>
-                        <FormContactUs onSubmit={onSubmit} />
-                    </Col>
-                    <Col md={12} lg={6}>
                         <Image style={{
                             width: '100vh',
                             height: '100vh',
                         }} src={imageFromSixSetion} />
+                    </Col>
+                    <Col md={12} lg={6}>
+                        <FormContactUs onSubmit={onSubmit} />
                     </Col>
                 </Row>
             </Container>
