@@ -14,7 +14,7 @@ export const ThirdSession: React.FC = () => {
     return (
         <section className="p-3 mb-3">
             <Container className="d-block d-lg-none">
-                <Row className='row section-indie-row justify-content-center justify-content-lg-end'>
+                <Row className='row justify-content-center'>
                     <Col md={12} lg={1} sm={12} className="mb-3">
                         <div
                             ref={imageRef}
@@ -30,7 +30,7 @@ export const ThirdSession: React.FC = () => {
                         }} text="providing quality Translation since 1999" />
                         <SubTitle text="Great Industry Expertise" />
                         <Paragraph items={paragraphs} />
-                        <Button variant="primary" className="w-100" size="lg">
+                        <Button variant="oxford" className="w-100" size="lg">
                             BROWSER OUR SERVICES
                         </Button>
                     </Col>
@@ -43,7 +43,7 @@ export const ThirdSession: React.FC = () => {
                     }} text="providing quality Translation since 1999" />
                     <SubTitle text="Great Industry Expertise" />
                     <Paragraph items={paragraphs} />
-                    <Button variant="primary" className="w-100" size="lg">
+                    <Button variant="oxford" className="w-100" size="lg">
                         BROWSER OUR SERVICES
                     </Button>
 

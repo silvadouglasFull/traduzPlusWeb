@@ -47,7 +47,7 @@ export const FormContactUs: React.FC<FormProps & React.DetailedHTMLProps<React.F
                     </Form.Group>
                 </Col>
             </Row>
-            <Button className="w-100 text-uppercase">
+            <Button variant="oxford" className="w-100 text-uppercase">
                 Send Message
             </Button>
         </Form>

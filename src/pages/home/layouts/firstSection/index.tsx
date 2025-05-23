@@ -16,7 +16,7 @@ export const FirstSection: React.FC = () => {
                     <Col md={12} className="mt-5 mb-3" lg={6} xxl={5} sm={12}>
                         <SubTitle text="A Few Words About us" />
                         <Paragraph items={paragraphs} />
-                        <Button variant="primary" className="w-100 mb-5" size="lg">
+                        <Button variant="oxford" className="w-100 mb-5" size="lg">
                             Learn More
                         </Button>
                     </Col>

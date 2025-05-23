@@ -7,5 +7,5 @@ export const styles: React.CSSProperties = {
     backgroundPosition: 'left center', // ou 'center center'
     backgroundRepeat: 'no-repeat',
     width: '100vw',
-    height: '45vh',
+    height: '100%',
 }

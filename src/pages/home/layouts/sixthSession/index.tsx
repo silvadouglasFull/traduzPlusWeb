@@ -14,9 +14,9 @@ export const SixthSession: React.FC = () => {
 
     return (
         <section className="bg-gray-100">
-            <Container fluid className="p-0 m-0">
-                <Row className='justify-content-center align-items-center'>
-                    <Col md={12} lg={6} className="p-5">
+            <Container fluid>
+                <Row className='justify-content-between align-items-center'>
+                    <Col md={12} lg={6}>
                         <FormContactUs onSubmit={onSubmit} />
                     </Col>
                     <Col md={12} lg={6}>
@@ -27,7 +27,7 @@ export const SixthSession: React.FC = () => {
                         >
                             <Image style={{
                                 width: '100vh',
-                                height: '100vh'
+                                height: '100vh',
                             }} src={imageFromSixSetion} />
                         </div>
                     </Col>
