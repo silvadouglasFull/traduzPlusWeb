@@ -1,17 +1,20 @@
 import type { LinkItem } from "@components/navbarPublic/links/item/types";
-
+import { PageAboutUs } from "@pages/aboutUs";
+import { PageHome } from '@pages/home';
 export const links: LinkItem[] = [
     {
         id: 0,
         title: "Home",
         url: "/",
         isActive: true,
+        element: PageHome
     },
     {
         id: 1,
         title: "About",
         url: "/about",
         isActive: false,
+        element: PageAboutUs
     },
     {
         id: 2,
