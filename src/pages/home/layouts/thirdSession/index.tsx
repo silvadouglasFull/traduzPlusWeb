@@ -1,17 +1,18 @@
 import imageFromThirSection from "@assets/traduzPlus/images/image-aside-01-1143x584.webp";
-import { paragraphs } from "@flavor/constants/texts/home/thirdSection";
+import { paragraphs, subTitle } from "@flavor/constants/texts/home/thirdSection";
+import { useChangeLanguage } from "@hooks/useChangeLanguage/paragraphs";
+import { useChangeLanguage as useChangeLanguageSubTitle } from "@hooks/useChangeLanguage/subTitle";
 import { Image } from "@pages/components/image";
 import { Paragraph } from "@pages/components/paragraph";
 import { SubTitle } from "@pages/components/subTitle";
-import { useChangeLanguage } from "@pages/home/layouts/hooks/useChangeLanguage";
 import { ParagraphLight } from "@pages/home/layouts/thirdSession/components";
 import { styles } from "@pagesHome/layouts/thirdSession/styles";
 import type React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
-
 export const ThirdSession: React.FC = () => {
     const { items } = useChangeLanguage(paragraphs)
+    const { description, text, textButton } = useChangeLanguageSubTitle(subTitle)
     return (
         <section className="p-3 mb-3">
             <Container className="d-block d-lg-none">
@@ -22,12 +23,12 @@ export const ThirdSession: React.FC = () => {
                     <Col md={12} lg={11} sm={12}>
                         <ParagraphLight style={{
                             fontSize: '1.125rem'
-                        }} text="providing quality Translation since 1999" />
-                        <SubTitle text="Great Industry Expertise" applyShadown={false} />
+                        }} text={description ?? ''} />
+                        <SubTitle text={text} applyShadown={false} />
                         <Paragraph items={items} />
                         <Button variant="oxford" className="w-100 text-uppercase" size="lg">
                             <Link to={'/services'} className="text-decoration-none text-light">
-                                BROWSER OUR SERVICES
+                                {textButton}
                             </Link>
                         </Button>
                     </Col>
@@ -37,12 +38,12 @@ export const ThirdSession: React.FC = () => {
                 <div className="w-50 p-5">
                     <ParagraphLight style={{
                         fontSize: '.875rem'
-                    }} text="providing quality Translation since 1999" />
-                    <SubTitle text="Great Industry Expertise" applyShadown={false} />
+                    }} text={description ?? ''} />
+                    <SubTitle text={text} applyShadown={false} />
                     <Paragraph items={items} />
                     <Button variant="oxford" className="w-100 text-uppercase" size="lg">
                         <Link to={'/services'} className="text-decoration-none text-light">
-                            BROWSER OUR SERVICES
+                            {textButton}
                         </Link>
                     </Button>
                 </div>

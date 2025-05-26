@@ -1,3 +1,4 @@
+import type { SubTitle } from "@flavor/constants/texts/home/types"
 import type { Paragraph } from "@pages/components/paragraph/item/types"
 
 export const paragraphs: Array<Paragraph> = [
@@ -32,5 +33,26 @@ export const paragraphs: Array<Paragraph> = [
         id: 6,
         text: 'Com um grupo central de mais de 700 linguistas profissionais atuando em seis continentes, atendemos as empresas mais reconhecidas do mundo nos setores de manufatura, direito, finanças, seguros, alimentos, varejo, distribuição, entre outros.',
         language: 'pt'
+    }
+]
+
+export const subTitle: SubTitle[] = [
+    {
+        id: 1,
+        text: 'A Few Words About us',
+        language: 'en',
+        textButton: 'Learn More'
+    },
+    {
+        id: 2,
+        text: '关于我们的几句话',
+        language: 'zh',
+        textButton: '了解更多'
+    },
+    {
+        id: 3,
+        text: 'Algumas palavras sobre nós',
+        language: 'pt',
+        textButton: 'Ler mais'
     }
 ]

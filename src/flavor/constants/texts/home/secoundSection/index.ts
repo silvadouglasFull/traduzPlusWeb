@@ -1,4 +1,5 @@
 import type { Paragraph } from "@pages/components/paragraph/item/types"
+import type { SubTitle } from "../types"
 
 export const paragraphs: Array<Paragraph> = [
     {
@@ -15,5 +16,25 @@ export const paragraphs: Array<Paragraph> = [
         id: 3,
         text: 'Nesta seção, você pode saber mais sobre os serviços que a Great Wall Soluções Linguísticas oferece aos seus clientes. Estamos sempre prontos para fornecer serviços de tradução e interpretação de qualidade.',
         language: 'pt'
+    }
+]
+export const subTitle: SubTitle[] = [
+    {
+        id: 1,
+        text: 'What we offer',
+        language: 'en',
+        textButton: 'Learn More'
+    },
+    {
+        id: 2,
+        text: '我们的服务',
+        language: 'zh',
+        textButton: '了解更多'
+    },
+    {
+        id: 3,
+        text: 'O que oferecemos',
+        language: 'pt',
+        textButton: 'Saiba mais'
     }
 ]
