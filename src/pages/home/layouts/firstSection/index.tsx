@@ -1,5 +1,4 @@
 import imageFromFirstSection from "@assets/traduzPlus/images/large-features-3-570x368.jpg";
-import { AnimationSlide } from "@components/animationSlide/slideLeftRight";
 import { paragraphs } from "@flavor/constants/texts/home/firstSection";
 import { Image } from "@pages/components/image";
 import { Paragraph } from "@pages/components/paragraph";
@@ -14,15 +13,13 @@ export const FirstSection: React.FC = () => {
                 <Row className="justify-content-center align-items-center">
                     <Col md={12} className="mt-5 mb-3" lg={6} xxl={5} sm={12}>
                         <SubTitle text="A Few Words About us" />
-                        <AnimationSlide direction="right">
-                            <Paragraph items={paragraphs} />
-                            <Button variant="oxford" className="w-100 mb-5 text-uppercase" size="lg">
-                                Learn More
-                            </Button>
-                        </AnimationSlide>
+                        <Paragraph items={paragraphs} />
+                        <Button variant="oxford" className="w-100 mb-5 text-uppercase" size="lg">
+                            Learn More
+                        </Button>
                     </Col>
                     <Col md={12} lg={6} xxl={7} sm={12}>
-                        <Image src={imageFromFirstSection} />
+                        <Image src={imageFromFirstSection} direction="right" />
                     </Col>
                 </Row>
             </Container>

@@ -13,21 +13,22 @@ export const SixthSession: React.FC = () => {
         <section className="bg-gray-100">
             <Container fluid>
                 <Row className='justify-content-between align-items-center'>
+                    <Col md={12} lg={6}>
+                        <FormContactUs onSubmit={onSubmit} />
+                    </Col>
                     <Col className="d-none d-md-block" md={12} lg={6}>
                         <Image style={{
                             width: '100vh',
                             height: '100vh',
-                        }} src={imageFromSixSetion} />
+                        }} src={imageFromSixSetion} direction="right" />
                     </Col>
                     <Col className="d-block d-md-none">
                         <Image style={{
                             width: '100%',
                             height: '100%',
-                        }} src={imageFromSixSetion} />
+                        }} src={imageFromSixSetion} direction="right" />
                     </Col>
-                    <Col md={12} lg={6}>
-                        <FormContactUs onSubmit={onSubmit} />
-                    </Col>
+
                 </Row>
             </Container>
         </section>

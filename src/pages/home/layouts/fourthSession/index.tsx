@@ -12,17 +12,17 @@ export const FourthSession: React.FC = () => {
         <section className="p-3 mb-3">
             <Container style={styles.container}>
                 <Row className="justify-content-center align-items-center">
-                    <Col lg={7} xl={6} className="mt-5">
+                    <Col>
+                        <Image src={imageFromFourthSection} />
+                    </Col>
+                    <Col className="mt-5">
                         <SubTitle text="Frequently Asked Questions" />
                         <AnimationSlide direction="right">
                             <Accordion items={accordions} />
                         </AnimationSlide>
                     </Col>
-                    <Col>
-                        <Image src={imageFromFourthSection} />
-                    </Col>
                 </Row>
             </Container>
-        </section>
+        </section >
     )
 }
