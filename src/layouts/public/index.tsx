@@ -1,3 +1,4 @@
+import { ButtonToTop } from "@components/buttonScroll/toTop";
 import { FallBack } from "@components/fallback";
 import { Footer } from "@components/footer";
 import { Header } from "@components/navbarPublic/index";
@@ -14,6 +15,7 @@ export const DefaultLayout: React.FC = () => {
             </Suspense>
             <Outlet />
             <Footer />
+            <ButtonToTop />
         </>
     )
 }
