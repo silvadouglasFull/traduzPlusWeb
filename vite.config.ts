@@ -48,6 +48,7 @@ export default defineConfig({
       "@pagesHome/*": `${root}/pages/home/*`,
       "@pagesAboutUs/*": `${root}/pages/aboutUs/*`,
       "@pagesContacts/*": `${root}/pages/contacts/*`,
+      "@pagesServices/*": `${root}/pages/services/*`,
       "@routes/*": `${root}/routes/*`,
       "@services/*": `${root}/services/*`,
       "@store/*": `${root}/store/*`,

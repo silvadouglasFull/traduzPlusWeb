@@ -33,9 +33,15 @@ export const breadCrumps: BreadCrumps[] = [
         url: '/about'
     },
     {
-        id: 0,
+        id: 1,
         midia: breadcrumbsAbout,
         url: '/contact'
+    },
+    {
+        id: 2,
+        midia: breadcrumbsAbout,
+        url: '/services'
     }
+
 ]
 export { logo };
