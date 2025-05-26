@@ -1,16 +1,13 @@
-import imageFromFirstSection from "@assets/traduzPlus/images/large-features-3-570x368.jpg";
 import { AnimationSlide } from "@components/animationSlide/slideLeftRight";
 import { paragraphs } from "@flavor/constants/texts/firstSection";
 import { SubTitle } from "@pages/components/subTitle";
-import { styles } from "@pages/home/styles";
-import { Image } from "@pagesHome/components/image";
-import { Paragraph } from "@pagesHome/components/paragraph";
-import type React from "react";
+import { Paragraph } from "@pages/home/components/paragraph";
+import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 export const FirstSection: React.FC = () => {
     return (
-        <section className="mb-3 p-3">
-            <Container style={styles.container}>
+        <section>
+            <Container>
                 <Row className="justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
                     <Col md={12} className="mt-5 mb-3" lg={6} xxl={5} sm={12}>
                         <SubTitle text="A Few Words About us" />
@@ -22,7 +19,7 @@ export const FirstSection: React.FC = () => {
                         </AnimationSlide>
                     </Col>
                     <Col md={12} lg={6} xxl={7} sm={12}>
-                        <Image src={imageFromFirstSection} />
+                        {/* <Image src={imageFromFirstSection} /> */}
                     </Col>
                 </Row>
             </Container>

@@ -1,5 +1,5 @@
-import { styles } from "@pagesHome/components/subTitle/styles";
-import type { SubTitleProps } from "@pagesHome/components/subTitle/types";
+import { styles } from "@pages/components/subTitle/styles";
+import type { SubTitleProps } from "@pages/components/subTitle/types";
 import { transformerInFirstWord } from "@utils/transfomerText";
 import type React from "react";
 export const SubTitle: React.FC<SubTitleProps> = ({ text, applyShadown = true, ...props }: SubTitleProps) => {

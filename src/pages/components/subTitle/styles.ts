@@ -1,4 +1,4 @@
-import type { Styles } from "@pagesHome/components/subTitle/types";
+import type { Styles } from "@pages/components/subTitle/types";
 export const styles: Styles = {
     fontSize: '4rem',
     opacity: 0.2,
