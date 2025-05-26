@@ -1,5 +1,5 @@
-import { AnimationSlide } from "@components/animationSlide";
-import type { AnimationSlideProps } from "@components/animationSlide/types";
+import { AnimationSlide } from "@components/animationSlide/slideLeftRight";
+import type { AnimationSlideProps } from "@components/animationSlide/slideLeftRight/types";
 import type { ImageProps } from "@pagesHome/components/image/types";
 
 import type React from "react";

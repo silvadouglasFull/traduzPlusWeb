@@ -7,17 +7,22 @@ import { Col, Container, Row } from "react-bootstrap";
 export const SixthSession: React.FC = () => {
     const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        // handle form submission here
     };
 
     return (
         <section className="bg-gray-100">
             <Container fluid>
                 <Row className='justify-content-between align-items-center'>
-                    <Col md={12} lg={6}>
+                    <Col className="d-none d-md-block" md={12} lg={6}>
                         <Image style={{
                             width: '100vh',
                             height: '100vh',
+                        }} src={imageFromSixSetion} />
+                    </Col>
+                    <Col className="d-block d-md-none">
+                        <Image style={{
+                            width: '100%',
+                            height: '100%',
                         }} src={imageFromSixSetion} />
                     </Col>
                     <Col md={12} lg={6}>

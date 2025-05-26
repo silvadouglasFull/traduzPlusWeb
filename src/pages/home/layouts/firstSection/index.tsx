@@ -3,7 +3,6 @@ import { paragraphs } from "@flavor/constants/texts";
 import { Image } from "@pagesHome/components/image";
 import { Paragraph } from "@pagesHome/components/paragraph";
 import { SubTitle } from "@pagesHome/components/subTitle";
-
 import type React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 export const FirstSection: React.FC = () => {
