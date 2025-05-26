@@ -7,4 +7,17 @@ export const styles: Style = {
         height: '50vh',
         position: 'relative',
     }
+}
+
+export const stylesDesktop: Style = {
+    section: {
+        ...styles,
+        height: '30vh',
+    }
+}
+export const stylesLargeDesktop: Style = {
+    section: {
+        ...styles,
+        height: '60vh',
+    }
 } 
