@@ -6,6 +6,7 @@ import { SubTitle } from "@pages/components/subTitle";
 import { styles } from "@pages/home/styles";
 import type React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 export const FirstSection: React.FC = () => {
     return (
         <section className="mb-3 p-3">
@@ -15,7 +16,9 @@ export const FirstSection: React.FC = () => {
                         <SubTitle text="A Few Words About us" />
                         <Paragraph items={paragraphs} />
                         <Button variant="oxford" className="w-100 mb-5 text-uppercase" size="lg">
-                            Learn More
+                            <Link to={'/about'} className="text-decoration-none text-light">
+                                Learn More
+                            </Link>
                         </Button>
                     </Col>
                     <Col md={12} lg={6} xxl={7} sm={12}>

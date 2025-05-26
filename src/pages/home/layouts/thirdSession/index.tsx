@@ -7,6 +7,7 @@ import { ParagraphLight } from "@pages/home/layouts/thirdSession/components";
 import { styles } from "@pagesHome/layouts/thirdSession/styles";
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export const ThirdSession: React.FC = () => {
     return (
@@ -23,7 +24,9 @@ export const ThirdSession: React.FC = () => {
                         <SubTitle text="Great Industry Expertise" applyShadown={false} />
                         <Paragraph items={paragraphs} />
                         <Button variant="oxford" className="w-100 text-uppercase" size="lg">
-                            BROWSER OUR SERVICES
+                            <Link to={'/services'} className="text-decoration-none text-light">
+                                BROWSER OUR SERVICES
+                            </Link>
                         </Button>
                     </Col>
                 </Row>
@@ -36,7 +39,9 @@ export const ThirdSession: React.FC = () => {
                     <SubTitle text="Great Industry Expertise" applyShadown={false} />
                     <Paragraph items={paragraphs} />
                     <Button variant="oxford" className="w-100 text-uppercase" size="lg">
-                        BROWSER OUR SERVICES
+                        <Link to={'/services'} className="text-decoration-none text-light">
+                            BROWSER OUR SERVICES
+                        </Link>
                     </Button>
                 </div>
             </Container>

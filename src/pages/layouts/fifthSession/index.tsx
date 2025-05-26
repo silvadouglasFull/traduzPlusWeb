@@ -2,6 +2,7 @@ import { SubTitleHighLighted } from '@pages/layouts/fifthSession/components/subT
 import { useSetTextButton } from '@pages/layouts/fifthSession/hooks';
 import React from "react";
 import { Button, Col, Container, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 export const FifthSession: React.FC = () => {
     const { text } = useSetTextButton()
     return (
@@ -13,7 +14,9 @@ export const FifthSession: React.FC = () => {
                     </Col>
                     <Col>
                         <Button className='text-uppercase mt-3' size='lg'>
-                            {text}
+                            <Link to={'/contact'} className='text-decoration-none text-light'>
+                                {text}
+                            </Link>
                         </Button>
                     </Col>
                 </Row>
