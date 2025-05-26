@@ -11,7 +11,7 @@ export const FirstSection: React.FC = () => {
     return (
         <section className="mb-3 p-3">
             <Container style={styles.container}>
-                <Row className="justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
+                <Row className="justify-content-center align-items-center">
                     <Col md={12} className="mt-5 mb-3" lg={6} xxl={5} sm={12}>
                         <SubTitle text="A Few Words About us" />
                         <AnimationSlide direction="right">

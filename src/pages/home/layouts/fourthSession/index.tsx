@@ -11,7 +11,7 @@ export const FourthSession: React.FC = () => {
     return (
         <section className="p-3 mb-3">
             <Container style={styles.container}>
-                <Row className="justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
+                <Row className="justify-content-center align-items-center">
                     <Col lg={7} xl={6} className="mt-5">
                         <SubTitle text="Frequently Asked Questions" />
                         <AnimationSlide direction="right">
