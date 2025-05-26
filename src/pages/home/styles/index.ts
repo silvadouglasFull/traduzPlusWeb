@@ -9,4 +9,7 @@ export const styles: Styles = {
     bgGray100: {
         backgroundColor: '#f5f6fa',
     },
+    container: {
+        overflowX: 'hidden'
+    }
 };

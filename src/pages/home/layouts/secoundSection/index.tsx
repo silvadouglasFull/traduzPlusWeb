@@ -4,7 +4,6 @@ import { paragraphs } from "@flavor/constants/texts/secoundSection";
 import { Paragraph } from '@pages/home/components/paragraph';
 import { SubTitle } from '@pages/home/components/subTitle';
 import { styles } from '@pages/home/styles';
-
 import React from "react";
 import { Container } from 'react-bootstrap';
 export const SecoundSection: React.FC = () => {

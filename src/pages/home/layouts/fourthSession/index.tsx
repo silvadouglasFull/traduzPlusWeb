@@ -1,5 +1,7 @@
 import imageFromFourthSection from "@assets/traduzPlus/images/accordions-1-470x368.jpg";
+import { AnimationSlide } from "@components/animationSlide/slideLeftRight";
 import { accordions } from "@flavor/constants/texts/fourthSection";
+import { styles } from "@pages/home/styles";
 import { Image } from "@pagesHome/components/image";
 import { SubTitle } from "@pagesHome/components/subTitle";
 import { Accordion } from "@pagesHome/layouts/fourthSession/components/accordion";
@@ -8,11 +10,13 @@ import { Col, Container, Row } from "react-bootstrap";
 export const FourthSession: React.FC = () => {
     return (
         <section className="p-3 mb-3">
-            <Container>
+            <Container style={styles.container}>
                 <Row className="justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
                     <Col lg={7} xl={6} className="mt-5">
                         <SubTitle text="Frequently Asked Questions" />
-                        <Accordion items={accordions} />
+                        <AnimationSlide direction="right">
+                            <Accordion items={accordions} />
+                        </AnimationSlide>
                     </Col>
                     <Col>
                         <Image src={imageFromFourthSection} />

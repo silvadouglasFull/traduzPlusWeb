@@ -4,9 +4,9 @@ import { Paragraph } from "@pages/home/components/paragraph";
 import { ParagraphLight } from "@pages/home/layouts/thirdSession/components";
 import { Image } from "@pagesHome/components/image";
 import { SubTitle } from "@pagesHome/components/subTitle";
+import { styles } from "@pagesHome/layouts/thirdSession/styles";
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
-import { styles } from "./styles";
 
 export const ThirdSession: React.FC = () => {
     return (
@@ -20,7 +20,7 @@ export const ThirdSession: React.FC = () => {
                         <ParagraphLight style={{
                             fontSize: '1.125rem'
                         }} text="providing quality Translation since 1999" />
-                        <SubTitle text="Great Industry Expertise" />
+                        <SubTitle text="Great Industry Expertise" applyShadown={false} />
                         <Paragraph items={paragraphs} />
                         <Button variant="oxford" className="w-100" size="lg">
                             BROWSER OUR SERVICES
@@ -33,12 +33,11 @@ export const ThirdSession: React.FC = () => {
                     <ParagraphLight style={{
                         fontSize: '.875rem'
                     }} text="providing quality Translation since 1999" />
-                    <SubTitle text="Great Industry Expertise" />
+                    <SubTitle text="Great Industry Expertise" applyShadown={false} />
                     <Paragraph items={paragraphs} />
                     <Button variant="oxford" className="w-100" size="lg">
                         BROWSER OUR SERVICES
                     </Button>
-
                 </div>
             </Container>
         </section>

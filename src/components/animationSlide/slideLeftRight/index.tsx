@@ -1,9 +1,9 @@
 import { config } from "@components/animationSlide/config";
+import { useXPoint } from "@components/animationSlide/slideLeftRight/hooks/useXPoint";
 import type { AnimationSlideProps } from "@components/animationSlide/slideLeftRight/types";
 import { motion } from "framer-motion";
 import type React from "react";
 import { useInView } from 'react-intersection-observer';
-import { useXPoint } from "./hooks/useXPoint";
 
 export const AnimationSlide: React.FC<React.PropsWithChildren<{}> & AnimationSlideProps> = ({ children, direction = 'left' }) => {
     const { xPoint } = useXPoint({ direction })
