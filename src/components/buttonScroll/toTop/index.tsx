@@ -1,9 +1,17 @@
 import { Icon } from "@components/icons"
+import { useShowBottonScrollToTop } from "@hooks/useShowButtonScrollToTop"
 import { scrollTo } from "@utils/scrollPage"
+import type React from "react"
 import { Button } from "react-bootstrap"
-export const ButtonToTop = () => {
+export const ButtonToTop: React.FC = () => {
+    const { show } = useShowBottonScrollToTop()
     const handleScroll = () => {
         scrollTo({ direction: 'top', scrollPosition: { top: 0 } })
+    }
+    if (!show) {
+        return (
+            <></>
+        )
     }
     return (
         <Button
