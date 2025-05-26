@@ -1,9 +1,9 @@
 import imageFromFourthSection from "@assets/traduzPlus/images/accordions-1-470x368.jpg";
 import { AnimationSlide } from "@components/animationSlide/slideLeftRight";
-import { accordions } from "@flavor/constants/texts/fourthSection";
+import { accordions } from "@flavor/constants/texts/home/fourthSection";
+import { Image } from "@pages/components/image";
 import { SubTitle } from "@pages/components/subTitle";
 import { styles } from "@pages/home/styles";
-import { Image } from "@pagesHome/components/image";
 import { Accordion } from "@pagesHome/layouts/fourthSession/components/accordion";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";

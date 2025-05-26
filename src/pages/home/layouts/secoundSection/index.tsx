@@ -1,8 +1,8 @@
 import { ServicesList } from '@components/list/services';
 import { servicesList } from '@flavor/constants/servicesList';
-import { paragraphs } from "@flavor/constants/texts/secoundSection";
+import { paragraphs } from "@flavor/constants/texts/home/secoundSection";
+import { Paragraph } from '@pages/components/paragraph';
 import { SubTitle } from '@pages/components/subTitle';
-import { Paragraph } from '@pages/home/components/paragraph';
 import { styles } from '@pages/home/styles';
 import React from "react";
 import { Container } from 'react-bootstrap';

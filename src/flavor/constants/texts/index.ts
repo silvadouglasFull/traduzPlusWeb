@@ -1,1 +1,1 @@
-export * from "@flavor/constants/texts/firstSection";
+export * from "@flavor/constants/texts/home/firstSection";

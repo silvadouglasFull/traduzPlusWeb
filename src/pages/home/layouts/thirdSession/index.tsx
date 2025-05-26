@@ -1,9 +1,9 @@
 import imageFromThirSection from "@assets/traduzPlus/images/image-aside-01-1143x584.webp";
-import { paragraphs } from "@flavor/constants/texts/thirdSection";
+import { paragraphs } from "@flavor/constants/texts/home/thirdSection";
+import { Image } from "@pages/components/image";
+import { Paragraph } from "@pages/components/paragraph";
 import { SubTitle } from "@pages/components/subTitle";
-import { Paragraph } from "@pages/home/components/paragraph";
 import { ParagraphLight } from "@pages/home/layouts/thirdSession/components";
-import { Image } from "@pagesHome/components/image";
 import { styles } from "@pagesHome/layouts/thirdSession/styles";
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
@@ -22,7 +22,7 @@ export const ThirdSession: React.FC = () => {
                         }} text="providing quality Translation since 1999" />
                         <SubTitle text="Great Industry Expertise" applyShadown={false} />
                         <Paragraph items={paragraphs} />
-                        <Button variant="oxford" className="w-100" size="lg">
+                        <Button variant="oxford" className="w-100 text-uppercase" size="lg">
                             BROWSER OUR SERVICES
                         </Button>
                     </Col>
@@ -35,7 +35,7 @@ export const ThirdSession: React.FC = () => {
                     }} text="providing quality Translation since 1999" />
                     <SubTitle text="Great Industry Expertise" applyShadown={false} />
                     <Paragraph items={paragraphs} />
-                    <Button variant="oxford" className="w-100" size="lg">
+                    <Button variant="oxford" className="w-100 text-uppercase" size="lg">
                         BROWSER OUR SERVICES
                     </Button>
                 </div>
