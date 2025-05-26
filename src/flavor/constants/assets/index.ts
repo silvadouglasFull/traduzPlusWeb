@@ -1,8 +1,10 @@
 import logo from "@assets/greatNewSoluctions/logo2.png";
+import breadcrumbsAbout from "@assets/traduzPlus/images/about/breadcrumbs-image-1.jpg";
 import slide1 from "@assets/traduzPlus/swiper/slider-minimal-slide-1-1920x888.jpg";
 import slide2 from "@assets/traduzPlus/swiper/slider-minimal-slide-2-1920x888.jpg";
 import slide3 from "@assets/traduzPlus/swiper/slider-minimal-slide-3-1920x888.jpg";
 import type { ItemProps } from "@components/carrosel/item/types";
+import type { BreadCrumps } from "@flavor/constants/assets/types";
 export const carroselSlides: Array<ItemProps> = [
     {
         midia: slide1,
@@ -21,6 +23,14 @@ export const carroselSlides: Array<ItemProps> = [
         title: 'Open Your Business',
         subTitle: 'To all World',
         id: 3,
+    }
+]
+
+export const breadCrumps: BreadCrumps[] = [
+    {
+        id: 0,
+        midia: breadcrumbsAbout,
+        url: '/about'
     }
 ]
 export { logo };
