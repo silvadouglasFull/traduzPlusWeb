@@ -5,21 +5,21 @@ export const languages: Array<LanguageItemProps> = [
         id: 0,
         icon: '🇺🇸',
         label: 'English',
-        onClick: () => { },
         isActive: true,
+        language: 'en',
     },
     {
         id: 1,
         icon: '🇧🇷',
         label: 'Português',
-        onClick: () => { },
         isActive: false,
+        language: 'pt'
     },
     {
         id: 2,
         icon: '🇨🇳',
         label: '中文',
-        onClick: () => { },
         isActive: false,
+        language: '缩写'
     }
 ]

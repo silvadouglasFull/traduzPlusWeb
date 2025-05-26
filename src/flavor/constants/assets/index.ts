@@ -11,18 +11,63 @@ export const carroselSlides: Array<ItemProps> = [
         title: 'Professional Translation',
         subTitle: 'Services',
         id: 1,
+        language: 'en'
     },
     {
         midia: slide2,
         title: 'Work with native',
         subTitle: 'Speakers',
         id: 2,
+        language: 'en'
     },
     {
         midia: slide3,
         title: 'Open Your Business',
         subTitle: 'To all World',
         id: 3,
+        language: 'en'
+    },
+    {
+        midia: slide1,
+        title: '专业翻译',
+        subTitle: '服务',
+        id: 4,
+        language: '缩写',
+    },
+    {
+        midia: slide2,
+        title: '与母语者合作',
+        subTitle: '讲者',
+        id: 5,
+        language: '缩写',
+    },
+    {
+        midia: slide3,
+        title: '让您的业务',
+        subTitle: '走向世界',
+        id: 6,
+        language: '缩写',
+    },
+    {
+        midia: slide1,
+        title: 'Tradução Profissional',
+        subTitle: 'Serviços',
+        id: 7,
+        language: 'pt',
+    },
+    {
+        midia: slide2,
+        title: 'Trabalhe com nativos',
+        subTitle: 'Falantes',
+        id: 8,
+        language: 'pt',
+    },
+    {
+        midia: slide3,
+        title: 'Expanda seu negócio',
+        subTitle: 'Para o mundo todo',
+        id: 9,
+        language: 'pt',
     }
 ]
 
