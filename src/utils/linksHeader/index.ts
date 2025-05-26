@@ -11,7 +11,7 @@ export const links: LinkItem[] = [
     },
     {
         id: 1,
-        title: "About",
+        title: "About Us",
         url: "/about",
         isActive: false,
         element: PageAboutUs
