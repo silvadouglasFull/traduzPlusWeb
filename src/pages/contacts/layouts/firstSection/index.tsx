@@ -1,5 +1,5 @@
 import { contacts } from "@flavor/constants/contacts";
-import { formatPhoneNumber } from "@utils/form/mask/phone";
+import { CardTelephone } from "@pages/contacts/components/cardPhone";
 import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 export const FirstSection: React.FC = () => {
@@ -8,13 +8,7 @@ export const FirstSection: React.FC = () => {
             <Container>
                 <Row className="mt-5 justify-content-center justify-content-lg-between flex-lg-row-reverse align-items-center">
                     {contacts.phones.map(item => (
-                        <Col className="text-center" sm={12} md={6} key={item.key}>
-                            <Card className="border border-top-0 border-left-0 border-right-0">
-                                <Card.Body>
-                                    {formatPhoneNumber(item.number, "br")}
-                                </Card.Body>
-                            </Card>
-                        </Col>
+                        <CardTelephone key={item.key} number={item.number} />
                     ))}
                     <Col sm={12} md={6} className="text-center">
                         <Card className="border border-top-0 border-left-0 border-right-0">

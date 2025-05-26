@@ -10,6 +10,7 @@
       "@pages/*": ["./src/pages/*"],
       "@pagesHome/*": ["./src/pages/home/*"],
       "@pagesAboutUs/*": ["./src/pages/aboutUs/*"],
+      "@pagesContacts/*": ["./src/pages/contacts/*"],
       "@routes/*": ["./src/routes/*"],
       "@services/*": ["./src/services/*"],
       "@store/*": ["./src/store/*"],
