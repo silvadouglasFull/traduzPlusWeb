@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const Item: React.FC<TItem> = ({ title, url }) => {
     return (
         <Col>
-            <Link className="text-light" to={url}>{title}</Link>
+            <Link className="text-light text-decoration-none" to={url}>{title}</Link>
         </Col>
     )
 }

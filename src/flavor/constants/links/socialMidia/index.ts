@@ -4,11 +4,12 @@ export const socialMidia: Array<ItemSocialMidia> = [
     {
         id: 0,
         title: 'Facebook',
-        url: ''
+        url: '',
+        icon: 'fa-brands fa-facebook'
     },
     {
         id: 1,
         title: 'Instagram',
-        url: '',
+        url: 'fa-brands fa-instagram',
     }
 ]
