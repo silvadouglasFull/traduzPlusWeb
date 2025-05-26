@@ -1,4 +1,4 @@
-export type Language = 'en' | 'pt' | '缩写'
+export type Language = 'en' | 'pt' | 'zh'
 export type ItemProps = {
     midia: string
     title: string

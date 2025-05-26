@@ -28,7 +28,6 @@ export const SixthSession: React.FC = () => {
                             height: '100%',
                         }} src={imageFromSixSetion} direction="right" />
                     </Col>
-
                 </Row>
             </Container>
         </section>

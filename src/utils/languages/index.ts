@@ -17,6 +17,6 @@ export const languages: Array<LanguageItemProps> = [
         id: 2,
         icon: '🇨🇳',
         label: '中文',
-        language: '缩写'
+        language: 'zh'
     }
 ]

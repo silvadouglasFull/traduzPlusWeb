@@ -35,7 +35,7 @@ export const carroselSlides: Array<ItemProps> = [
         title: '专业翻译',
         subTitle: '服务',
         id: 4,
-        language: '缩写',
+        language: 'zh',
         textButton: '了解更多',
     },
     {
@@ -43,7 +43,7 @@ export const carroselSlides: Array<ItemProps> = [
         title: '与母语者合作',
         subTitle: '讲者',
         id: 5,
-        language: '缩写',
+        language: 'zh',
         textButton: '了解更多',
     },
     {
@@ -51,7 +51,7 @@ export const carroselSlides: Array<ItemProps> = [
         title: '让您的业务',
         subTitle: '走向世界',
         id: 6,
-        language: '缩写',
+        language: 'zh',
         textButton: '了解更多',
     },
     {

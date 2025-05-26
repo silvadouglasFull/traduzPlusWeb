@@ -3,13 +3,15 @@ import { paragraphs } from "@flavor/constants/texts/home/thirdSection";
 import { Image } from "@pages/components/image";
 import { Paragraph } from "@pages/components/paragraph";
 import { SubTitle } from "@pages/components/subTitle";
+import { useChangeLanguage } from "@pages/home/layouts/hooks/useChangeLanguage";
 import { ParagraphLight } from "@pages/home/layouts/thirdSession/components";
 import { styles } from "@pagesHome/layouts/thirdSession/styles";
-import React from "react";
+import type React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export const ThirdSession: React.FC = () => {
+    const { items } = useChangeLanguage(paragraphs)
     return (
         <section className="p-3 mb-3">
             <Container className="d-block d-lg-none">
@@ -22,7 +24,7 @@ export const ThirdSession: React.FC = () => {
                             fontSize: '1.125rem'
                         }} text="providing quality Translation since 1999" />
                         <SubTitle text="Great Industry Expertise" applyShadown={false} />
-                        <Paragraph items={paragraphs} />
+                        <Paragraph items={items} />
                         <Button variant="oxford" className="w-100 text-uppercase" size="lg">
                             <Link to={'/services'} className="text-decoration-none text-light">
                                 BROWSER OUR SERVICES
@@ -37,7 +39,7 @@ export const ThirdSession: React.FC = () => {
                         fontSize: '.875rem'
                     }} text="providing quality Translation since 1999" />
                     <SubTitle text="Great Industry Expertise" applyShadown={false} />
-                    <Paragraph items={paragraphs} />
+                    <Paragraph items={items} />
                     <Button variant="oxford" className="w-100 text-uppercase" size="lg">
                         <Link to={'/services'} className="text-decoration-none text-light">
                             BROWSER OUR SERVICES
