@@ -6,6 +6,7 @@ import { Paragraph } from "@pages/components/paragraph";
 import { SubTitle } from "@pages/components/subTitle";
 import React from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 export const FirstSection: React.FC = () => {
     return (
         <section className="mb-3">
@@ -17,11 +18,13 @@ export const FirstSection: React.FC = () => {
                         <AnimationSlide direction="right">
                             <Paragraph items={paragraphs} />
                             <Button variant="oxford" className="w-100 mb-5 text-uppercase" size="lg">
-                                View our Services
+                                <Link to={'/services'} className="text-decoration-none text-light">
+                                    View our Services
+                                </Link>
                             </Button>
                         </AnimationSlide>
                     </Col>
-                    <Col md={12} lg={6} xxl={7} sm={12}>
+                    <Col md={12} lg={6} xxl={7} sm={12} className="text-center">
                         <Image src={imageFirstSection} />
                     </Col>
                 </Row>
