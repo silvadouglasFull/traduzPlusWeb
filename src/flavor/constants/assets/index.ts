@@ -11,21 +11,24 @@ export const carroselSlides: Array<ItemProps> = [
         title: 'Professional Translation',
         subTitle: 'Services',
         id: 1,
-        language: 'en'
+        language: 'en',
+        textButton: 'Learn more',
     },
     {
         midia: slide2,
         title: 'Work with native',
         subTitle: 'Speakers',
         id: 2,
-        language: 'en'
+        language: 'en',
+        textButton: 'Learn more',
     },
     {
         midia: slide3,
         title: 'Open Your Business',
         subTitle: 'To all World',
         id: 3,
-        language: 'en'
+        language: 'en',
+        textButton: 'Learn more',
     },
     {
         midia: slide1,
@@ -33,6 +36,7 @@ export const carroselSlides: Array<ItemProps> = [
         subTitle: '服务',
         id: 4,
         language: '缩写',
+        textButton: '了解更多',
     },
     {
         midia: slide2,
@@ -40,6 +44,7 @@ export const carroselSlides: Array<ItemProps> = [
         subTitle: '讲者',
         id: 5,
         language: '缩写',
+        textButton: '了解更多',
     },
     {
         midia: slide3,
@@ -47,6 +52,7 @@ export const carroselSlides: Array<ItemProps> = [
         subTitle: '走向世界',
         id: 6,
         language: '缩写',
+        textButton: '了解更多',
     },
     {
         midia: slide1,
@@ -54,6 +60,7 @@ export const carroselSlides: Array<ItemProps> = [
         subTitle: 'Serviços',
         id: 7,
         language: 'pt',
+        textButton: 'Ver mais',
     },
     {
         midia: slide2,
@@ -61,6 +68,7 @@ export const carroselSlides: Array<ItemProps> = [
         subTitle: 'Falantes',
         id: 8,
         language: 'pt',
+        textButton: 'Ver mais',
     },
     {
         midia: slide3,
@@ -68,6 +76,7 @@ export const carroselSlides: Array<ItemProps> = [
         subTitle: 'Para o mundo todo',
         id: 9,
         language: 'pt',
+        textButton: 'Ver mais',
     }
 ]
 

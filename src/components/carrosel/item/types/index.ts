@@ -5,4 +5,5 @@ export type ItemProps = {
     subTitle: string
     id?: number
     language?: Language
+    textButton?: string
 }

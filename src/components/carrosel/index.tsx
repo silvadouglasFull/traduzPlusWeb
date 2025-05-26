@@ -15,11 +15,8 @@ export const ControlledCarousel: React.FC<CarroselProps> = ({ items }) => {
             {items.length ? items.map(item => (
                 <Carousel.Item key={item.id}>
                     <Item
-                        midia={item.midia}
-                        subTitle={item.subTitle}
-                        title={item.title}
+                        {...item}
                     />
-
                 </Carousel.Item>
             )) : null}
         </Carousel>
