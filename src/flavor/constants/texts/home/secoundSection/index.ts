@@ -4,17 +4,25 @@ import type { SubTitle } from "../types"
 export const paragraphs: Array<Paragraph> = [
     {
         id: 1,
-        text: 'In this section, you can learn more about the services Great Wall Soluções Linguisticas offers to its clients. We are always ready to provide you with quality translation and interpreting services.',
+        text: `At Great Wall Language Solutions, we provide high-level linguistic and strategic
+services designed for organizations and professionals who operate—or aim to
+operate—across Brazil and China. Our Solutions reflect precision, discretion, and real
+results in a competitive global context.`,
         language: 'en'
     },
     {
         id: 2,
-        text: '在本节中，您可以了解 Great Wall Soluções Linguisticas 为客户提供的服务。我们始终准备为您提供高质量的翻译和口译服务。',
+        text: `在 长城语言解决方案公司，我们专为希望进入巴西市场的中国企业提供高水平、
+战略性的语言与本地化支持服务。我们的目标是帮助企业在文化与制度差异中做
+出明智决策，稳步推进业务发展。`,
         language: 'zh'
     },
     {
         id: 3,
-        text: 'Nesta seção, você pode saber mais sobre os serviços que a Great Wall Soluções Linguísticas oferece aos seus clientes. Estamos sempre prontos para fornecer serviços de tradução e interpretação de qualidade.',
+        text: `Na Great Wall Language Solutions, oferecemos soluções linguísƟcas e estratégicas com
+o mais alto padrão de qualidade, sempre guiados por um compromisso com a
+excelência, o rigor e a clareza. Nossos serviços são projetados para empresas e
+indivíduos que exigem precisão, discrição e resultados concretos no cenário sinobrasileiro e global. `,
         language: 'pt'
     }
 ]

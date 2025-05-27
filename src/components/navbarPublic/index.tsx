@@ -16,19 +16,17 @@ export const Header: React.FC = () => {
     return (
         <Navbar collapseOnSelect expand="lg" className="fixed-top bg-sm-only"
             style={hasBackground ? styles.bgDefault : styles.bgTransparent}>
-            <Container className="justify-conent-start justify-conent-md-center">
+            <Container>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Brand as={Link} to={'#'} className="d-block d-md-none">
                     <LogLink urlLogo={logo} />
                 </Navbar.Brand>
                 <Navbar.Brand as={Link} to={'#'} className="d-md-block d-none mr-5">
-                    <LogLink urlLogo={logo} width={'100%'} />
+                    <LogLink urlLogo={logo} width={!hasBackground ? '100%' : 100} height={!hasBackground ? '100%' : 50} />
                 </Navbar.Brand>
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className={`me-auto w-100 navbar-nav justify-content-between align-items-end ${!hasBackground ? 'mt-3' : ''}`}>
                         <LinksHeader items={items} />
-                    </Nav>
-                    <Nav>
                         <LanguageDropdown />
                     </Nav>
                 </Navbar.Collapse>
