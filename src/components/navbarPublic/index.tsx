@@ -5,13 +5,14 @@ import { LogLink } from '@components/navbarPublic/logLink';
 import { styles } from "@components/navbarPublic/styles";
 import '@components/navbarPublic/styles.css';
 import { logo } from "@flavor/index";
-import { links } from "@utils/linksHeader";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from "react-router-dom";
+import { useChangeLanguage } from "./hooks/useChangeLanguage";
 export const Header: React.FC = () => {
     const { hasBackground } = useNavbarBackground()
+    const { items } = useChangeLanguage()
     return (
         <Navbar collapseOnSelect expand="lg" className="fixed-top bg-sm-only"
             style={hasBackground ? styles.bgDefault : styles.bgTransparent}>
@@ -25,7 +26,7 @@ export const Header: React.FC = () => {
                 </Navbar.Brand>
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <LinksHeader items={links} />
+                        <LinksHeader items={items} />
                     </Nav>
                     <Nav>
                         <LanguageDropdown />
