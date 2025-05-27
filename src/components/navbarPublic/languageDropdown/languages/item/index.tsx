@@ -9,9 +9,10 @@ export const Item: React.FC<LanguageItemProps> = ({
     label,
     language
 }) => {
-    const { setLanguage, language: languageContext } = useLanguage()
+    const { setLanguage, language: languageContext, setIcon } = useLanguage()
     const onClick = () => {
         setLanguage(language)
+        setIcon(icon)
     }
     return (
         <NavDropdown.Item to={'#'} onClick={onClick} as={Link} active={languageContext === language}>
