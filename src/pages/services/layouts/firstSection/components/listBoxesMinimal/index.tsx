@@ -4,7 +4,7 @@ import React from "react";
 import { Row } from "react-bootstrap";
 export const ListBoxesMinimal: React.FC<TListBoxesMinimal> = ({ items, ...props }: TListBoxesMinimal) => {
     return (
-        <Row {...props} className="p-3 d-flex justify-content-center align-items-center">
+        <Row {...props} className="p-3 d-flex justify-content-center align-items-start">
             {items.length ? items.map(item => {
                 const { id, ...rest } = item;
                 return <Item key={id} {...rest} id={id.toString()} />;
