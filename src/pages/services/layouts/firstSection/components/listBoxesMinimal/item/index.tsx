@@ -1,5 +1,4 @@
 import { Icon } from "@components/icons";
-import { colors } from "@flavor/constants/colors";
 import type { Item as TItem } from "@pagesServices/layouts/firstSection/components/listBoxesMinimal/item/types";
 import React from "react";
 import { Col, Row } from "react-bootstrap";
@@ -9,15 +8,11 @@ export const Item: React.FC<TItem & React.DetailedHTMLProps<React.HTMLAttributes
             <article {...props}>
                 <Row className="d-flex justify-content-start align-items-start flex-nowrap">
                     <div className="mr-2">
-                        <Icon name={icon} style={{
-                            color: colors.OxfordBlue,
-                        }} />
+                        <Icon name={icon} className="text-light" />
                     </div>
                     <div className="w-100">
                         <Col className="col-12">
-                            <h4 className="font-weight-bold" style={{
-                                color: colors.OxfordBlue
-                            }}>
+                            <h4 className="font-weight-bold text-light">
                                 {nameBox}
                             </h4>
                             <p className=" text-secondary">{description}</p>

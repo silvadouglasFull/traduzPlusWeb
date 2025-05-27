@@ -5,5 +5,5 @@ export const contacts: Contact = {
         { key: 1, number: '19999705449' },
         { key: 2, number: '16995210729' },
     ],
-    email: 'traduzSales@traduzplus.com.br'
+    email: 'solucoesling@greatwall.com.br'
 }

@@ -15,7 +15,7 @@ export const FifthSession: React.FC = () => {
                         <SubTitleHighLighted text={title} hightLightedText={hightLightedText} />
                     </Col>
                     <Col>
-                        <Button className='text-uppercase mt-3' size='lg'>
+                        <Button className='text-uppercase mt-3' variant='secondary' size='lg'>
                             <Link to={'/contact'} className='text-decoration-none text-light'>
                                 {text}
                             </Link>

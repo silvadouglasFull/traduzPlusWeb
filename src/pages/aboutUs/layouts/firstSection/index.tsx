@@ -13,7 +13,6 @@ export const FirstSection: React.FC = () => {
         <section className="mb-3">
             <Container className="text-center mt-5">
                 <SubTitle text={text} />
-                <p className="font-weight-bold">Noster pars vix falleres valebat est. Ire velox ducunt ad ferox zirbus.</p>
             </Container>
             <Container>
                 {items.map((item, i) => {
