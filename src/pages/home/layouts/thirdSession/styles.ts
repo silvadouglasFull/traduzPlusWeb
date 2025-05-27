@@ -1,4 +1,4 @@
-import imageFromThirSection from "@assets/traduzPlus/images/image-aside-01-1143x584.webp";
+import imageFromThirSection from "@assets/greatNewSoluctions/images/image-aside-01-1143x584.webp";
 import React from "react";
 
 export const styles: React.CSSProperties = {
