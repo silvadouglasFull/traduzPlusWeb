@@ -1,6 +1,6 @@
-import type { Item } from "@components/list/services/item/types";
-import type { ServiceListProps } from "@components/list/services/types";
 import { useLanguage } from "@context/language/hooks";
+import type { Item } from "@pages/home/layouts/secoundSection/components/services/item/types";
+import type { ServiceListProps } from "@pages/home/layouts/secoundSection/components/services/types";
 import { useEffect, useState } from "react";
 
 export const useChangeLanguage = (servicesList: Array<Item>): ServiceListProps => {

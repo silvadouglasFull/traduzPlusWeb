@@ -1,6 +1,7 @@
 import { useContactUs } from "@components/forms/contactUs/hooks/contactUs";
 import { useButtonsLabels } from "@components/forms/contactUs/hooks/useChangaLanguage/buttonsLabels";
 import { useChangeLanguage } from "@components/forms/contactUs/hooks/useChangaLanguage/formLabel";
+import { useSetPreviewMessage } from "@components/forms/contactUs/hooks/useSetPreviewMessage";
 import type { FormProps } from "@components/forms/contactUs/types";
 import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
@@ -9,6 +10,7 @@ export const FormContactUs: React.FC<FormProps & React.DetailedHTMLProps<React.F
     const { state, onChange, onChangePhone } = useContactUs()
     const { items } = useChangeLanguage()
     const { text } = useButtonsLabels()
+    const { message } = useSetPreviewMessage()
     return (
         <Form className="p-3" onSubmit={onSubmit} {...props}>
             <Row>
@@ -29,6 +31,7 @@ export const FormContactUs: React.FC<FormProps & React.DetailedHTMLProps<React.F
                                     onChange={onChange}
                                     as={item.type}
                                     rows={3}
+                                    placeholder={message}
                                 />
                             </Form.Group>
                         </Col>

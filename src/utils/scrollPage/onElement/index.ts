@@ -1,3 +1,3 @@
 export const scrollOnElenet = (elementId: string): void => {
-    elementId && document.getElementById(elementId)?.scrollIntoView()
+    elementId && document.getElementById(elementId)?.scrollIntoView({ behavior: 'smooth' })
 }

@@ -1,7 +1,7 @@
-import type { Item } from "@components/list/services/item/types";
 import { Image } from "@pages/components/image";
 import { Paragraph } from "@pages/components/paragraph";
 import { SubTitle } from "@pages/components/subTitle";
+import type { Item } from "@pages/home/layouts/secoundSection/components/services/item/types";
 import { styles } from "@pages/home/styles";
 
 import { Button, Col, Container, Row } from "react-bootstrap";

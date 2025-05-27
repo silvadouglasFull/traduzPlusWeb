@@ -2,9 +2,14 @@ import { Image } from '@components/carrosel/item/image';
 import { styles as imageStyles } from '@components/carrosel/item/image/styles';
 import { fontSizeDesktop, stylesDesktop, stylesMobile } from '@components/carrosel/item/styles';
 import type { ItemProps } from '@components/carrosel/item/types';
+import { sections } from '@constants/index';
+import { scrollOnElenet } from '@utils/scrollPage/onElement';
 import { Button, Container } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel';
 export const Item: React.FC<ItemProps> = ({ midia, subTitle, title, textButton }) => {
+    const handleScrollForm = (): void => {
+        scrollOnElenet(sections.home.contact)
+    }
     return (
         <>
             <Image src={midia} className='d-block w-100' style={{ ...imageStyles }} />
@@ -14,7 +19,7 @@ export const Item: React.FC<ItemProps> = ({ midia, subTitle, title, textButton }
                     <p className='text-uppercase' style={{
                         fontSize: 14
                     }}>{subTitle}</p>
-                    <Button size="lg" className='w-90' variant="oxford">
+                    <Button onClick={handleScrollForm} size="lg" className='w-90' variant="oxford">
                         {textButton}
                     </Button>
                 </Container>
@@ -25,7 +30,7 @@ export const Item: React.FC<ItemProps> = ({ midia, subTitle, title, textButton }
                     <p className='text-uppercase' style={{
                         fontSize: 32
                     }}>{subTitle}</p>
-                    <Button size="lg" className='w-90' variant="oxford">
+                    <Button onClick={handleScrollForm} size="lg" className='w-90' variant="oxford">
                         {textButton}
                     </Button>
                 </Container>

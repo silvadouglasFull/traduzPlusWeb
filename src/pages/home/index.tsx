@@ -10,11 +10,11 @@ export const PageHome: React.FC = () => {
     return (
         <>
             <FirstSection />
-            <SecoundSection />
-            <ThirdSession />
-            <FourthSession />
-            <FifthSession />
             <ContactUsProvider>
+                <SecoundSection />
+                <ThirdSession />
+                <FourthSession />
+                <FifthSession />
                 <SixthSession />
             </ContactUsProvider>
         </>

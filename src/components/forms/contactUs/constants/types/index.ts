@@ -39,4 +39,9 @@ export type FormField = {
 export type TButtonsLabels = {
     language: Language
     text: string
-} 
+}
+export type PreviewMessage = {
+    id: number | string
+    message: string
+    language: Language
+}

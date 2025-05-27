@@ -1,4 +1,4 @@
-import type { FormField, TButtonsLabels } from "@components/forms/contactUs/constants/types";
+import type { FormField, PreviewMessage, TButtonsLabels } from "@components/forms/contactUs/constants/types";
 
 export const formLabels: FormField[] = [
     // English
@@ -189,3 +189,25 @@ export const buttonsLabels: TButtonsLabels[] = [
         language: 'zh'
     }
 ];
+export const previewMessage: PreviewMessage[] = [
+    // English
+    {
+        id: 1,
+        message: 'Hello, I would like to talk about this service.',
+        language: 'en',
+    },
+
+    // Portuguese
+    {
+        id: 2,
+        message: 'Olá, gostaria de falar sobre este serviço.',
+        language: 'pt',
+    },
+
+    // Chinese Simplified
+    {
+        id: 3,
+        message: '你好，我想了解这个服务。',
+        language: 'zh',
+    },
+]

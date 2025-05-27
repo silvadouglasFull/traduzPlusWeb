@@ -1,4 +1,4 @@
-import type { FormContextType, States } from "@components/forms/contactUs/context/types";
+import type { FormContextType, HandleFormField, States } from "@components/forms/contactUs/context/types";
 import type { Event } from "@components/forms/types";
 import { formatPhoneNumber } from "@utils/form/mask/phone";
 import { reducer } from "@utils/form/reducer";
@@ -19,6 +19,12 @@ export const Provider: React.FC<React.PropsWithChildren> = ({ children }) => {
         const { name, value } = event.target;
         dispatch({ field: name as keyof States, value });
     }
+
+    const handleForm = (field: HandleFormField): void => {
+        Object.keys(field).map((key) => {
+            dispatch({ field: key as keyof States || undefined, value: field[key as keyof States] })
+        })
+    }
     const onChangePhone = (event: Event) => {
         const { value, name } = event.target
         const phone = formatPhoneNumber(value, "br")
@@ -29,6 +35,7 @@ export const Provider: React.FC<React.PropsWithChildren> = ({ children }) => {
             state,
             onChange,
             onChangePhone,
+            handleForm
         }}>
             {children}
         </Context.Provider>

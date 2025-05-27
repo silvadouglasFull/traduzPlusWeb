@@ -1,4 +1,4 @@
-import type { Item } from "@components/list/services/item/types";
+import type { Item } from "@pages/home/layouts/secoundSection/components/services/item/types";
 import { largeFeatures, singleServices } from "../assets/services/secoundSection";
 
 export const servicesList: Array<Item> = [
