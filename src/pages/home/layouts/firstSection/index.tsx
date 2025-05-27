@@ -1,4 +1,4 @@
-import imageFromFirstSection from "@assets/traduzPlus/images/large-features-3-570x368.jpg";
+import imageFromFirstSection from "@assets/greatNewSoluctions/images/large-features-3-570x368.jpg";
 import { paragraphs, subTitle } from "@flavor/constants/texts/home/firstSection";
 import { useChangeLanguage } from "@hooks/useChangeLanguage/paragraphs";
 import { useChangeLanguage as useChangeLanguageSubTitle } from "@hooks/useChangeLanguage/subTitle";

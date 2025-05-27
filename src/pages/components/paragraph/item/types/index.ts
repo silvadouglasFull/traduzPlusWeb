@@ -4,5 +4,5 @@ export type Paragraph = {
     text?: string
     id?: number
     language?: Language
-    mida?: string
+    midia?: string
 }

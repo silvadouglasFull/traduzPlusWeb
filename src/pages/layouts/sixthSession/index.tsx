@@ -1,4 +1,4 @@
-import imageFromSixSetion from "@assets/traduzPlus/images/contact-big-1-874x742.jpg";
+import imageFromSixSetion from "@assets/greatNewSoluctions/images/contact-big-1-874x742.jpg";
 import { FormContactUs } from "@components/forms/contactUs";
 import { Image } from "@pages/components/image";
 import '@pagesHome/styles/index.css';

@@ -1,4 +1,4 @@
-import { AmigosBrasileiroChines } from "@flavor/constants/assets/about/firstSection";
+import { AmigosBrasileiroChines, ChinesEscritorioBrasil, imageFirstSection } from "@flavor/constants/assets/about/firstSection";
 import type { SubTitle } from "@flavor/constants/texts/types";
 import type { Paragraph } from "@pages/components/paragraph/item/types";
 
@@ -8,7 +8,7 @@ export const paragraphs: Array<Paragraph> = [
         language: 'en',
         text: `Great Wall Language Solutions is a highly specialized language service provider, fully focused on bridging Mandarin Chinese, Portuguese, and English. Our mission is to break down cultural and linguistic barriers through professional translation, interpreting, and high-quality language training.
                Our story began humbly but with purpose. In 2012, we started offering on-demand interpreting services for Brazilians and Chinese professionals who couldn’t communicate with one another. That’s when we discovered a critical truth: there’s a major communication gap between Brazil and China—two nations with tremendous economic synergy still divided by language and cultural distance.`,
-        mida: AmigosBrasileiroChines
+        midia: AmigosBrasileiroChines
     },
     {
         id: 2,
@@ -16,7 +16,8 @@ export const paragraphs: Array<Paragraph> = [
         text: `That gap inspired us to found Great Wall—not as just another language agency, but as a reliable bridge between two global forces that need to understand each other clearly and respectfully.
               Unlike companies that offer dozens of languages with shallow expertise, we believe that those who do everything, master nothing. That’s why we chose to become leaders where it truly matters: in the languages that drive trade and collaboration between Brazil, China, and the international market.
               Our team is composed of highly qualified linguists who studied and lived in China, fully immersed in the language and culture — listening, speaking, and engaging with native speakers every single day. This real-world immersion gives them a deep understanding of linguistic and cultural nuances, the kind of insight that makes all the difference in effective, respectful communication.
-              In addition, we leverage state-of-the-art language technology to ensure that every project is delivered with precision, efficiency, and cultural sensitivity, meeting the highest standards in the industry.`
+              In addition, we leverage state-of-the-art language technology to ensure that every project is delivered with precision, efficiency, and cultural sensitivity, meeting the highest standards in the industry.`,
+        midia: ChinesEscritorioBrasil
     },
     {
         id: 3,
@@ -25,7 +26,8 @@ export const paragraphs: Array<Paragraph> = [
 
 With deep knowledge of China’s and Brazil’s cultural, commercial, and institutional landscapes, we help guide decisions with clarity, reduce risks, and unlock opportunities in two of the world’s most dynamic and complex markets.
 
-We turn insight into competitive advantage, building solid pathways for companies to engage intelligently, respectfully, and successfully within the Sino-Brazilian context.`
+We turn insight into competitive advantage, building solid pathways for companies to engage intelligently, respectfully, and successfully within the Sino-Brazilian context.`,
+        midia: imageFirstSection
     },
     {
         id: 4,
@@ -36,7 +38,7 @@ Nossa história começou de forma simples, porém significativa. Em 2012, passam
 
 Essa lacuna nos motivou a fundar a Great Wall. Não como mais uma agência genérica, mas como uma ponte sólida entre mundos que precisam dialogar com clareza, respeito e eficiência.
 `,
-        mida: AmigosBrasileiroChines
+        midia: AmigosBrasileiroChines
     },
     {
         id: 5,
@@ -47,7 +49,8 @@ Contamos com uma equipe de linguistas altamente qualificados, que viveram e estu
 
 Além disso, utilizamos as mais avançadas tecnologias linguísticas para garantir que cada projeto seja conduzido com precisão, agilidade e sensibilidade cultural, atendendo aos mais altos padrões do mercado.
 
-`
+`,
+        midia: ChinesEscritorioBrasil
     },
     {
         id: 6,
@@ -56,7 +59,8 @@ Além disso, utilizamos as mais avançadas tecnologias linguísticas para garant
 
 Com profundo conhecimento cultural, comercial e institucional da China e do Brasil, nossa atuação orienta decisões com clareza, reduz riscos e maximiza oportunidades em dois dos mercados mais dinâmicos e complexos do mundo.
 
-Transformamos informação em vantagem competitiva, criando pontes seguras para empresas que desejam atuar com inteligência, respeito e eficiência no contexto sino-brasileiro.`
+Transformamos informação em vantagem competitiva, criando pontes seguras para empresas que desejam atuar com inteligência, respeito e eficiência no contexto sino-brasileiro.`,
+        midia: imageFirstSection
     },
     {
         id: 7,
@@ -69,7 +73,7 @@ Transformamos informação em vantagem competitiva, criando pontes seguras para 
 
 这一发现促使我们创立了长城语言解决方案公司——不仅仅是一家语言公司，更是一座连接两个文化、帮助彼此理解与合作的桥梁。
 `,
-        mida: AmigosBrasileiroChines
+        midia: AmigosBrasileiroChines
     },
     {
         id: 8,
@@ -78,7 +82,8 @@ Transformamos informação em vantagem competitiva, criando pontes seguras para 
 
 我们的语言专家团队由受过高等教育并在中国学习与生活多年的语言人才组成，他们深入体验了中国文化与语言的日常应用场景，在与中国人的持续交流中磨练出了对语言细节与文化微妙差异的敏锐感知，这正是高效、得体沟通不可或缺的关键能力。
 
-此外，我们还结合使用全球领先的语言技术工具，以确保每一个项目都具备精准性、高效性和文化适应性，达到国际专业水准。`
+此外，我们还结合使用全球领先的语言技术工具，以确保每一个项目都具备精准性、高效性和文化适应性，达到国际专业水准。`,
+        midia: ChinesEscritorioBrasil
     },
     {
         id: 9,
@@ -87,7 +92,8 @@ Transformamos informação em vantagem competitiva, criando pontes seguras para 
 
 除了传统语言服务，我们还提供针对中国市场与巴西市场的战略性、高度定制化的咨询服务，帮助中国企业深入了解巴西，协助巴西企业有效进入中国，完全根据客户的具体目标量身打造。
 
-我们对中国与巴西的文化、商业和体制环境均有深厚理解，能够帮助客户做出明智决策、规避风险、把握发展机遇，在这两个极具潜力与活力的市场中实现成功。`
+我们对中国与巴西的文化、商业和体制环境均有深厚理解，能够帮助客户做出明智决策、规避风险、把握发展机遇，在这两个极具潜力与活力的市场中实现成功。`,
+        midia: imageFirstSection
     }
 ];
 export const subTitles: SubTitle[] = [

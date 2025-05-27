@@ -16,12 +16,14 @@ export const FirstSection: React.FC = () => {
                 <p className="font-weight-bold">Noster pars vix falleres valebat est. Ire velox ducunt ad ferox zirbus.</p>
             </Container>
             <Container>
-                {items.map((item, i) => (
-                    i % 2 === 0 ?
-                        <Right key={item.id} {...item} />
-                        :
-                        <Left key={item.id} {...item} />
-                ))}
+                {items.map((item, i) => {
+                    return (
+                        i % 2 === 0 ?
+                            <Left key={item.id} showButton={((i + 1) === items.length)} {...item} />
+                            :
+                            <Right key={item.id} showButton={((i + 1) === items.length)} {...item} />
+                    )
+                })}
             </Container>
         </section>
     )

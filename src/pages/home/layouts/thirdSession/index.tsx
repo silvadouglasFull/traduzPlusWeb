@@ -1,4 +1,4 @@
-import imageFromThirSection from "@assets/traduzPlus/images/image-aside-01-1143x584.webp";
+import imageFromThirSection from "@assets/greatNewSoluctions/images/image-aside-01-1143x584.webp";
 import { paragraphs, subTitle } from "@flavor/constants/texts/home/thirdSection";
 import { useChangeLanguage } from "@hooks/useChangeLanguage/paragraphs";
 import { useChangeLanguage as useChangeLanguageSubTitle } from "@hooks/useChangeLanguage/subTitle";
