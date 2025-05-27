@@ -1,6 +1,6 @@
 import { useGetImageBradCrumps } from "@components/bradCumps/hooks";
 import { FallBack } from "@components/fallback";
-import { FifthSession } from "@pages/layouts/fifthSession";
+import { FifthSession } from "@pages/layouts/fifthSection";
 import { FirstSection } from "@pagesAboutUs/layouts/firstSection";
 import React, { lazy, Suspense } from "react";
 const Breadcrumbs = lazy(() => import('@components/bradCumps').then(({ Breadcrumbs }) => ({ default: Breadcrumbs })))

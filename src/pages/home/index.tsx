@@ -1,5 +1,5 @@
 import { Provider as ContactUsProvider } from "@components/forms/contactUs/context";
-import { FifthSession } from "@pages/layouts/fifthSession";
+import { FifthSession } from "@pages/layouts/fifthSection";
 import { SixthSession } from "@pages/layouts/sixthSession";
 import { FirstSection } from "@pagesHome/layouts/firstSection";
 import { FourthSession } from "@pagesHome/layouts/fourthSession";

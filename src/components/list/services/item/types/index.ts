@@ -1,12 +1,15 @@
+import type { Language } from "@components/carrosel/item/types"
+
 export type Description = {
-    id: number,
+    id: number
     description: string
 }
 export type Item = {
     id: number
-    icon: string,
-    name: string,
-    descriptions: Array<Description>,
-    textButon: string,
+    icon: string
+    name: string
+    descriptions: Array<Description>
+    textButon: string
     link: string
+    language?: Language
 }
