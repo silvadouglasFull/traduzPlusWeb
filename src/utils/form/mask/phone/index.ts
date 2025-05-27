@@ -1,4 +1,4 @@
-import type { PhoneCountry } from "./types";
+import type { PhoneCountry } from "@utils/form/mask/phone/types";
 
 
 /**
@@ -17,15 +17,15 @@ export function formatPhoneNumber(phone: string, country: PhoneCountry): string 
     const digits = phone.replace(/\D/g, "");
 
     switch (country) {
-        case "us":
+        case "en":
             if (digits.length !== 10) return phone;
             return `(${digits.slice(0, 3)}) ${digits.slice(3, 6)}-${digits.slice(6)}`;
 
-        case "cn":
+        case "zh":
             if (digits.length !== 11) return phone;
             return `+86 ${digits.slice(0, 3)} ${digits.slice(3, 7)} ${digits.slice(7)}`;
 
-        case "br":
+        case "pt":
             if (digits.length === 11) {
                 // Mobile phone: (11) 98765-4321
                 return `(${digits.slice(0, 2)}) ${digits.slice(2, 7)}-${digits.slice(7)}`;
