@@ -1,5 +1,6 @@
 import type { FormContextType, HandleFormField, States } from "@components/forms/contactUs/context/types";
 import type { Event } from "@components/forms/types";
+import { useLanguage } from "@context/language/hooks";
 import { formatPhoneNumber } from "@utils/form/mask/phone";
 import { reducer } from "@utils/form/reducer";
 import React, { createContext, useReducer } from "react";
@@ -15,6 +16,7 @@ export const Context = createContext<FormContextType | undefined>(undefined);
 
 export const Provider: React.FC<React.PropsWithChildren> = ({ children }) => {
     const [state, dispatch] = useReducer(reducer, states)
+    const { language } = useLanguage()
     const onChange = (event: Event) => {
         const { name, value } = event.target;
         dispatch({ field: name as keyof States, value });
@@ -27,7 +29,7 @@ export const Provider: React.FC<React.PropsWithChildren> = ({ children }) => {
     }
     const onChangePhone = (event: Event) => {
         const { value, name } = event.target
-        const phone = formatPhoneNumber(value, "br")
+        const phone = formatPhoneNumber(value, language ?? 'en')
         dispatch({ field: name as keyof States, value: phone })
     }
     return (
