@@ -1,5 +1,5 @@
 import type { Item } from "@components/list/services/item/types";
-import { singleServices } from "../assets/services/secoundSection";
+import { largeFeatures, singleServices } from "../assets/services/secoundSection";
 
 export const servicesList: Array<Item> = [
     // English
@@ -47,7 +47,7 @@ export const servicesList: Array<Item> = [
             text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
         }],
         language: 'en',
-        midia: singleServices
+        midia: largeFeatures
     },
     {
         id: 2,
@@ -93,7 +93,7 @@ export const servicesList: Array<Item> = [
             text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
         }],
         language: 'en',
-        midia: singleServices
+        midia: largeFeatures
     },
 
     // Chinese
@@ -118,7 +118,7 @@ export const servicesList: Array<Item> = [
             text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
         }],
         language: 'zh',
-        midia: singleServices
+        midia: largeFeatures
     },
     {
         id: 5,
@@ -164,7 +164,7 @@ export const servicesList: Array<Item> = [
             text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
         }],
         language: 'zh',
-        midia: singleServices
+        midia: largeFeatures
     },
     {
         id: 7,
@@ -212,7 +212,7 @@ export const servicesList: Array<Item> = [
             text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
         }],
         language: 'pt',
-        midia: singleServices
+        midia: largeFeatures
     },
     {
         id: 9,
@@ -258,7 +258,7 @@ export const servicesList: Array<Item> = [
             text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
         }],
         language: 'pt',
-        midia: singleServices
+        midia: largeFeatures
     },
     {
         id: 11,
@@ -281,6 +281,6 @@ export const servicesList: Array<Item> = [
             text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
         }],
         language: 'pt',
-        midia: singleServices
+        midia: largeFeatures
     }
 ];
