@@ -3,7 +3,7 @@ import type { ContextProvider } from "@context/language/types";
 import { createContext, useState } from "react";
 
 export const Context = createContext<ContextProvider | undefined>(undefined)
-export const Provider: React.FC<React.PropsWithChildren> = ({ children }) => {
+export const Provider: React.FC<React.PropsWithChildren> = ({ children }: React.PropsWithChildren) => {
     const [language, setLanguage] = useState<Language>('en')
     const [icon, setIcon] = useState('🌐')
     return (
