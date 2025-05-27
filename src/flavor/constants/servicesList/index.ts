@@ -1,4 +1,5 @@
 import type { Item } from "@components/list/services/item/types";
+import { singleServices } from "../assets/services/secoundSection";
 
 export const servicesList: Array<Item> = [
     // English
@@ -14,7 +15,16 @@ export const servicesList: Array<Item> = [
             { description: 'GDPR and legal translation', id: 2 },
             { description: 'Software and technology translation', id: 3 }
         ],
-        language: 'en'
+        detailsService: [{
+            id: 1,
+            text: 'Sunt seculaes imitari placidus, peritus lixaes. Cum uria volare, omnes humani generises dignus dexter, salvus armariumes.'
+        },
+        {
+            id: 2,
+            text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
+        }],
+        language: 'en',
+        midia: singleServices
     },
     {
         id: 1,
@@ -28,7 +38,16 @@ export const servicesList: Array<Item> = [
             { description: 'Sight and telephone translation', id: 6 },
             { description: 'Video and audio translation', id: 7 }
         ],
-        language: 'en'
+        detailsService: [{
+            id: 1,
+            text: 'Sunt seculaes imitari placidus, peritus lixaes. Cum uria volare, omnes humani generises dignus dexter, salvus armariumes.'
+        },
+        {
+            id: 2,
+            text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
+        }],
+        language: 'en',
+        midia: singleServices
     },
     {
         id: 2,
@@ -42,7 +61,16 @@ export const servicesList: Array<Item> = [
             { description: 'Content summarization and categorization', id: 10 },
             { description: 'Ads review and sentiment analysis', id: 11 }
         ],
-        language: 'en'
+        detailsService: [{
+            id: 1,
+            text: 'Sunt seculaes imitari placidus, peritus lixaes. Cum uria volare, omnes humani generises dignus dexter, salvus armariumes.'
+        },
+        {
+            id: 2,
+            text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
+        }],
+        language: 'en',
+        midia: singleServices
     },
     {
         id: 3,
@@ -56,7 +84,16 @@ export const servicesList: Array<Item> = [
             { description: 'Website and online store localization', id: 14 },
             { description: 'Technical documentation translation', id: 15 }
         ],
-        language: 'en'
+        detailsService: [{
+            id: 1,
+            text: 'Sunt seculaes imitari placidus, peritus lixaes. Cum uria volare, omnes humani generises dignus dexter, salvus armariumes.'
+        },
+        {
+            id: 2,
+            text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
+        }],
+        language: 'en',
+        midia: singleServices
     },
 
     // Chinese
@@ -72,7 +109,16 @@ export const servicesList: Array<Item> = [
             { description: 'GDPR 和法律翻译', id: 18 },
             { description: '软件和技术翻译', id: 19 }
         ],
-        language: 'zh'
+        detailsService: [{
+            id: 1,
+            text: 'Sunt seculaes imitari placidus, peritus lixaes. Cum uria volare, omnes humani generises dignus dexter, salvus armariumes.'
+        },
+        {
+            id: 2,
+            text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
+        }],
+        language: 'zh',
+        midia: singleServices
     },
     {
         id: 5,
@@ -86,7 +132,16 @@ export const servicesList: Array<Item> = [
             { description: '视译和电话翻译', id: 22 },
             { description: '视频和音频翻译', id: 23 }
         ],
-        language: 'zh'
+        detailsService: [{
+            id: 1,
+            text: 'Sunt seculaes imitari placidus, peritus lixaes. Cum uria volare, omnes humani generises dignus dexter, salvus armariumes.'
+        },
+        {
+            id: 2,
+            text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
+        }],
+        language: 'zh',
+        midia: singleServices
     },
     {
         id: 6,
@@ -100,7 +155,16 @@ export const servicesList: Array<Item> = [
             { description: '内容摘要与分类', id: 26 },
             { description: '广告审核与情感分析', id: 27 }
         ],
-        language: 'zh'
+        detailsService: [{
+            id: 1,
+            text: 'Sunt seculaes imitari placidus, peritus lixaes. Cum uria volare, omnes humani generises dignus dexter, salvus armariumes.'
+        },
+        {
+            id: 2,
+            text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
+        }],
+        language: 'zh',
+        midia: singleServices
     },
     {
         id: 7,
@@ -114,7 +178,16 @@ export const servicesList: Array<Item> = [
             { description: '网站和在线商店本地化', id: 30 },
             { description: '技术文档翻译', id: 31 }
         ],
-        language: 'zh'
+        detailsService: [{
+            id: 1,
+            text: 'Sunt seculaes imitari placidus, peritus lixaes. Cum uria volare, omnes humani generises dignus dexter, salvus armariumes.'
+        },
+        {
+            id: 2,
+            text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
+        }],
+        language: 'zh',
+        midia: singleServices
     },
 
     // Portuguese
@@ -130,7 +203,16 @@ export const servicesList: Array<Item> = [
             { description: 'Tradução jurídica e de GDPR', id: 34 },
             { description: 'Tradução de software e tecnologia', id: 35 }
         ],
-        language: 'pt'
+        detailsService: [{
+            id: 1,
+            text: 'Sunt seculaes imitari placidus, peritus lixaes. Cum uria volare, omnes humani generises dignus dexter, salvus armariumes.'
+        },
+        {
+            id: 2,
+            text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
+        }],
+        language: 'pt',
+        midia: singleServices
     },
     {
         id: 9,
@@ -144,7 +226,16 @@ export const servicesList: Array<Item> = [
             { description: 'Tradução à vista e por telefone', id: 38 },
             { description: 'Tradução de vídeo e áudio', id: 39 }
         ],
-        language: 'pt'
+        detailsService: [{
+            id: 1,
+            text: 'Sunt seculaes imitari placidus, peritus lixaes. Cum uria volare, omnes humani generises dignus dexter, salvus armariumes.'
+        },
+        {
+            id: 2,
+            text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
+        }],
+        language: 'pt',
+        midia: singleServices
     },
     {
         id: 10,
@@ -158,7 +249,16 @@ export const servicesList: Array<Item> = [
             { description: 'Resumos e categorização de conteúdo', id: 42 },
             { description: 'Análise de anúncios e sentimentos', id: 43 }
         ],
-        language: 'pt'
+        detailsService: [{
+            id: 1,
+            text: 'Sunt seculaes imitari placidus, peritus lixaes. Cum uria volare, omnes humani generises dignus dexter, salvus armariumes.'
+        },
+        {
+            id: 2,
+            text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
+        }],
+        language: 'pt',
+        midia: singleServices
     },
     {
         id: 11,
@@ -172,6 +272,15 @@ export const servicesList: Array<Item> = [
             { description: 'Localização de sites e lojas virtuais', id: 46 },
             { description: 'Tradução de documentação técnica', id: 47 }
         ],
-        language: 'pt'
+        detailsService: [{
+            id: 1,
+            text: 'Sunt seculaes imitari placidus, peritus lixaes. Cum uria volare, omnes humani generises dignus dexter, salvus armariumes.'
+        },
+        {
+            id: 2,
+            text: 'Canis clemens boreas est. Rumors mori! Poetas studere in ferox rugensis civitas! Heu, gratis zelus! Calceuss credere in cirpi! Rusticus, primus adelphiss rare transferre de domesticus, fatalis historia.'
+        }],
+        language: 'pt',
+        midia: singleServices
     }
 ];

@@ -1,4 +1,5 @@
 import type { Language } from "@components/carrosel/item/types"
+import type { Paragraph } from "@pages/components/paragraph/item/types"
 
 export type Description = {
     id: number
@@ -12,4 +13,6 @@ export type Item = {
     textButon: string
     link: string
     language?: Language
+    detailsService: Array<Paragraph>
+    midia?: string
 }

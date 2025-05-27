@@ -1,0 +1,41 @@
+import type { Item } from "@components/list/services/item/types";
+import { Image } from "@pages/components/image";
+import { Paragraph } from "@pages/components/paragraph";
+import { SubTitle } from "@pages/components/subTitle";
+import { styles } from "@pages/home/styles";
+
+import { Button, Col, Container, Row } from "react-bootstrap";
+export const Right: React.FC<Item> = ({ textButon, name, detailsService, midia }: Item) => {
+    return (
+        <>
+            <Container style={styles.container} className="d-none d-md-block" >
+                <Row className="justify-content-center align-items-center" >
+                    <Col md={12} lg={6} xxl={7} sm={12} >
+                        <Image src={midia} />
+                    </Col>
+                    <Col md={12} className="mt-5 mb-3" lg={6} xxl={5} sm={12} >
+                        <SubTitle text={name} />
+                        <Paragraph items={detailsService} />
+                        < Button variant="oxford" className="w-100 mb-5 text-uppercase" size="lg" >
+                            {textButon}
+                        </Button>
+                    </Col>
+                </Row>
+            </Container>
+            <Container style={styles.container} className="d-block d-md-none" >
+                <Row className="justify-content-center align-items-center" >
+                    <Col md={12} className="mt-5 mb-3" lg={6} xxl={5} sm={12} >
+                        <SubTitle text={name} />
+                        <Paragraph items={detailsService} />
+                        <Button variant="oxford" className="w-100 mb-5 text-uppercase" size="lg" >
+                            {textButon}
+                        </Button>
+                    </Col>
+                    <Col md={12} lg={6} xxl={7} sm={12} >
+                        <Image src={midia} direction="right" />
+                    </Col>
+                </Row>
+            </Container>
+        </>
+    )
+}

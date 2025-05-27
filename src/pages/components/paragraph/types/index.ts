@@ -1,4 +1,4 @@
-import type { Item } from "@pages/components/paragraph/item/types"
+import type { Paragraph } from "@pages/components/paragraph/item/types"
 export type ParagraphProps = {
-    items: Array<Item>
+    items: Array<Paragraph>
 }
