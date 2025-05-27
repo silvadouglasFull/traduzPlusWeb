@@ -1,4 +1,5 @@
 import imageFromThirSection from "@assets/greatNewSoluctions/images/image-aside-01-1143x584.webp";
+import { sections } from "@constants/index";
 import { paragraphs, subTitle } from "@flavor/constants/texts/home/thirdSection";
 import { useChangeLanguage } from "@hooks/useChangeLanguage/paragraphs";
 import { useChangeLanguage as useChangeLanguageSubTitle } from "@hooks/useChangeLanguage/subTitle";
@@ -14,7 +15,7 @@ export const ThirdSession: React.FC = () => {
     const { items } = useChangeLanguage(paragraphs)
     const { description, text, textButton } = useChangeLanguageSubTitle(subTitle)
     return (
-        <section className="p-3 mb-3">
+        <section className="p-3 mb-3" id={sections.home.greatExpertise}>
             <Container className="d-block d-lg-none">
                 <Row className='row justify-content-center'>
                     <Col md={12} lg={1} sm={12} className="mb-3">

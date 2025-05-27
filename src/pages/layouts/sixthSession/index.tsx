@@ -1,5 +1,6 @@
 import imageFromSixSetion from "@assets/greatNewSoluctions/images/contact-big-1-874x742.jpg";
 import { FormContactUs } from "@components/forms/contactUs";
+import { sections } from "@constants/index";
 import { Image } from "@pages/components/image";
 import '@pagesHome/styles/index.css';
 import React from "react";
@@ -10,7 +11,7 @@ export const SixthSession: React.FC = () => {
     };
 
     return (
-        <section className="bg-gray-100">
+        <section className="bg-gray-100" id={sections.home.contact}>
             <Container fluid>
                 <Row className='justify-content-between align-items-center'>
                     <Col md={12} lg={6}>
