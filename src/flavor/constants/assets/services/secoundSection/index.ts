@@ -1,4 +1,13 @@
-import largeFeatures from "@assets/greatNewSoluctions/images/services/large-features-4-1214x792.jpg"
-import singleServices from "@assets/greatNewSoluctions/images/services/single-services-1-568x388.jpg"
-export { largeFeatures, singleServices }
+import BussinesPresentation from "@assets/greatNewSoluctions/images/services/BussinesPresentation.png"
+import ChinaBusinessConsulting from "@assets/greatNewSoluctions/images/services/ChinaBusinessConsulting.png"
+import ChinesEscritorioBrasil from "@assets/greatNewSoluctions/images/services/ChinesEscritorioBrasil.png"
+import ClassroomLearningMoment from "@assets/greatNewSoluctions/images/services/ClassroomLearningMoment.png"
+import HomemSentadoNoSofa from "@assets/greatNewSoluctions/images/services/HomemSentadoNoSofa.jpg"
+import OfficeWorkFocus from "@assets/greatNewSoluctions/images/services/OfficeWorkFocus.png"
+export {
+    BussinesPresentation,
+    ChinaBusinessConsulting, ChinesEscritorioBrasil, ClassroomLearningMoment,
+    HomemSentadoNoSofa,
+    OfficeWorkFocus
+}
 

@@ -1,4 +1,4 @@
-import { imageFirstSection } from "@flavor/constants/assets/about/firstSection";
+import { HomemMulherVendoUmLivro } from "@flavor/constants/assets/about/firstSection";
 import { subTitles } from "@flavor/constants/texts/about/firstSection";
 import { useChangeLanguage as useChangeLanguageSubTitle } from "@hooks/useChangeLanguage/subTitle";
 import type { LayoutProps } from "@pages/aboutUs/layouts/firstSection/layouts/types";
@@ -15,7 +15,7 @@ export const Right: React.FC<LayoutProps> = ({ id, language, text: paragraph, mi
             <Container className="d-block d-md-none">
                 <Row className="justify-content-center align-items-center">
                     <Col md={12} className="mt-5 mb-3" lg={6} xxl={5} sm={12}>
-                        <Image src={midia ?? imageFirstSection} />
+                        <Image src={midia ?? HomemMulherVendoUmLivro} />
                     </Col>
                     <Col md={12} lg={6} xxl={7} sm={12} className="text-center">
                         <Paragraph items={[{
@@ -50,7 +50,7 @@ export const Right: React.FC<LayoutProps> = ({ id, language, text: paragraph, mi
                         ) : null}
                     </Col>
                     <Col md={12} lg={6} xxl={7} sm={12} className="text-center">
-                        <Image src={midia ?? imageFirstSection} direction="right" />
+                        <Image src={midia ?? HomemMulherVendoUmLivro} direction="right" />
                     </Col>
                 </Row>
             </Container>

@@ -1,4 +1,4 @@
-import { AmigosBrasileiroChines, ChinesEscritorioBrasil, imageFirstSection } from "@flavor/constants/assets/about/firstSection";
+import { AmigosBrasileiroChines, HomemMulherVendoUmLivro, ProfessoraNaLousa } from "@flavor/constants/assets/about/firstSection";
 import type { SubTitle } from "@flavor/constants/texts/types";
 import type { Paragraph } from "@pages/components/paragraph/item/types";
 
@@ -17,7 +17,7 @@ export const paragraphs: Array<Paragraph> = [
               Unlike companies that offer dozens of languages with shallow expertise, we believe that those who do everything, master nothing. That’s why we chose to become leaders where it truly matters: in the languages that drive trade and collaboration between Brazil, China, and the international market.
               Our team is composed of highly qualified linguists who studied and lived in China, fully immersed in the language and culture — listening, speaking, and engaging with native speakers every single day. This real-world immersion gives them a deep understanding of linguistic and cultural nuances, the kind of insight that makes all the difference in effective, respectful communication.
               In addition, we leverage state-of-the-art language technology to ensure that every project is delivered with precision, efficiency, and cultural sensitivity, meeting the highest standards in the industry.`,
-        midia: ChinesEscritorioBrasil
+        midia: ProfessoraNaLousa
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const paragraphs: Array<Paragraph> = [
 With deep knowledge of China’s and Brazil’s cultural, commercial, and institutional landscapes, we help guide decisions with clarity, reduce risks, and unlock opportunities in two of the world’s most dynamic and complex markets.
 
 We turn insight into competitive advantage, building solid pathways for companies to engage intelligently, respectfully, and successfully within the Sino-Brazilian context.`,
-        midia: imageFirstSection
+        midia: HomemMulherVendoUmLivro
     },
     {
         id: 4,
@@ -50,7 +50,7 @@ Contamos com uma equipe de linguistas altamente qualificados, que viveram e estu
 Além disso, utilizamos as mais avançadas tecnologias linguísticas para garantir que cada projeto seja conduzido com precisão, agilidade e sensibilidade cultural, atendendo aos mais altos padrões do mercado.
 
 `,
-        midia: ChinesEscritorioBrasil
+        midia: ProfessoraNaLousa
     },
     {
         id: 6,
@@ -60,7 +60,7 @@ Além disso, utilizamos as mais avançadas tecnologias linguísticas para garant
 Com profundo conhecimento cultural, comercial e institucional da China e do Brasil, nossa atuação orienta decisões com clareza, reduz riscos e maximiza oportunidades em dois dos mercados mais dinâmicos e complexos do mundo.
 
 Transformamos informação em vantagem competitiva, criando pontes seguras para empresas que desejam atuar com inteligência, respeito e eficiência no contexto sino-brasileiro.`,
-        midia: imageFirstSection
+        midia: HomemMulherVendoUmLivro
     },
     {
         id: 7,
@@ -83,7 +83,7 @@ Transformamos informação em vantagem competitiva, criando pontes seguras para 
 我们的语言专家团队由受过高等教育并在中国学习与生活多年的语言人才组成，他们深入体验了中国文化与语言的日常应用场景，在与中国人的持续交流中磨练出了对语言细节与文化微妙差异的敏锐感知，这正是高效、得体沟通不可或缺的关键能力。
 
 此外，我们还结合使用全球领先的语言技术工具，以确保每一个项目都具备精准性、高效性和文化适应性，达到国际专业水准。`,
-        midia: ChinesEscritorioBrasil
+        midia: ProfessoraNaLousa
     },
     {
         id: 9,
@@ -93,7 +93,7 @@ Transformamos informação em vantagem competitiva, criando pontes seguras para 
 除了传统语言服务，我们还提供针对中国市场与巴西市场的战略性、高度定制化的咨询服务，帮助中国企业深入了解巴西，协助巴西企业有效进入中国，完全根据客户的具体目标量身打造。
 
 我们对中国与巴西的文化、商业和体制环境均有深厚理解，能够帮助客户做出明智决策、规避风险、把握发展机遇，在这两个极具潜力与活力的市场中实现成功。`,
-        midia: imageFirstSection
+        midia: HomemMulherVendoUmLivro
     }
 ];
 export const subTitles: SubTitle[] = [

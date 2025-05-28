@@ -2,10 +2,10 @@ import { paragraphs, subTitles } from "@flavor/constants/texts/about/firstSectio
 import { useChangeLanguage } from "@hooks/useChangeLanguage/paragraphs";
 import { useChangeLanguage as useChangeLanguageSubTitle } from "@hooks/useChangeLanguage/subTitle";
 import { SubTitle } from "@pages/components/subTitle";
+import { Left } from "@pagesAboutUs/layouts/firstSection/layouts/left";
+import { Right } from "@pagesAboutUs/layouts/firstSection/layouts/right";
 import React from "react";
 import { Container } from "react-bootstrap";
-import { Left } from "./layouts/left";
-import { Right } from "./layouts/right";
 export const FirstSection: React.FC = () => {
     const { items } = useChangeLanguage(paragraphs)
     const { text } = useChangeLanguageSubTitle(subTitles)

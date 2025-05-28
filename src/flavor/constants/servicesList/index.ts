@@ -1,29 +1,29 @@
+import { BussinesPresentation, ChinaBusinessConsulting, ChinesEscritorioBrasil, ClassroomLearningMoment, OfficeWorkFocus } from "@flavor/constants/assets/services/secoundSection";
 import type { Item } from "@pages/home/layouts/secoundSection/components/services/item/types";
-import { largeFeatures, singleServices } from "../assets/services/secoundSection";
 
 export const servicesList: Array<Item> = [
     // English
     {
         id: 0,
-        name: 'Professional Document TranslaƟon',
+        name: 'Professional Document Translation',
         link: '#',
         icon: 'fa-solid fa-book fa-beat fa-2xl',
         textButon: 'Order',
         descriptions: [
             { description: 'Technical', id: 0 },
             { description: 'Legal', id: 1 },
-            { description: 'Corporate and insƟtuƟonal translations', id: 2 },
+            { description: 'Corporate and institucional translations', id: 2 },
         ],
         detailsService: [{
             id: 1,
-            text: `We deliver technical, legal, corporate, and institucional translations with precise terminology, confidenciality, and cultural alignment.`
+            text: `We deliver technical, legal, corporate, and institucional translations with precise terminology, confidentiality, and cultural alignment.`
         },
         {
             id: 2,
             text: `Each document is handled with care to reflect your company’s professionalism across languages and markets.`
         }],
         language: 'en',
-        midia: singleServices
+        midia: ChinesEscritorioBrasil
     },
     {
         id: 1,
@@ -44,7 +44,7 @@ export const servicesList: Array<Item> = [
             text: `We ensure seamless, reliable communicaƟon during high stakes interactions.`
         }],
         language: 'en',
-        midia: largeFeatures
+        midia: BussinesPresentation
     },
     {
         id: 2,
@@ -66,7 +66,7 @@ export const servicesList: Array<Item> = [
             text: `Lessons are personalized and results-driven, combining linguistic excellence with practical, real-world communication.`
         }],
         language: 'en',
-        midia: singleServices
+        midia: ClassroomLearningMoment
     },
     {
         id: 13,
@@ -87,7 +87,7 @@ export const servicesList: Array<Item> = [
             text: `This service ensures cultural clarity and practical assistance during your company’s operations or expansion within China.`
         }],
         language: 'en',
-        midia: largeFeatures
+        midia: ChinaBusinessConsulting
     },
     {
         id: 14,
@@ -108,28 +108,7 @@ export const servicesList: Array<Item> = [
             text: `Our consulting is tailor-made, secure, and scalable, positioning your company for longterm success.`
         }],
         language: 'en',
-        midia: singleServices
-    },
-    // Chinese
-    {
-        id: 4,
-        name: '我们的服务',
-        link: '#',
-        icon: 'fa-solid fa-book fa-beat fa-2xl',
-        textButon: '下单',
-        descriptions: [
-            { description: '长城语言解决方案公司', id: 16 },
-        ],
-        detailsService: [{
-            id: 1,
-            text: `在 长城语言解决方案公司，我们专为希望进入巴西市场的中国企业提供高水平、战略性的语言与本地化支持服务。`
-        },
-        {
-            id: 2,
-            text: `我们的目标是帮助企业在文化与制度差异中做出明智决策，稳步推进业务发展。`
-        }],
-        language: 'zh',
-        midia: singleServices
+        midia: OfficeWorkFocus
     },
     {
         id: 5,
@@ -149,7 +128,7 @@ export const servicesList: Array<Item> = [
             text: `每一份文件都传达贵公司在国际环境中的专业形象。`
         }],
         language: 'zh',
-        midia: largeFeatures
+        midia: ChinesEscritorioBrasil
     },
     {
         id: 6,
@@ -168,7 +147,7 @@ export const servicesList: Array<Item> = [
 丰富的译员进行，确保跨语言交流的顺畅与高效，助力关键时刻的战略沟通。`
         }],
         language: 'zh',
-        midia: singleServices
+        midia: BussinesPresentation
     },
     {
         id: 15,
@@ -190,7 +169,7 @@ export const servicesList: Array<Item> = [
         },
         ],
         language: 'zh',
-        midia: largeFeatures
+        midia: ClassroomLearningMoment
     },
     {
         id: 16,
@@ -214,7 +193,7 @@ export const servicesList: Array<Item> = [
 落地策略，加快进入巴西市场的步伐。`
         }],
         language: 'zh',
-        midia: singleServices
+        midia: ChinaBusinessConsulting
     },
     {
         id: 17,
@@ -251,7 +230,7 @@ export const servicesList: Array<Item> = [
         }
         ],
         language: 'zh',
-        midia: largeFeatures
+        midia: OfficeWorkFocus
     },
     // Portuguese
     {
@@ -278,7 +257,7 @@ assegurando que a comunicação escrita da sua empresa reflita profissionalismo 
 qualquer idioma`
         }],
         language: 'pt',
-        midia: singleServices
+        midia: ChinesEscritorioBrasil
     },
     {
         id: 9,
@@ -300,7 +279,7 @@ qualquer idioma`
             text: `Apoiamos executivos, lideranças e autoridades em momentos decisivos, garantindo fluidez e segurança comunicacional em tempo real.`
         }],
         language: 'pt',
-        midia: largeFeatures
+        midia: BussinesPresentation
     },
     {
         id: 10,
@@ -323,7 +302,7 @@ qualquer idioma`
             text: `Aulas personalizadas com metodologia de alto impacto, foco prático e imersão cultural, que capacitam nossos alunos para atuar com desenvoltura em contextos reais e exigentes.`
         }],
         language: 'pt',
-        midia: singleServices
+        midia: ClassroomLearningMoment
     },
     {
         id: 11,
@@ -346,7 +325,7 @@ qualquer idioma`
             text: `Esse serviço proporciona segurança e inteligência em negociações e processos de implantação no mercado chinês.`
         }],
         language: 'pt',
-        midia: largeFeatures
+        midia: ChinaBusinessConsulting
     },
     {
         id: 12,
@@ -367,6 +346,6 @@ qualquer idioma`
             text: `Entregamos soluções seguras, estruturadas e sob medida, que permitem a entrada sólida da sua empresa em um dos mercados mais exigentes e promissores do mundo.`
         }],
         language: 'pt',
-        midia: largeFeatures
+        midia: OfficeWorkFocus
     },
 ];
