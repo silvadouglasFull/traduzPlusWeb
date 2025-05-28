@@ -4,6 +4,7 @@ import { FirstSection } from "@pagesContacts/layouts/firstSection";
 import React from "react";
 
 export const PageContact: React.FC = () => {
+
     return (
         <>
             <FirstSection />

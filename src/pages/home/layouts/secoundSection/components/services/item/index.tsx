@@ -2,6 +2,7 @@ import { useContactUs } from "@components/forms/contactUs/hooks/contactUs"
 import { useSetPreviewMessage } from "@components/forms/contactUs/hooks/useSetPreviewMessage"
 import { Icon } from "@components/icons"
 import { sections } from "@constants/index"
+import { useLanguage } from "@context/language/hooks"
 import { colors } from "@flavor/constants/colors"
 import { Paragraph } from "@pages/home/layouts/secoundSection/components/services/item/paragraph"
 import type { Item as TItem } from "@pages/home/layouts/secoundSection/components/services/item/types"
@@ -12,15 +13,16 @@ import { Link } from "react-router-dom"
 export const Item: React.FC<TItem> = ({ descriptions, icon, name, link, textButon, }) => {
     const { handleForm } = useContactUs()
     const { message } = useSetPreviewMessage()
+    const { language } = useLanguage()
     const handleService = () => {
-        const descritionsMessage = descriptions.map(item => item.description).join(', ')
-        handleForm({ message: `${message.replace('.', '')}: ${name} (${descritionsMessage})` })
+        const descriptionsMessage = descriptions.map(item => item.description).join(', ')
+        handleForm({ message: `${message.replace('.', '')}: ${name} (${descriptionsMessage})` })
         scrollOnElenet(sections.home.contact)
     }
     return (
         <Col className="col-12 mb-3" md={3}>
             <Card style={{
-                height: '28.125rem',
+                height: language === 'pt' ? '34.375rem' : '28.125rem',
                 width: '18rem'
             }} className="rounded-4 d-none d-md-flex">
                 <Card.Body className="p-5">
@@ -62,6 +64,6 @@ export const Item: React.FC<TItem> = ({ descriptions, icon, name, link, textButo
                     </Link>
                 </Card.Footer>
             </Card>
-        </Col>
+        </Col >
     )
 }

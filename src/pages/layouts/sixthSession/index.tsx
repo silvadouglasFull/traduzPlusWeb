@@ -1,11 +1,27 @@
 import imageFromSixSetion from "@assets/greatNewSoluctions/images/contact-big-1-874x742.jpg";
 import { FormContactUs } from "@components/forms/contactUs";
+import { useContactUs } from "@components/forms/contactUs/hooks/contactUs";
 import { sections } from "@constants/index";
 import { Image } from "@pages/components/image";
 import '@pagesHome/styles/index.css';
-import React from "react";
+import { scrollOnElenet } from "@utils/scrollPage/onElement";
+import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
+import { useLocation } from "react-router-dom";
 export const SixthSession: React.FC = () => {
+    const { state } = useLocation()
+    const { handleForm } = useContactUs()
+    useEffect(() => {
+        const handleScrollPage = () => {
+            if (state?.focusId && state?.message) {
+                handleForm({
+                    message: state.message
+                })
+                scrollOnElenet(state.focusId)
+            }
+        }
+        handleScrollPage()
+    }, [state])
     const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
     };

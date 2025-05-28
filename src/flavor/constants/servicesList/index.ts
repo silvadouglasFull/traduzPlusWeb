@@ -7,7 +7,7 @@ export const servicesList: Array<Item> = [
         id: 0,
         name: 'Professional Document Translation',
         link: '#',
-        icon: 'fa-solid fa-book fa-beat fa-2xl',
+        icon: 'fa-solid fa-file-invoice fa-beat fa-2xl',
         textButon: 'Order',
         descriptions: [
             { description: 'Technical', id: 0 },
@@ -29,7 +29,7 @@ export const servicesList: Array<Item> = [
         id: 1,
         name: 'Interpretation for Business and Events',
         link: '#',
-        icon: 'fa-solid fa-briefcase fa-beat fa-2xl',
+        icon: 'fa-solid fa-calendar-days fa-beat fa-2xl',
         textButon: 'Order',
         descriptions: [
             { description: 'Our interpreters are highly trained and discreet', id: 4 },
@@ -50,7 +50,7 @@ export const servicesList: Array<Item> = [
         id: 2,
         name: 'Elite Language Training',
         link: '#',
-        icon: 'fa-solid fa-map fa-beat fa-2xl',
+        icon: 'fa-solid fa-graduation-cap fa-beat fa-2xl',
         textButon: 'Order',
         descriptions: [
             { description: 'Mandarin for Executives, Youth, and Children', id: 8 },
@@ -72,7 +72,7 @@ export const servicesList: Array<Item> = [
         id: 13,
         name: 'On-Site Consulting in China',
         link: '#',
-        icon: 'fa-solid fa-briefcase fa-beat fa-2xl',
+        icon: 'fa-solid fa-building-user fa-beat fa-2xl',
         textButon: 'Order',
         descriptions: [
             { description: 'Local, strategic consulting', id: 4 },
@@ -93,7 +93,7 @@ export const servicesList: Array<Item> = [
         id: 14,
         name: 'Consulting for Company Setup in China',
         link: '#',
-        icon: 'fa-solid fa-briefcase fa-beat fa-2xl',
+        icon: 'fa-solid fa-building fa-beat fa-2xl',
         textButon: 'Order',
         descriptions: [
             { description: 'Establishing a presence in the Chinese market', id: 4 },
@@ -114,7 +114,7 @@ export const servicesList: Array<Item> = [
         id: 5,
         name: '专业文件翻译服务',
         link: '#',
-        icon: 'fa-solid fa-briefcase fa-beat fa-2xl',
+        icon: 'fa-solid fa-calendar-days fa-beat fa-2xl',
         textButon: '下单',
         descriptions: [
             { description: '技术、法律、商业和机构类文件。', id: 20 },
@@ -134,7 +134,7 @@ export const servicesList: Array<Item> = [
         id: 6,
         name: '商务会议与大型活动的口译服务',
         link: '#',
-        icon: 'fa-solid fa-map fa-beat fa-2xl',
+        icon: 'fa-solid fa-graduation-cap fa-beat fa-2xl',
         textButon: '下单',
         descriptions: [
             { description: '商务会议。', id: 24 },
@@ -153,7 +153,7 @@ export const servicesList: Array<Item> = [
         id: 15,
         name: '葡萄牙语语言培训',
         link: '#',
-        icon: 'fa-solid fa-briefcase fa-beat fa-2xl',
+        icon: 'fa-solid fa-calendar-days fa-beat fa-2xl',
         textButon: '下单',
         descriptions: [
             { description: '面向高管、青少年与儿童的定制课程', id: 20 },
@@ -175,7 +175,7 @@ export const servicesList: Array<Item> = [
         id: 16,
         name: '在巴西的本地化商务咨询服务',
         link: '#',
-        icon: 'fa-solid fa-map fa-beat fa-2xl',
+        icon: 'fa-solid fa-building-user fa-beat fa-2xl',
         textButon: '下单',
         descriptions: [
             { description: '希望进入巴西市场的中国企业', id: 24 },
@@ -199,7 +199,7 @@ export const servicesList: Array<Item> = [
         id: 17,
         name: '协助中国企业在巴西设立公司及本地运营支持',
         link: '#',
-        icon: 'fa-solid fa-briefcase fa-beat fa-2xl',
+        icon: 'fa-solid fa-building fa-beat fa-2xl',
         textButon: '下单',
         descriptions: [
             { description: '注册公司。', id: 20 },
@@ -237,7 +237,7 @@ export const servicesList: Array<Item> = [
         id: 8,
         name: 'Tradução Profissional de Documentos ',
         link: '#',
-        icon: 'fa-solid fa-book fa-beat fa-2xl',
+        icon: 'fa-solid fa-file-invoice fa-beat fa-2xl',
         textButon: 'Pedir',
         descriptions: [
             { description: 'Tradução técnica', id: 32 },
@@ -263,7 +263,7 @@ qualquer idioma`
         id: 9,
         name: 'Interpretação em Reuniões e Eventos',
         link: '#',
-        icon: 'fa-solid fa-briefcase fa-beat fa-2xl',
+        icon: 'fa-solid fa-calendar-days fa-beat fa-2xl',
         textButon: 'Pedir',
         descriptions: [
             { description: 'Com elevado grau de preparo e discrição', id: 36 },
@@ -285,7 +285,7 @@ qualquer idioma`
         id: 10,
         name: 'Formação Linguística de Alto Nível',
         link: '#',
-        icon: 'fa-solid fa-map fa-beat fa-2xl',
+        icon: 'fa-solid fa-graduation-cap fa-beat fa-2xl',
         textButon: 'Pedir',
         descriptions: [
             { description: 'Mandarim para Executivos, Jovens e Crianças', id: 40 },
@@ -308,7 +308,7 @@ qualquer idioma`
         id: 11,
         name: 'Consultoria Presencial na China',
         link: '#',
-        icon: 'fa-solid fa-map fa-beat fa-2xl',
+        icon: 'fa-solid fa-building-user fa-beat fa-2xl',
         textButon: 'Pedir',
         descriptions: [
             { description: 'Presença local e acompanhamento em compromissos estratégicos.', id: 44 },
@@ -331,7 +331,7 @@ qualquer idioma`
         id: 12,
         name: 'Consultoria para Abertura de Empresas na China',
         link: '#',
-        icon: 'fa-solid fa-map fa-beat fa-2xl',
+        icon: 'fa-solid fa-building fa-beat fa-2xl',
         textButon: 'Pedir',
         descriptions: [
             { description: 'Implantação empresarial no mercado chinês.', id: 48 },
