@@ -41,6 +41,7 @@ export default defineConfig({
       "@constants/*": `${root}/constants/*`,
       "@assets/*": `${root}/assets/*`,
       "@components/*": `${root}/components/*`,
+      "@config/*": `${root}/config/*`,
       "@features/*": `${root}/features/*`,
       "@hooks/*": `${root}/hooks/*`,
       "@layouts/*": `${root}/layouts/*`,

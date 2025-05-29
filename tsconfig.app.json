@@ -1,10 +1,12 @@
 {
   "compilerOptions": {
     "paths": {
+      "@api/*": ["./src/api/*"],
       "@assets/*": ["./src/assets/*"],
       "@components/*": ["./src/components/*"],
       "@constants/*": ["./src/constants/*"],
       "@context/*": ["./src/context/*"],
+      "@config/*": ["./src/config/*"],
       "@features/*": ["./src/features/*"],
       "@hooks/*": ["./src/hooks/*"],
       "@layouts/*": ["./src/layouts/*"],
