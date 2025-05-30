@@ -57,7 +57,7 @@ export const FormContactUs: React.FC<FormProps & React.DetailedHTMLProps<React.F
                     )
                 )) : null}
             </Row>
-            <Button variant="oxford" className="w-100 text-uppercase">
+            <Button variant="oxford" type="submit" tabIndex={16} className="w-100 text-uppercase">
                 {text}
             </Button>
         </Form >

@@ -13,6 +13,6 @@ export class GenerateBaseUrl implements IGenerateBaseUrl {
         return hosts.find(item => item.env === env)?.host ?? ''
     }
     public formatUrl(url: string): string {
-        return `${this.getBaseURL(REACT_APP_ENV)}/${this.version}/${url}`
+        return `${this.getBaseURL(REACT_APP_ENV)}/${this.version}${url}`
     }
 }

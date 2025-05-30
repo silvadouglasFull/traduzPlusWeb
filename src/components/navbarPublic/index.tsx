@@ -25,7 +25,7 @@ export const Header: React.FC = () => {
                     <LogLink urlLogo={logo} width={!hasBackground ? '100%' : 100} height={!hasBackground ? '100%' : 50} />
                 </Navbar.Brand>
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className={`me-auto w-100 navbar-nav justify-content-between align-items-end ${!hasBackground ? 'mt-3' : ''}`}>
+                    <Nav className={`me-auto w-100 navbar-nav justify-content-between align-items-md-end ${!hasBackground ? 'mt-3' : ''}`}>
                         <LinksHeader items={items} />
                         <LanguageDropdown />
                     </Nav>
