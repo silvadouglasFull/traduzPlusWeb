@@ -1,30 +1,9 @@
-import type { IGenerateHeaderOptions } from "@api/generateHeaderOptions/IGenerateHeaderOptions";
-import type { IHttp } from "@api/http/IHttp";
-import type { Get, RequestResponse } from "@api/types";
-export class Api {
-    private generateHeaderOptions: IGenerateHeaderOptions
-    private http: IHttp
-    constructor(generateHeaderOptions: IGenerateHeaderOptions, http: IHttp) {
-        this.generateHeaderOptions = generateHeaderOptions
-        this.http = http
-    }
-    async get({ uri }: Get): RequestResponse {
-        return this.http.request(this.generateHeaderOptions.generateHeaders({ method: 'get', uri }))
-    }
-
-    async post({ uri, body }: { uri: string, body: any }): RequestResponse {
-        return this.http.request(this.generateHeaderOptions.generateHeaders({ method: 'post', uri, body }))
-    }
-
-    async put({ uri, body }: { uri: string, body: any }): RequestResponse {
-        return this.http.request(this.generateHeaderOptions.generateHeaders({ method: 'put', uri, body }))
-    }
-
-    async patch({ uri, body }: { uri: string, body: any }): RequestResponse {
-        return this.http.request(this.generateHeaderOptions.generateHeaders({ method: 'patch', uri, body }))
-    }
-
-    async delete({ uri }: { uri: string }): RequestResponse {
-        return this.http.request(this.generateHeaderOptions.generateHeaders({ method: 'delete', uri }))
-    }
+import { container } from "@api/api.container"
+import type { Body } from "@api/generateHeaderOptions/types"
+export const api = {
+    get: async (uri: string) => container().get({ uri }),
+    post: async (uri: string, body?: Body) => container().post({ uri, body }),
+    put: async (uri: string, body?: Body) => container().put({ uri, body }),
+    patch: async (uri: string, body?: Body) => container().patch({ uri, body }),
+    delete: async (uri: string) => container().delete({ uri })
 }

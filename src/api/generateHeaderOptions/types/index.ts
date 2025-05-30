@@ -1,5 +1,5 @@
 export type Methods = 'get' | 'post' | 'update' | 'put' | 'patch' | 'delete'
-export type Body = Object
+export type Body = Object | undefined
 export type TGenerateHeaderProps = {
     uri: string
     method: Methods
