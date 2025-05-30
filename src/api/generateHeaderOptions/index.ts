@@ -1,11 +1,11 @@
 import type { IGenerateBaseUrl } from "@api/generateBaseUrl/IGenerateBaseUrl";
+import type { IGenerateHeaderOptions } from "@api/generateHeaderOptions/IGenerateHeaderOptions";
 import type { Header, Headers, Methods, TGenerateHeaderProps } from "@api/generateHeaderOptions/types";
-export class GenerateHeaderOptions {
-    private generateBaseUrl: IGenerateBaseUrl
-    constructor(generateBaseUrl: IGenerateBaseUrl, { body, method, uri }: TGenerateHeaderProps) {
-        this.generateBaseUrl = generateBaseUrl
-        this.generateHeaders({ body, method, uri })
 
+export class GenerateHeaderOptions implements IGenerateHeaderOptions {
+    private generateBaseUrl: IGenerateBaseUrl
+    constructor(generateBaseUrl: IGenerateBaseUrl) {
+        this.generateBaseUrl = generateBaseUrl
     }
     setHeaders(method: Methods) {
         const headers: Headers = {
@@ -18,16 +18,20 @@ export class GenerateHeaderOptions {
         }
         return headers
     }
-    generateHeaders({ body, method, uri }: TGenerateHeaderProps): Header {
+    public generateHeaders({ body, method, uri }: TGenerateHeaderProps): Header {
         const url = this.generateBaseUrl.formatUrl(uri)
         const headers = this.setHeaders(method)
+        const options = {
+            headers,
+            method,
+            body
+        }
+        if (!body) {
+            delete options.body
+        }
         return {
-            url: url,
-            options: {
-                body,
-                headers,
-                method
-            }
+            url,
+            options
         }
     }
 }

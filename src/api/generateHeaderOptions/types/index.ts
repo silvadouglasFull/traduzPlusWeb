@@ -1,10 +1,9 @@
-export type Methods = 'get' | 'post' | 'update' | 'put' | 'delete'
-export type Uri = string
+export type Methods = 'get' | 'post' | 'update' | 'put' | 'patch' | 'delete'
 export type Body = Object
 export type TGenerateHeaderProps = {
-    uri: Uri
+    uri: string
     method: Methods
-    body: Body
+    body?: Body
 }
 export type ContentType = 'application/json'
 export type Headers = {
@@ -15,7 +14,7 @@ export type Headers = {
 export type Options = {
     method: Methods
     headers: Headers
-    body: Body
+    body?: Body
 }
 export type Header = {
     url: string

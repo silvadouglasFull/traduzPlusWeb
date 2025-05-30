@@ -1,9 +1,8 @@
 import type { Header } from "@api/generateHeaderOptions/types";
-export class ApiHttp {
-    constructor({ options, url }: Header) {
-        this.init({ options, url })
-    }
-    init({ options, url }: Header) {
+import type { IHttp } from "@api/http/IHttp";
+import type { RequestResponse } from "@api/http/types";
+export class ApiHttp implements IHttp {
+    async request({ options, url }: Header): RequestResponse {
         const { body, ...rest } = options
         return fetch(url, { ...rest, body: JSON.stringify(body) })
     }

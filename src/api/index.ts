@@ -1,13 +1,30 @@
-import { generateHeaders } from "@api/generateHeaderOptions/container";
-import type { TGenerateHeaderProps } from "@api/generateHeaderOptions/types";
-import { ApiHttp } from "./http";
-
+import type { IGenerateHeaderOptions } from "@api/generateHeaderOptions/IGenerateHeaderOptions";
+import type { IHttp } from "@api/http/IHttp";
+import type { Get, RequestResponse } from "@api/types";
 export class Api {
-    constructor({ body, method, uri }: TGenerateHeaderProps) {
-        this.init({ body, method, uri })
+    private generateHeaderOptions: IGenerateHeaderOptions
+    private http: IHttp
+    constructor(generateHeaderOptions: IGenerateHeaderOptions, http: IHttp) {
+        this.generateHeaderOptions = generateHeaderOptions
+        this.http = http
     }
-    init({ body, method, uri }: TGenerateHeaderProps) {
-        const generateHeader = generateHeaders({ body, method, uri })
-        return new ApiHttp(generateHeader.generateHeaders({ body, method, uri }))
+    async get({ uri }: Get): RequestResponse {
+        return this.http.request(this.generateHeaderOptions.generateHeaders({ method: 'get', uri }))
+    }
+
+    async post({ uri, body }: { uri: string, body: any }): RequestResponse {
+        return this.http.request(this.generateHeaderOptions.generateHeaders({ method: 'post', uri, body }))
+    }
+
+    async put({ uri, body }: { uri: string, body: any }): RequestResponse {
+        return this.http.request(this.generateHeaderOptions.generateHeaders({ method: 'put', uri, body }))
+    }
+
+    async patch({ uri, body }: { uri: string, body: any }): RequestResponse {
+        return this.http.request(this.generateHeaderOptions.generateHeaders({ method: 'patch', uri, body }))
+    }
+
+    async delete({ uri }: { uri: string }): RequestResponse {
+        return this.http.request(this.generateHeaderOptions.generateHeaders({ method: 'delete', uri }))
     }
 }
