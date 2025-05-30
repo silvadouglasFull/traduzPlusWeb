@@ -1,6 +1,7 @@
 import type { IGenerateBaseUrl } from "@api/generateBaseUrl/IGenerateBaseUrl";
 import type { IGenerateHeaderOptions } from "@api/generateHeaderOptions/IGenerateHeaderOptions";
 import type { Header, Headers, Methods, TGenerateHeaderProps } from "@api/generateHeaderOptions/types";
+import { REACT_APP_X_API_KEY } from "@config/index";
 
 export class GenerateHeaderOptions implements IGenerateHeaderOptions {
     private generateBaseUrl: IGenerateBaseUrl
@@ -10,8 +11,7 @@ export class GenerateHeaderOptions implements IGenerateHeaderOptions {
     setHeaders(method: Methods) {
         const headers: Headers = {
             "Content-Type": 'application/json',
-            Authentication: '',
-            Authorization: ''
+            'API-KEY': REACT_APP_X_API_KEY
         }
         if (method === 'get') {
             delete headers["Content-Type"]

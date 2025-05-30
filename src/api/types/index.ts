@@ -9,13 +9,13 @@ export type Delete = {
 }
 export type Payload = { uri: string, body: Body }
 export type TApi = typeof api
-export type StatusCodeError = 420 | 500
-export type StatusCodeSuccess = 201 | 200
-export type ResponseError = {
+export type StatusCodeInfo = 199
+export type StatusCodeSuccess = 200 | 201
+export type StatusCodeWarning = 403 | 405 | 420
+export type StatusCodeDanger = 500 | 504
+export type StatusCode = StatusCodeInfo | StatusCodeSuccess | StatusCodeWarning | StatusCodeDanger
+export type ResponseRequest = {
     message: string
-    statusCode: StatusCodeError
-}
-export type ResponseSucess = {
-    message: string
-    statusCode: StatusCodeSuccess
+    statusCode: StatusCode
+    data?: []
 }

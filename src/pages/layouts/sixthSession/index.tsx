@@ -2,16 +2,23 @@ import imageFromSixSetion from "@assets/greatNewSoluctions/images/contact-big-1-
 import { FormContactUs } from "@components/forms/contactUs";
 import { useContactUs } from "@components/forms/contactUs/hooks/contactUs";
 import { message } from "@components/forms/contactUs/modules/fetchMessage";
+import { Toast } from "@components/toast";
+import { useToast } from "@components/toast/hooks/useToast";
 import { sections } from "@constants/index";
+import { contacts } from "@flavor/constants/contacts";
 import { Image } from "@pages/components/image";
+import { useChangeLanguage } from "@pages/layouts/sixthSession/hooks";
 import '@pagesHome/styles/index.css';
 import { scrollOnElenet } from "@utils/scrollPage/onElement";
 import React, { useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
+import { generateBodyPayload } from "./utils/generateBodyPayload";
 export const SixthSession: React.FC = () => {
     const { state } = useLocation()
     const { handleForm, state: valuesFromForm } = useContactUs()
+    const { onClose, show, setMessage, setStatusCode, statusCode, message: messageResponse } = useToast()
+    const { message: previewMessage } = useChangeLanguage()
     useEffect(() => {
         const handleScrollPage = () => {
             if (state?.focusId && state?.message) {
@@ -23,15 +30,20 @@ export const SixthSession: React.FC = () => {
         }
         handleScrollPage()
     }, [state])
-    const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        message.send({
-            ...valuesFromForm
+        const response = await message.send({
+            body: generateBodyPayload({ state: valuesFromForm, previewMessage }),
+            subject: 'Teste',
+            recipient_email: contacts.email
         })
+        const { message: responseMessage, statusCode: responseStatusCode } = response
+        setMessage(responseMessage)
+        setStatusCode(responseStatusCode)
     };
-
     return (
         <section className="bg-gray-100" id={sections.home.contact}>
+            <Toast message={messageResponse} onclose={onClose} show={show} statusCode={statusCode} />
             <Container fluid>
                 <Row className='justify-content-between align-items-center'>
                     <Col md={12} lg={6}>
