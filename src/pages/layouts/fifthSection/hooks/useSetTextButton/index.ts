@@ -1,6 +1,6 @@
 import { useLanguage } from "@context/language/hooks"
 import { specialButtonsText } from "@flavor/constants/texts/specialButtonText"
-import type { UseSetTextButton } from "@pages/layouts/fifthSection/hooks/types"
+import type { UseSetTextButton } from "@pages/layouts/fifthSection/hooks/useSetTextButton/types"
 import { useEffect, useState } from "react"
 import { useLocation } from "react-router-dom"
 

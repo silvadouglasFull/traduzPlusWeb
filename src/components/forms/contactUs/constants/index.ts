@@ -5,20 +5,20 @@ export const formLabels: FormField[] = [
     {
         id: 1,
         idControll: 'first_name',
-        label: 'First Name',
+        label: 'Name',
         name: 'first_name',
         type: 'text',
-        placeholder: 'Enter your first name',
+        placeholder: 'Enter your name',
         required: true,
         language: 'en'
     },
     {
         id: 2,
         idControll: 'last_name',
-        label: 'Last Name',
+        label: 'Company name',
         name: 'last_name',
         type: 'text',
-        placeholder: 'Enter your last name',
+        placeholder: 'Enter your company name',
         required: true,
         language: 'en'
     },

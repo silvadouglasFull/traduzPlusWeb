@@ -9,7 +9,14 @@ export const socialMidia: Array<ItemSocialMidia> = [
     },
     {
         id: 1,
+        title: 'Whatsapp',
+        url: '',
+        icon: 'fa-brands fa-whatsapp',
+    },
+    {
+        id: 2,
         title: 'Instagram',
-        url: 'fa-brands fa-instagram',
+        url: '',
+        icon: 'fa-brands fa-instagram',
     }
 ]

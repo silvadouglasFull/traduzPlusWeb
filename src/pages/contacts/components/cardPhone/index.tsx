@@ -8,7 +8,7 @@ export const CardTelephone: React.FC<Phones> = ({ number }: Phones) => {
         <Col className="text-center" sm={12} md={6}>
             <Card className="border border-top-0 border-left-0 border-right-0">
                 <Card.Body>
-                    {formatPhoneNumber(number, "br")}
+                    {formatPhoneNumber(number, "pt")}
                 </Card.Body>
             </Card>
         </Col>
