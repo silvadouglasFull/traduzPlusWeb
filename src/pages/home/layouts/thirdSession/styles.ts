@@ -1,5 +1,6 @@
-import imageFromThirSection from "@assets/greatNewSoluctions/images/image-aside-01-1143x584.webp";
+import { VITE_CLOUD_FLARE } from "@config/index";
 import React from "react";
+export const imageFromThirSection = `${VITE_CLOUD_FLARE}/greatNewSoluctions/images/image-aside-01-1143x584.webp`;
 
 export const styles: React.CSSProperties = {
     backgroundImage: `url('${imageFromThirSection}')`,

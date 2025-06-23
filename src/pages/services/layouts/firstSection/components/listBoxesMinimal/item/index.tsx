@@ -4,20 +4,18 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 export const Item: React.FC<TItem & React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>> = ({ description, icon, id, nameBox, ...props }: TItem) => {
     return (
-        <Col sm={12} md={4} className="w-100">
+        <Col sm={12} md={4}>
             <article {...props}>
                 <Row className="d-flex justify-content-start align-items-start flex-nowrap">
-                    <div className="me-2">
+                    <Col className="me-2">
                         <Icon name={icon} className="text-light" />
-                    </div>
-                    <div className="w-100">
-                        <Col className="col-12">
-                            <h4 className="font-weight-bold text-light">
-                                {nameBox}
-                            </h4>
-                            <p className=" text-secondary">{description}</p>
-                        </Col>
-                    </div>
+                    </Col>
+                    <Col className="col-12">
+                        <h4 className="font-weight-bold text-light">
+                            {nameBox}
+                        </h4>
+                        <p className=" text-secondary">{description}</p>
+                    </Col>
                 </Row>
             </article>
         </Col>
