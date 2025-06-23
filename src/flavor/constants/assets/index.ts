@@ -3,7 +3,7 @@ import { VITE_CLOUD_FLARE } from "@config/index";
 import { slide1, slide2, slide3 } from "@flavor/constants/assets/slides";
 import type { BreadCrumps } from "@flavor/constants/assets/types";
 export const breadcrumbsAbout = `${VITE_CLOUD_FLARE}/greatNewSoluctions/images/about/breadcrumbs-image-1.jpg`;
-export const logo = `${VITE_CLOUD_FLARE}/greatNewSoluctions/logo2.png`;
+export const logo = `${VITE_CLOUD_FLARE}/greatNewSoluctions/logo.png`;
 
 export const carroselSlides: Array<ItemProps> = [
     {
