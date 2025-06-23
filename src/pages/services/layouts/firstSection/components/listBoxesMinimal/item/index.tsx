@@ -7,7 +7,7 @@ export const Item: React.FC<TItem & React.DetailedHTMLProps<React.HTMLAttributes
         <Col sm={12} md={4} className="w-100">
             <article {...props}>
                 <Row className="d-flex justify-content-start align-items-start flex-nowrap">
-                    <div className="mr-2">
+                    <div className="me-2">
                         <Icon name={icon} className="text-light" />
                     </div>
                     <div className="w-100">

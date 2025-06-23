@@ -1,6 +1,6 @@
 import { Image } from '@components/carrosel/item/image';
 import { styles as imageStyles } from '@components/carrosel/item/image/styles';
-import { fontSizeDesktop, stylesDesktop, stylesMobile } from '@components/carrosel/item/styles';
+import { stylesDesktop, stylesMobile } from '@components/carrosel/item/styles';
 import type { ItemProps } from '@components/carrosel/item/types';
 import { sections } from '@constants/index';
 import { scrollOnElenet } from '@utils/scrollPage/onElement';
@@ -15,10 +15,8 @@ export const Item: React.FC<ItemProps> = ({ midia, subTitle, title, textButton }
             <Image src={midia} className='d-block w-100' style={{ ...imageStyles }} />
             <Carousel.Caption className="d-block d-md-none" style={stylesMobile}>
                 <Container>
-                    <h1 className='text-uppercase font-weight-bold'>{title}</h1>
-                    <p className='text-uppercase' style={{
-                        fontSize: 14
-                    }}>{subTitle}</p>
+                    <h1 className='text-capitalize fst-italic'>{title}</h1>
+                    <p className='text-uppercase'>{subTitle}</p>
                     <Button onClick={handleScrollForm} size="lg" className='w-90' variant="oxford">
                         {textButton}
                     </Button>
@@ -26,10 +24,8 @@ export const Item: React.FC<ItemProps> = ({ midia, subTitle, title, textButton }
             </Carousel.Caption>
             <Carousel.Caption className="d-md-block d-none" style={stylesDesktop}>
                 <Container>
-                    <h1 className='text-uppercase font-weight-bold' style={fontSizeDesktop}>{title}</h1>
-                    <p className='text-uppercase' style={{
-                        fontSize: 32
-                    }}>{subTitle}</p>
+                    <h1 className='text-capitalize fst-italic'>{title}</h1>
+                    <p className='text-uppercase'>{subTitle}</p>
                     <Button onClick={handleScrollForm} size="lg" className='w-90' variant="oxford">
                         {textButton}
                     </Button>

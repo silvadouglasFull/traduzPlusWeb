@@ -8,7 +8,7 @@ import type { BreadCrumps } from "@flavor/constants/assets/types";
 export const carroselSlides: Array<ItemProps> = [
     {
         midia: slide1,
-        title: 'Professional Translation',
+        title: '"Translation, interpretation and consultancy for companies that want to negotiate with clarity and confidence in the Sino-Brazilian world.”',
         subTitle: 'Services',
         id: 1,
         language: 'en',

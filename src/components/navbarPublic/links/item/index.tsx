@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Item: React.FC<LinkItem> = ({ title, url, icon, isActive }) => {
     return (
-        <Nav.Link as={Link} className='text-light mr-5' to={url} active={isActive}>
+        <Nav.Link as={Link} className='text-light me-5' to={url} active={isActive}>
             {icon ? icon : null} {title}
         </Nav.Link>
     )

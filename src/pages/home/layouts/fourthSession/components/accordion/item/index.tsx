@@ -13,7 +13,7 @@ export const Item: React.FC<TItem> = ({ id, title, descriptions }) => {
             }}>
                 <Toggle eventKey={String(id)}>
                     <Row className="flex-nowrap accordion-color-title align-items-center">
-                        <div className="mr-2" style={styles.color}>
+                        <div className="me-2" style={styles.color}>
                             <Icon name="fa-solid fa-square-plus" />
                         </div>
                         <Card.Text style={styles.color}>

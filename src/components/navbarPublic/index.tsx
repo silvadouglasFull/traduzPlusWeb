@@ -21,7 +21,7 @@ export const Header: React.FC = () => {
                 <Navbar.Brand as={Link} to={'/'} className="d-block d-md-none">
                     <LogLink urlLogo={logo} />
                 </Navbar.Brand>
-                <Navbar.Brand as={Link} to={'/'} className="d-md-block d-none mr-5">
+                <Navbar.Brand as={Link} to={'/'} className="d-md-block d-none me-5">
                     <LogLink urlLogo={logo} width={!hasBackground ? '100%' : 100} height={!hasBackground ? '100%' : 50} />
                 </Navbar.Brand>
                 <Navbar.Collapse id="responsive-navbar-nav">
