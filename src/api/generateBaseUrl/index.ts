@@ -1,7 +1,7 @@
 import { hosts } from "@api/constants";
 import type { ENV, Versions } from "@api/constants/types";
 import type { IGenerateBaseUrl } from "@api/generateBaseUrl/IGenerateBaseUrl";
-import { REACT_API_PORT, REACT_APP_ENV } from "@config/index";
+import { VITE_API_PORT, VITE_ENV } from "@config/index";
 
 export class GenerateBaseUrl implements IGenerateBaseUrl {
     private version: Versions
@@ -13,6 +13,6 @@ export class GenerateBaseUrl implements IGenerateBaseUrl {
         return hosts.find(item => item.env === env)?.host ?? ''
     }
     public formatUrl(url: string): string {
-        return `${this.getBaseURL(REACT_APP_ENV)}:${REACT_API_PORT}/${this.version}${url}`
+        return `${this.getBaseURL(VITE_ENV)}:${VITE_API_PORT}/${this.version}${url}`
     }
 }

@@ -1,5 +1,15 @@
+import type { Config } from "@config/types";
 //@ts-ignore
-import process from "process"
-export const REACT_APP_ENV = process.env.REACT_APP_ENV ?? 'develop'
-export const REACT_API_PORT = process.env.REACT_API_PORT ?? '8000'
-export const REACT_APP_X_API_KEY = 'your_secret_api_key_here'
+export const VITE_ENV = import.meta.env.VITE_ENV ?? 'develop';
+export const VITE_API_PORT = import.meta.env.VITE_API_PORT ?? '8000';
+export const VITE_X_API_KEY = import.meta.env.VITE_X_API_KEY ?? '';
+export const VITE_CLOUD_FLARE = import.meta.env.VITE_CLOUD_FLARE ?? '';
+
+export const config = (): Config => {
+    return {
+        VITE_ENV,
+        VITE_API_PORT,
+        VITE_X_API_KEY,
+        VITE_CLOUD_FLARE,
+    }
+}
