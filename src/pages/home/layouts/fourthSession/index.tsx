@@ -1,6 +1,6 @@
-import imageFromFourthSection from "@assets/greatNewSoluctions/images/accordions-1-470x368.jpg";
 import { AnimationSlide } from "@components/animationSlide/slideLeftRight";
 import { sections } from "@constants/index";
+import { imageFromFourthSection } from "@flavor/constants/assets/home/fourthSection";
 import { subTitle } from "@flavor/constants/texts/home/fourthSession";
 import { useChangeLanguage as useChangeLanguageSubTitle } from "@hooks/useChangeLanguage/subTitle";
 import { Image } from "@pages/components/image";

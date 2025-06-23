@@ -1,5 +1,5 @@
-import imageFromFirstSection from "@assets/greatNewSoluctions/images/large-features-3-570x368.jpg";
 import { sections } from "@constants/index";
+import { imageFromFirstSection } from "@flavor/constants/assets/home/firstSection";
 import { paragraphs, subTitle } from "@flavor/constants/texts/home/firstSection";
 import { useChangeLanguage } from "@hooks/useChangeLanguage/paragraphs";
 import { useChangeLanguage as useChangeLanguageSubTitle } from "@hooks/useChangeLanguage/subTitle";

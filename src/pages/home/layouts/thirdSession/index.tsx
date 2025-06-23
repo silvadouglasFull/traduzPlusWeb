@@ -1,5 +1,5 @@
-import imageFromThirSection from "@assets/greatNewSoluctions/images/image-aside-01-1143x584.webp";
 import { sections } from "@constants/index";
+import { imageFromThirSection } from "@flavor/constants/assets/home/thirdSection";
 import { paragraphs, subTitle } from "@flavor/constants/texts/home/thirdSection";
 import { useChangeLanguage } from "@hooks/useChangeLanguage/paragraphs";
 import { useChangeLanguage as useChangeLanguageSubTitle } from "@hooks/useChangeLanguage/subTitle";
