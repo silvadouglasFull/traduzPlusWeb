@@ -1,5 +1,7 @@
-import AmigosBrasileiroChines from "@assets/greatNewSoluctions/images/about/AmigosBrasileiroChines.png"
-import HomemMulherVendoUmLivro from "@assets/greatNewSoluctions/images/about/HomemMulherVendoUmLivro.jpg"
-import ProfessoraNaLousa from "@assets/greatNewSoluctions/images/about/ProfessoraNaLousa.jpg"
+import { VITE_CLOUD_FLARE } from "@config/index"
+
+const AmigosBrasileiroChines = `${VITE_CLOUD_FLARE}/greatNewSoluctions/images/about/AmigosBrasileiroChines.png`
+const HomemMulherVendoUmLivro = `${VITE_CLOUD_FLARE}/greatNewSoluctions/images/about/HomemMulherVendoUmLivro.jpg`
+const ProfessoraNaLousa = `${VITE_CLOUD_FLARE}/greatNewSoluctions/images/about/ProfessoraNaLousa.jpg`
 export { AmigosBrasileiroChines, HomemMulherVendoUmLivro, ProfessoraNaLousa }
 
