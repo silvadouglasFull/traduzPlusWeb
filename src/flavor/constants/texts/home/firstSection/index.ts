@@ -4,39 +4,74 @@ import type { Paragraph } from "@pages/components/paragraph/item/types"
 export const paragraphs: Array<Paragraph> = [
     {
         id: 1,
-        text: `Great Wall Language Solutions is a specialized provider focused on bridging Mandarin Chinese, Portuguese, and English. Founded in 2012, we began by offering interpreting services for Brazilians and Chinese professionals facing communication barriers. This revealed a significant gap between two economically connected nations, inspiring us to become a reliable bridge that fosters clear and respectful understanding.`,
+        text: `At Great Wall Language Solutions, we understand that effective communication between Brazil and
+China is not a detail — it is a strategic asset. Since 2012, we have been a trusted provider of specialized
+language services in Mandarin, Portuguese, and English, with an uncompromising focus on excellence,
+precision, and cultural sensitivity.`,
         language: 'en'
     },
     {
         id: 2,
-        text: 'Unlike broad language agencies, we focus deeply on the languages driving Brazil-China trade and collaboration. Our team has lived and studied in China, gaining deep cultural and linguistic insight to ensure effective communication. We also use advanced language technologies and provide strategic consulting tailored to clients’ goals, helping businesses navigate and succeed in the complex Sino-Brazilian market.',
+        text: `We don’t offer dozens of languages. We choose to go deep where it matters most: in the languages that
+drive business and relations between two of the world’s largest economies.`,
         language: 'en'
+    },
+    {
+        id: 8,
+        text: `Our team consists of highly qualified professionals with real-life experience in China and rigorous
+technical expertise. We apply the highest industry standards and advanced technology to ensure that
+every word we translate becomes a reliable bridge between cultures, institutions, and companies.
+More than translation or interpretation, we deliver communication security and strategic advantage for
+organizations that require clarity, respect, and efficiency in every international interaction.`,
+        language: 'en',
     },
     // Tradução para Chinês
     {
         id: 3,
-        text: '长城语言解决方案公司专注于中文普通话、葡萄牙语和英语的专业语言服务。自2012年起，我们为中巴两国因语言障碍导致的沟通困难提供口译服务，发现两国之间存在巨大沟通鸿沟。基于此，我们致力于成为连接中巴文化与商业的桥梁，推动双方的理解与合作。',
+        text: `在长城语言解决方案公司，我们深知中巴之间的有效沟通不是细节，而是战略资产`,
         language: 'zh'
     },
     {
         id: 4,
-        text: '我们拥有一支在中国生活学习多年的语言专家团队，深入掌握语言细节和文化差异，确保高效且得体的沟通。结合领先的语言技术，我们不仅提供翻译和口译，还为客户量身定制中巴市场的战略咨询，帮助客户规避风险，把握机遇，实现商业成功。',
+        text: `自 2012 年以来，我们一直是普通话、葡萄牙语和英语语言服务领域值得信赖的专业提供商，专
+注于卓越、精准和文化敏感性。`,
+        language: 'zh'
+    },
+    {
+        id: 9,
+        text: `我们不提供几十种语言服务，而是专注于最重要的几种语言：那些推动中巴合作的关键语言。我们的团队由经验丰富、曾在中国生活和学习的语言专家组成，具备严格的专业素养。`,
+        language: 'zh'
+    },
+    {
+        id: 10,
+        text: `我们采用行业最高标准和先进技术，确保每一字每一句都能成为连接文化、机构与企业之间的可
+信桥梁。
+不仅是翻译或口译服务，我们还为需要在国际交流中实现清晰、尊重和高效的组织，提供沟通安
+全与战略优势`,
         language: 'zh'
     },
     // Tradução para Português
     {
         id: 5,
-        text: `A Great Wall Language Solutions é especializada em serviços linguísticos focados em mandarim, português e inglês. Nosso objetivo é eliminar barreiras de comunicação por meio de tradução, interpretação e treinamento de alta qualidade. Desde 2012, conectamos brasileiros e chineses em negócios, preenchendo uma grande lacuna entre esses países com potencial econômico.`,
+        text: `Na Great Wall Language Solutions, entendemos que a comunicação eficaz entre Brasil e China não é um
+detalhe — é um fator estratégico. Atuamos desde 2012 como referência em serviços linguísticos
+especializados em mandarim, português e inglês, com foco absoluto em excelência, precisão e
+sensibilidade cultural.`,
         language: 'pt'
     },
     {
         id: 6,
-        text: 'Optamos por ser uma ponte sólida, focando profundamente nas línguas que impulsionam a relação Brasil-China. Nossa equipe, que viveu e estudou na China, possui entendimento cultural e linguístico que garante uma comunicação eficaz e respeitosa. Utilizamos também tecnologias avançadas para garantir precisão e sensibilidade cultural em todos os projetos.',
+        text: `Não oferecemos dezenas de idiomas. Escolhemos ser profundos onde realmente importa: nas línguas que
+impulsionam relações e negócios entre dois dos maiores mercados do mundo.`,
         language: 'pt'
     },
     {
         id: 7,
-        text: `Além dos serviços tradicionais, oferecemos consultoria estratégica personalizada para os mercados chinês e brasileiro. Com amplo conhecimento cultural e comercial, ajudamos a reduzir riscos e maximizar oportunidades, transformando informação em vantagem competitiva para empresas que atuam entre esses dois mercados dinâmicos.`,
+        text: `Nossa equipe é formada por profissionais altamente qualificados, com vivência real na China e
+conhecimento técnico rigoroso. Utilizamos as melhores práticas e tecnologias do setor para assegurar
+que cada palavra traduzida seja um elo confiável entre culturas, instituições e empresas.
+Mais que tradução ou interpretação, entregamos segurança comunicacional e vantagem estratégica
+para organizações que exigem clareza, respeito e eficiência em cada interação internacional.`,
         language: 'pt'
     }
 ]
