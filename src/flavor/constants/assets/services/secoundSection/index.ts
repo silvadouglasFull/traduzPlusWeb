@@ -1,9 +1,11 @@
-import BussinesPresentation from "@assets/greatNewSoluctions/images/services/BussinesPresentation.png"
-import ChinaBusinessConsulting from "@assets/greatNewSoluctions/images/services/ChinaBusinessConsulting.png"
-import ChinesEscritorioBrasil from "@assets/greatNewSoluctions/images/services/ChinesEscritorioBrasil.png"
-import ClassroomLearningMoment from "@assets/greatNewSoluctions/images/services/ClassroomLearningMoment.png"
-import HomemSentadoNoSofa from "@assets/greatNewSoluctions/images/services/HomemSentadoNoSofa.jpg"
-import OfficeWorkFocus from "@assets/greatNewSoluctions/images/services/OfficeWorkFocus.png"
+import { VITE_CLOUD_FLARE } from "@config/index"
+
+const BussinesPresentation = `${VITE_CLOUD_FLARE}/greatNewSoluctions/images/services/BussinesPresentation.png`
+const ChinaBusinessConsulting = `${VITE_CLOUD_FLARE}/greatNewSoluctions/images/services/ChinaBusinessConsulting.png`
+const ChinesEscritorioBrasil = `${VITE_CLOUD_FLARE}/greatNewSoluctions/images/services/ChinesEscritorioBrasil.png`
+const ClassroomLearningMoment = `${VITE_CLOUD_FLARE}/greatNewSoluctions/images/services/ClassroomLearningMoment.png`
+const HomemSentadoNoSofa = `${VITE_CLOUD_FLARE}/greatNewSoluctions/images/services/HomemSentadoNoSofa.jpg`
+const OfficeWorkFocus = `${VITE_CLOUD_FLARE}/greatNewSoluctions/images/services/OfficeWorkFocus.png`
 export {
     BussinesPresentation,
     ChinaBusinessConsulting, ChinesEscritorioBrasil, ClassroomLearningMoment,

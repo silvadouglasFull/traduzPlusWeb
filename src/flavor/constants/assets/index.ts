@@ -1,11 +1,10 @@
-import breadcrumbsAbout from "@assets/greatNewSoluctions/images/about/breadcrumbs-image-1.jpg";
-import logo from "@assets/greatNewSoluctions/logo2.png";
 import type { ItemProps } from "@components/carrosel/item/types";
 import { VITE_CLOUD_FLARE } from "@config/index";
+import { slide1, slide2, slide3 } from "@flavor/constants/assets/slides";
 import type { BreadCrumps } from "@flavor/constants/assets/types";
-export const slide3 = `${VITE_CLOUD_FLARE}/greatNewSoluctions/swiper/3.png`
-export const slide2 = `${VITE_CLOUD_FLARE}/greatNewSoluctions/swiper/2.png`
-export const slide1 = `${VITE_CLOUD_FLARE}/greatNewSoluctions/swiper/1.png`
+export const breadcrumbsAbout = `${VITE_CLOUD_FLARE}/greatNewSoluctions/images/about/breadcrumbs-image-1.jpg`;
+export const logo = `${VITE_CLOUD_FLARE}/greatNewSoluctions/logo2.png`;
+
 export const carroselSlides: Array<ItemProps> = [
     {
         midia: slide1,
@@ -100,4 +99,3 @@ export const breadCrumps: BreadCrumps[] = [
     }
 
 ]
-export { logo };
