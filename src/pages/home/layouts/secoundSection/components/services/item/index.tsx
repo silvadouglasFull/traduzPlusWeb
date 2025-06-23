@@ -22,7 +22,7 @@ export const Item: React.FC<TItem> = ({ descriptions, icon, name, link, textButo
     return (
         <Col className="col-12 mb-3" md={3}>
             <Card style={{
-                height: language === 'pt' ? '34.375rem' : '28.125rem',
+                height: language === 'pt' ? '37.5rem' : '28.125rem',
                 width: '18rem'
             }} className="rounded-4 d-none d-md-flex">
                 <Card.Body className="p-5">
@@ -42,7 +42,6 @@ export const Item: React.FC<TItem> = ({ descriptions, icon, name, link, textButo
                     </Link>
                 </Card.Footer>
             </Card>
-
             <Card style={{
                 height: '28.125rem',
                 width: '100%'
