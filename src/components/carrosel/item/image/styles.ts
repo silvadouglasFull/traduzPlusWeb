@@ -4,6 +4,6 @@ export const styles: React.CSSProperties = {
     width: '100vw',
     height: '100vh',
     objectFit: 'cover',
-    objectPosition: 'center',
+    objectPosition: 'center 30%',
     filter: 'brightness(50%)'
 }

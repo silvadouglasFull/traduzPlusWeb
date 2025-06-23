@@ -15,8 +15,8 @@ export const Item: React.FC<ItemProps> = ({ midia, subTitle, title, textButton }
             <Image src={midia} className='d-block w-100' style={{ ...imageStyles }} />
             <Carousel.Caption className="d-block d-md-none" style={stylesMobile}>
                 <Container>
-                    <h1 className='text-capitalize fst-italic'>{title}</h1>
-                    <p className='text-uppercase'>{subTitle}</p>
+                    <h1 className='font-weight-bold'>{title}</h1>
+                    <p className='fst-italic'>{subTitle}</p>
                     <Button onClick={handleScrollForm} size="lg" className='w-90' variant="oxford">
                         {textButton}
                     </Button>
@@ -24,8 +24,8 @@ export const Item: React.FC<ItemProps> = ({ midia, subTitle, title, textButton }
             </Carousel.Caption>
             <Carousel.Caption className="d-md-block d-none" style={stylesDesktop}>
                 <Container>
-                    <h1 className='text-capitalize fst-italic'>{title}</h1>
-                    <p className='text-uppercase'>{subTitle}</p>
+                    <h1 className='font-weight-bold'>{title}</h1>
+                    <p className='fst-italic'>{subTitle}</p>
                     <Button onClick={handleScrollForm} size="lg" className='w-90' variant="oxford">
                         {textButton}
                     </Button>
