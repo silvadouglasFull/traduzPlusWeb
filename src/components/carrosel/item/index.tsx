@@ -17,7 +17,7 @@ export const Item: React.FC<ItemProps> = ({ midia, subTitle, title, textButton }
                 <Container>
                     <h1 className='font-weight-bold'>{title}</h1>
                     <p className='fst-italic'>{subTitle}</p>
-                    <Button onClick={handleScrollForm} size="lg" className='w-90' variant="oxford">
+                    <Button onClick={handleScrollForm} size="lg" className='w-90' variant="outline-light">
                         {textButton}
                     </Button>
                 </Container>
@@ -26,7 +26,7 @@ export const Item: React.FC<ItemProps> = ({ midia, subTitle, title, textButton }
                 <Container>
                     <h1 className='font-weight-bold'>{title}</h1>
                     <p className='fst-italic'>{subTitle}</p>
-                    <Button onClick={handleScrollForm} size="lg" className='w-90' variant="oxford">
+                    <Button onClick={handleScrollForm} size="lg" className='w-90' variant="outline-light">
                         {textButton}
                     </Button>
                 </Container>
