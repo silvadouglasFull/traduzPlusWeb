@@ -8,9 +8,13 @@ export const Button: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
     const { hasBackground } = useNavbarBackground()
 
     return (
-        <NavDropdown title={<span className={`text-${hasBackground ? 'dark' : 'light'}`}>{icon} Languages</span>} id="collapsible-nav-dropdown">
-            {children}
-        </NavDropdown>
-
+        <>
+            <NavDropdown className="d-block d-md-none" title={<span className="text-dark">{icon} Languages</span>} id="collapsible-nav-dropdown">
+                {children}
+            </NavDropdown>
+            <NavDropdown className="d-none d-md-block" title={<span className={`text-${hasBackground ? 'dark' : 'light'}`}>{icon} Languages</span>} id="collapsible-nav-dropdown">
+                {children}
+            </NavDropdown>
+        </>
     )
 }

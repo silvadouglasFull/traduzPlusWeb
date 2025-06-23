@@ -15,15 +15,12 @@ export const Header: React.FC = () => {
     const { items } = useChangeLanguage()
     return (
         <Navbar collapseOnSelect expand="lg" className="fixed-top bg-sm-only"
-            style={hasBackground ? styles.bgDefault : styles.bgTransparent}>
+            style={hasBackground ? styles.bgDefault : styles.blurStyle}>
             <Container>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Brand as={Link} to={'/'} className="d-block d-md-none">
-                    <LogLink urlLogo={logo} />
-                </Navbar.Brand>
-                <Navbar.Brand as={Link} to={'/'} className="d-md-block d-none me-5">
+                <Navbar.Brand as={Link} to={'/'}>
                     <LogLink urlLogo={logo} width={'100%'} height={'100%'} />
                 </Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className={`me-auto w-100 navbar-nav justify-content-between align-items-md-end ${!hasBackground ? 'mt-3' : ''}`}>
                         <LinksHeader items={items} />
