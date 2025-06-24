@@ -18,10 +18,10 @@ export const FourthSession: React.FC = () => {
         <section className="p-3 mb-3" id={sections.home.faq}>
             <Container style={styles.container}>
                 <Row className="justify-content-center align-items-center">
-                    <Col>
+                    <Col sm={12} md={6}>
                         <Image src={imageFromFourthSection} />
                     </Col>
-                    <Col className="mt-5">
+                    <Col sm={12} md={6} className="mt-5">
                         <SubTitle text={text} />
                         <AnimationSlide direction="right">
                             <Accordion items={items} />
