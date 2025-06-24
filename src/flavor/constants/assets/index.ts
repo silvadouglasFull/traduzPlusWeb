@@ -61,6 +61,9 @@ export const carroselSlides: Array<ItemProps> = [
         id: 3,
         language: 'en',
         textButton: 'Learn more',
+        style: {
+            objectPosition: 'center 15%'
+        }
     },
     {
         midia: slide3,
@@ -69,6 +72,10 @@ export const carroselSlides: Array<ItemProps> = [
         id: 6,
         language: 'zh',
         textButton: '了解更多',
+        style: {
+            objectPosition: 'center 15%'
+        }
+
     },
 
     {
@@ -78,6 +85,10 @@ export const carroselSlides: Array<ItemProps> = [
         id: 9,
         language: 'pt',
         textButton: 'Ver mais',
+        style: {
+            objectPosition: 'center 15%'
+        }
+
     }
 ]
 

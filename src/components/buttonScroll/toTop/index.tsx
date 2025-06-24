@@ -16,7 +16,7 @@ export const ButtonToTop: React.FC = () => {
     return (
         <Button
             onClick={handleScroll}
-            variant="oxford"
+            variant="outline-light"
             style={{
                 position: 'fixed',
                 bottom: 20,

@@ -6,13 +6,13 @@ import { sections } from '@constants/index';
 import { scrollOnElenet } from '@utils/scrollPage/onElement';
 import { Button, Container } from "react-bootstrap";
 import Carousel from 'react-bootstrap/Carousel';
-export const Item: React.FC<ItemProps> = ({ midia, subTitle, title, textButton }) => {
+export const Item: React.FC<ItemProps> = ({ midia, subTitle, title, textButton, style }) => {
     const handleScrollForm = (): void => {
         scrollOnElenet(sections.home.contact)
     }
     return (
         <>
-            <Image src={midia} className='d-block w-100' style={{ ...imageStyles }} />
+            <Image src={midia} className='d-block w-100' style={{ ...imageStyles, ...style }} />
             <Carousel.Caption className="d-block d-md-none" style={stylesMobile}>
                 <Container>
                     <h1 className='font-weight-bold'>{title}</h1>

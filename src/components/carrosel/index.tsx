@@ -1,8 +1,8 @@
 import { Item } from "@components/carrosel/item";
+import '@components/carrosel/styles.css';
 import type { CarroselProps } from "@components/carrosel/types";
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import './styles.css';
 export const ControlledCarousel: React.FC<CarroselProps> = ({ items }) => {
     const [index, setIndex] = useState(1);
     const handleSelect = (selectedIndex: number) => {
