@@ -27,7 +27,7 @@ export const ThirdSession: React.FC = () => {
                         }} text={description ?? ''} />
                         <SubTitle text={text} applyShadown={false} />
                         <Paragraph items={items} />
-                        <Button variant="oxford" className="w-100 text-uppercase" size="lg">
+                        <Button variant="outline-light" className="w-100 text-uppercase" size="lg">
                             <Link to={'/services'} className="text-decoration-none text-light">
                                 {textButton}
                             </Link>
@@ -42,7 +42,7 @@ export const ThirdSession: React.FC = () => {
                     }} text={description ?? ''} />
                     <SubTitle text={text} applyShadown={false} />
                     <Paragraph items={items} />
-                    <Button variant="oxford" className="w-100 text-uppercase" size="lg">
+                    <Button variant="outline-light" className="w-100 text-uppercase" size="lg">
                         <Link to={'/services'} className="text-decoration-none text-light">
                             {textButton}
                         </Link>

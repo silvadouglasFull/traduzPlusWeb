@@ -24,7 +24,7 @@ export const Right: React.FC<LayoutProps> = ({ id, language, text: paragraph, mi
                             text: paragraph
                         }]} />
                         {showButton ? (
-                            <Button variant="oxford" className="w-100 mb-5 text-uppercase" size="lg">
+                            <Button variant="outline-light" className="w-100 mb-5 text-uppercase" size="lg">
                                 <Link to={'/services'} className="text-decoration-none text-light">
                                     {textButton}
                                 </Link>
@@ -42,7 +42,7 @@ export const Right: React.FC<LayoutProps> = ({ id, language, text: paragraph, mi
                             text: paragraph
                         }]} />
                         {showButton ? (
-                            <Button variant="oxford" className="w-100 mb-5 text-uppercase" size="lg">
+                            <Button variant="outline-light" className="w-100 mb-5 text-uppercase" size="lg">
                                 <Link to={'/services'} className="text-decoration-none text-light">
                                     {textButton}
                                 </Link>

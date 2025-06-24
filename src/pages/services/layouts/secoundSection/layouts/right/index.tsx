@@ -27,7 +27,7 @@ export const Right: React.FC<Item> = ({ descriptions, textButon, name, detailsSe
                     <Col md={12} className="mt-5 mb-3" lg={6} xxl={5} sm={12} >
                         <SubTitle text={name} />
                         <Paragraph items={detailsService} />
-                        < Button onClick={handleService} variant="oxford" className="w-100 mb-5 text-uppercase" size="lg" >
+                        < Button onClick={handleService} variant="outline-light" className="w-100 mb-5 text-uppercase" size="lg" >
                             {textButon}
                         </Button>
                     </Col>
@@ -38,7 +38,7 @@ export const Right: React.FC<Item> = ({ descriptions, textButon, name, detailsSe
                     <Col md={12} className="mt-5 mb-3" lg={6} xxl={5} sm={12} >
                         <SubTitle text={name} />
                         <Paragraph items={detailsService} />
-                        <Button onClick={handleService} variant="oxford" className="w-100 mb-5 text-uppercase" size="lg" >
+                        <Button onClick={handleService} variant="outline-light" className="w-100 mb-5 text-uppercase" size="lg" >
                             {textButon}
                         </Button>
                     </Col>

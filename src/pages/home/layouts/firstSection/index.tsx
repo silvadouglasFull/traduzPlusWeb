@@ -20,7 +20,7 @@ export const FirstSection: React.FC = () => {
                     <Col md={12} className="mt-5 mb-3" lg={6} xxl={5} sm={12}>
                         <SubTitle text={text} />
                         <Paragraph items={items} />
-                        <Button variant="oxford" className="w-100 mb-5 text-uppercase" size="lg">
+                        <Button variant="outline-light" className="w-100 mb-5 text-uppercase" size="lg">
                             <Link to={'/about'} className="text-decoration-none text-light">
                                 {textButton}
                             </Link>

@@ -24,7 +24,7 @@ export const Left: React.FC<LayoutProps> = ({ id, language, text: paragraph, mid
                             text: paragraph
                         }]} />
                         {showButton ? (
-                            <Button variant="oxford" className="w-100 mb-5 text-uppercase" size="lg">
+                            <Button variant="outline-light" className="w-100 mb-5 text-uppercase" size="lg">
                                 <Link to={'/services'} className="text-decoration-none text-light">
                                     {textButton}
                                 </Link>
