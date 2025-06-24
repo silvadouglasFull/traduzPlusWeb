@@ -5,7 +5,7 @@ import { Row } from "react-bootstrap";
 export const SocialMedia: React.FC<SocialMidiaItems> = ({ items, ...props }) => {
     return (
         <Row {...props} className="mb-3">
-            {items.length ? items.map(item => (<Item key={item.id} {...item} />)) : null}
+            {items.length ? items.filter(item => item.url).map(item => (<Item key={item.id} {...item} />)) : null}
         </Row>
     )
 }
