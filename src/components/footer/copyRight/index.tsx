@@ -25,7 +25,7 @@ export const CopyRight: React.FC = () => {
             </Col>
             <Col className="col-4">
                 <Link to={'#'} className="text-light text-decoration-none mt-3">
-                    {appVersion}
+                    <strong>Versão do site:</strong> {appVersion}
                 </Link>
             </Col>
         </Row>
