@@ -1,6 +1,0 @@
-@media (max-width: 576px) {
-  /* sm: telas menores que 576px */
-  .bg-sm-only {
-    background-color: #ffff !important;
-  }
-}
