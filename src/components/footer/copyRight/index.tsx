@@ -1,5 +1,6 @@
 import { logoDSWeb } from "@constants/assets";
 import { linkDSWeb } from "@constants/index";
+import { appVersion } from "@flavor/index";
 import { openPage } from "@utils/openPages";
 import React from "react";
 import { Col, Image, Row } from "react-bootstrap";
@@ -9,8 +10,8 @@ export const CopyRight: React.FC = () => {
         openPage(linkDSWeb)
     }
     return (
-        <Row>
-            <Col className="col-12">
+        <Row className="text-center">
+            <Col className="col-12 mb-3">
                 <Image
                     className="rounded-4"
                     style={{ width: 32, height: 32, cursor: 'pointer' }}
@@ -19,8 +20,13 @@ export const CopyRight: React.FC = () => {
                     onClick={handleOpenLink}
                 />
             </Col>
-            <Col>
-                <Link to={'#'} className="text-light">Politica de Privacidade</Link>
+            <Col className="col-8">
+                <Link to={'#'} className="text-light text-decoration-none mt-3">Politica de Privacidade</Link>
+            </Col>
+            <Col className="col-4">
+                <Link to={'#'} className="text-light text-decoration-none mt-3">
+                    {appVersion}
+                </Link>
             </Col>
         </Row>
     )
