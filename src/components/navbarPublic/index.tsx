@@ -1,4 +1,5 @@
 import { useNavbarBackground } from "@components/navbarPublic/hooks/useNavbarBackground";
+import { useNavBarExpanded } from "@components/navbarPublic/hooks/useNavBarExpanded";
 import { LanguageDropdown } from "@components/navbarPublic/languageDropdown";
 import { LinksHeader } from "@components/navbarPublic/links";
 import { LogLink } from '@components/navbarPublic/logLink';
@@ -13,14 +14,15 @@ import { Link } from "react-router-dom";
 export const Header: React.FC = () => {
     const { hasBackground } = useNavbarBackground()
     const { items } = useChangeLanguage()
+    const { handleExpanded, isExpanded } = useNavBarExpanded()
     return (
-        <Navbar collapseOnSelect expand="lg" className="fixed-top"
-            style={hasBackground ? styles.bgDefault : styles.bgTransparent}>
+        <Navbar expanded={isExpanded} collapseOnSelect expand="lg" className="fixed-top"
+            style={(hasBackground || isExpanded) ? styles.bgDefault : styles.bgTransparent}>
             <Container>
                 <Navbar.Brand as={Link} to={'/'}>
                     <LogLink urlLogo={logo} />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Toggle onClick={handleExpanded} aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="w-100 navbar-nav justify-content-between align-items-md-end">
                         <LinksHeader items={items} />

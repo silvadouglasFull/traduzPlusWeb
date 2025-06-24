@@ -12,7 +12,7 @@ const Item: React.FC<LinkItem> = ({ title, url, icon, isActive }) => {
             <Nav.Link as={Link} className={`d-none d-md-block mt-4 text-${hasBackground ? 'dark' : 'light'} me-5`} to={url} active={isActive}>
                 {icon ? icon : null} {title}
             </Nav.Link>
-            <Nav.Link as={Link} className={`d-block d-md-none mt-4 text-dark me-5`} to={url} active={isActive}>
+            <Nav.Link as={Link} className={`d-block d-md-none mt-4 text-light me-5`} to={url} active={isActive}>
                 {icon ? icon : null} {title}
             </Nav.Link>
         </>
