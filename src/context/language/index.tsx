@@ -9,7 +9,10 @@ export const Provider: React.FC<React.PropsWithChildren> = ({ children }: React.
     return (
         <Context.Provider
             value={{
-                language, setLanguage, icon, setIcon
+                language,
+                setLanguage,
+                icon,
+                setIcon,
             }}>
             {children}
         </Context.Provider>

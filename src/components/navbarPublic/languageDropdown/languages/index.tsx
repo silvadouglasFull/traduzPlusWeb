@@ -5,7 +5,7 @@ export const Lenguages: React.FC<LanguagesProps> = ({ items }) => {
     return (
         <>
             {items.length ? items.map(item => (
-                <Item key={item.id} {...item} />
+                <Item {...item} key={item.id} />
             )) : null}
         </>
     )

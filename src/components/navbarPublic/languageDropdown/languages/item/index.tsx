@@ -1,13 +1,13 @@
-import type { LanguageItemProps } from "@components/navbarPublic/languageDropdown/languages/item/types";
+import type { Items } from "@components/navbarPublic/languageDropdown/languages/item/types";
 import { useLanguage } from "@context/language/hooks";
 import React from "react";
 import { NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export const Item: React.FC<LanguageItemProps> = ({
+export const Item: React.FC<Items> = ({
     icon,
     label,
-    language
+    language,
 }) => {
     const { setLanguage, language: languageContext, setIcon } = useLanguage()
     const onClick = () => {

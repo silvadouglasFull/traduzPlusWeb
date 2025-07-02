@@ -1,17 +1,17 @@
-import { Icon } from "@components/icons";
+import { useGetLanguage } from "@components/navbarPublic/languageDropdown/button/title/hooks/useGetLabelLanguage";
 import { useLanguage } from "@context/language/hooks";
-
 export const Title = () => {
-    const { icon, } = useLanguage()
+    const { icon } = useLanguage()
+    const { label } = useGetLanguage()
     if (icon) {
         return (<span className="text-light">
-            {icon} Language
+            {icon} {label}
         </span>)
     }
     //🌐 Languages
     return (
         <small className="text-light">
-            <Icon name="fa fa-language fa-1x" /> Language
+            🌐 {label}
         </small>
     )
 }
