@@ -1,9 +1,9 @@
+import { ButtonLeft } from "@pages/home/layouts/secoundSection/components/horizontalScroll/butons/left";
+import { ButtonRight } from "@pages/home/layouts/secoundSection/components/horizontalScroll/butons/right";
 import type { Direction } from "@pages/home/layouts/secoundSection/components/horizontalScroll/types";
 import { styles } from "@pagesHome/layouts/secoundSection/components/horizontalScroll/styles";
 import type React from "react";
 import { useRef } from "react";
-import { ButtonLeft } from "./butons/left";
-import { ButtonRight } from "./butons/right";
 
 export const HorizontalScrollSection: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
   const scrollRef = useRef<HTMLDivElement>(null);
