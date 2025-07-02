@@ -4,14 +4,16 @@ import { message } from "@components/forms/contactUs/modules/fetchMessage";
 import { Toast } from "@components/toast";
 import { useToast } from "@components/toast/hooks/useToast";
 import { sections } from "@constants/index";
+import { useLanguage } from "@context/language/hooks";
 import { imageFromSixSetion } from "@flavor/constants/assets/home/sixthSession";
 import { contacts } from "@flavor/constants/contacts";
+import { flavor } from "@flavor/index";
 import { Image } from "@pages/components/image";
 import { useChangeLanguage } from "@pages/layouts/sixthSession/hooks";
 import { generateBodyPayload } from "@pages/layouts/sixthSession/utils/generateBodyPayload";
 import '@pagesHome/styles/index.css';
 import { scrollOnElenet } from "@utils/scrollPage/onElement";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 export const SixthSession: React.FC = () => {
@@ -19,6 +21,8 @@ export const SixthSession: React.FC = () => {
     const { handleForm, state: valuesFromForm } = useContactUs()
     const { onClose, show, setMessage, setStatusCode, statusCode, message: messageResponse } = useToast()
     const { message: previewMessage } = useChangeLanguage()
+    const [loading, setLoading] = useState<boolean>(false)
+    const { language } = useLanguage()
     useEffect(() => {
         const handleScrollPage = () => {
             if (state?.focusId && state?.message) {
@@ -31,15 +35,18 @@ export const SixthSession: React.FC = () => {
         handleScrollPage()
     }, [state])
     const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        setLoading(true)
         event.preventDefault();
         const response = await message.send({
             body: generateBodyPayload({ state: valuesFromForm, previewMessage }),
-            subject: 'Teste',
+            subject: `${flavor}`,
+            language,
             recipient_email: contacts.email
         })
         const { message: responseMessage, statusCode: responseStatusCode } = response
         setMessage(responseMessage)
         setStatusCode(responseStatusCode)
+        setLoading(false)
     };
     return (
         <section className="bg-gray-100" id={sections.home.contact}>
@@ -47,7 +54,7 @@ export const SixthSession: React.FC = () => {
             <Container fluid>
                 <Row className='justify-content-between align-items-center'>
                     <Col md={12} lg={6}>
-                        <FormContactUs onSubmit={onSubmit} />
+                        <FormContactUs loading={loading} onSubmit={onSubmit} />
                     </Col>
                     <Col className="d-none d-md-block" md={12} lg={6}>
                         <Image style={{

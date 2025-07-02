@@ -3,10 +3,11 @@ import { useButtonsLabels } from "@components/forms/contactUs/hooks/useChangaLan
 import { useChangeLanguage } from "@components/forms/contactUs/hooks/useChangaLanguage/formLabel";
 import { useSetPreviewMessage } from "@components/forms/contactUs/hooks/useSetPreviewMessage";
 import type { FormProps } from "@components/forms/contactUs/types";
+import { Spinner } from "@components/spinner";
 import React from "react";
 import { Button, Col, Row } from "react-bootstrap";
 import Form from 'react-bootstrap/Form';
-export const FormContactUs: React.FC<FormProps & React.DetailedHTMLProps<React.FormHTMLAttributes<HTMLFormElement>, HTMLFormElement>> = ({ onSubmit, ...props }) => {
+export const FormContactUs: React.FC<FormProps & React.DetailedHTMLProps<React.FormHTMLAttributes<HTMLFormElement>, HTMLFormElement>> = ({ loading, onSubmit, ...props }) => {
     const { state, onChange, onChangePhone } = useContactUs()
     const { items } = useChangeLanguage()
     const { text } = useButtonsLabels()
@@ -58,7 +59,7 @@ export const FormContactUs: React.FC<FormProps & React.DetailedHTMLProps<React.F
                 )) : null}
             </Row>
             <Button variant="outline-light" type="submit" tabIndex={16} className="w-100 text-uppercase">
-                {text}
+                {loading ? (<Spinner />) : text}
             </Button>
         </Form >
     );

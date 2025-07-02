@@ -13,7 +13,7 @@ export class Fetch implements IFetch {
     }
     async send(body: Payload): SendMessageResponse {
         try {
-            const response = await this.api.post(`/${this.prefix}/${endPoints.sendMessage}`, body)
+            const response = await this.api.post(`/${this.prefix}${endPoints.sendMessage}`, body)
             const json = await response.json()
             return {
                 message: json?.message,
