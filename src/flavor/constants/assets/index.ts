@@ -40,8 +40,8 @@ export const carroselSlides: Array<ItemProps> = [
     },
     {
         midia: slide2,
-        title: '我们不会翻译所有东西，我们只翻译重要的东西',
-        subTitle: '“完全专注于巴西、中国和全球市场之间的沟通——具有真正的深度和卓越性。”',
+        title: '我们不是翻译一切，而是精准传达真正关键的信息',
+        subTitle: '"专注中巴及全球市场沟通，深度专业，追求卓越"',
         id: 5,
         language: 'zh',
         textButton: '了解更多',
