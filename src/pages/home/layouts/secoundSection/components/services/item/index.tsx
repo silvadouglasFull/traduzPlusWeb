@@ -2,7 +2,6 @@ import { useContactUs } from "@components/forms/contactUs/hooks/contactUs"
 import { useSetPreviewMessage } from "@components/forms/contactUs/hooks/useSetPreviewMessage"
 import { Icon } from "@components/icons"
 import { sections } from "@constants/index"
-import { useLanguage } from "@context/language/hooks"
 import { colors } from "@flavor/constants/colors"
 import { Paragraph } from "@pages/home/layouts/secoundSection/components/services/item/paragraph"
 import type { Item as TItem } from "@pages/home/layouts/secoundSection/components/services/item/types"
@@ -10,10 +9,9 @@ import { scrollOnElenet } from "@utils/scrollPage/onElement"
 import React from "react"
 import { Card, Col } from "react-bootstrap"
 import { Link } from "react-router-dom"
-export const Item: React.FC<TItem> = ({ descriptions, icon, name, link, textButon, }) => {
+export const Item: React.FC<TItem> = ({ descriptions, icon, name, link, textButon }) => {
     const { handleForm } = useContactUs()
     const { message } = useSetPreviewMessage()
-    const { language } = useLanguage()
     const handleService = () => {
         const descriptionsMessage = descriptions.map(item => item.description).join(', ')
         handleForm({ message: `${message.replace('.', '')}: ${name} (${descriptionsMessage})` })
@@ -22,8 +20,7 @@ export const Item: React.FC<TItem> = ({ descriptions, icon, name, link, textButo
     return (
         <Col className="col-12 mb-3" md={3}>
             <Card style={{
-                height: language === 'pt' ? '37.5rem' : '28.125rem',
-                width: '18rem'
+                width: '18.75rem'
             }} className="rounded-4 d-none d-md-flex">
                 <Card.Body className="p-5">
                     <Icon name={icon} style={{
@@ -42,10 +39,7 @@ export const Item: React.FC<TItem> = ({ descriptions, icon, name, link, textButo
                     </Link>
                 </Card.Footer>
             </Card>
-            <Card style={{
-                height: '28.125rem',
-                width: '100%'
-            }} className="rounded-4 d-flex d-md-none">
+            <Card className="w-100 rounded-4 d-flex d-md-none">
                 <Card.Body className="p-5">
                     <Icon name={icon} style={{
                         color: '#081a48'
