@@ -96,7 +96,7 @@ export const servicesList: Array<Item> = [
     },
     {
         id: 14,
-        name: 'ConsulƟng for Company FormaƟon in China',
+        name: 'Consulting for Company FormaƟon in China',
         link: '#',
         icon: 'fa-solid fa-building fa-beat fa-2xl',
         textButon: 'Order',
