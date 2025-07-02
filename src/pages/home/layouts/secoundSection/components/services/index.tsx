@@ -5,11 +5,7 @@ import type { ServiceListProps } from "@pages/home/layouts/secoundSection/compon
 import type React from "react"
 import { Row } from "react-bootstrap"
 export const ServicesList: React.FC<ServiceListProps & React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>> = ({ items }) => {
-    const { height, offsetHeightList } = usesetsTheHeightOfAllCards()
-    const getOffSeHeight = (height: number) => {
-        offsetHeightList.push(height)
-    }
-    console.log(offsetHeightList)
+    const { height, createOffSetHeightList } = usesetsTheHeightOfAllCards({ lengthOfCards: items.length, })
     return (
         <>
             <Row className="d-flex d-md-none justify-content-center align-items-start">
@@ -19,7 +15,7 @@ export const ServicesList: React.FC<ServiceListProps & React.DetailedHTMLProps<R
             </ Row>
             <HorizontalScrollSection>
                 {items.length ? items.map(item => (
-                    <Item {...item} getOffSeHeight={getOffSeHeight} height={height} key={item.id} />
+                    <Item {...item} createOffSetHeightList={createOffSetHeightList} height={height} key={item.id} />
                 )) : null}
             </HorizontalScrollSection>
         </>

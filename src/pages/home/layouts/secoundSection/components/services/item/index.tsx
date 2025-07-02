@@ -9,7 +9,7 @@ import { scrollOnElenet } from "@utils/scrollPage/onElement"
 import React from "react"
 import { Card, Col } from "react-bootstrap"
 import { Link } from "react-router-dom"
-export const Item: React.FC<TItem> = ({ descriptions, icon, name, link, textButon }) => {
+export const Item: React.FC<TItem> = ({ id, descriptions, icon, name, link, textButon, createOffSetHeightList, height = '37.5rem' }) => {
     const { handleForm } = useContactUs()
     const { message } = useSetPreviewMessage()
     const handleService = () => {
@@ -19,9 +19,14 @@ export const Item: React.FC<TItem> = ({ descriptions, icon, name, link, textButo
     }
     return (
         <Col className="col-12 mb-3" md={3}>
-            <Card style={{
-                width: '18.75rem'
-            }} className="rounded-4 d-none d-md-flex">
+            <Card
+                ref={(el) => {
+                    if (createOffSetHeightList) createOffSetHeightList(el, id)
+                }}
+                style={{
+                    width: '18.75rem',
+                    height: height
+                }} className="rounded-4 d-none d-md-flex">
                 <Card.Body className="p-5">
                     <Icon name={icon} style={{
                         color: colors.OxfordBlue
@@ -39,7 +44,9 @@ export const Item: React.FC<TItem> = ({ descriptions, icon, name, link, textButo
                     </Link>
                 </Card.Footer>
             </Card>
-            <Card className="w-100 rounded-4 d-flex d-md-none">
+            <Card className="w-100 rounded-4 d-flex d-md-none" style={{
+                height: height
+            }}>
                 <Card.Body className="p-5">
                     <Icon name={icon} style={{
                         color: '#081a48'

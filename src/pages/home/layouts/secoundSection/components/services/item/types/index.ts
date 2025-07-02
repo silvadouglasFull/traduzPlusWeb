@@ -15,4 +15,6 @@ export type Item = {
     language?: Language
     detailsService: Array<Paragraph>
     midia?: string
+    createOffSetHeightList: (el: HTMLDivElement | null, index: number) => void
+    height?: string
 }
