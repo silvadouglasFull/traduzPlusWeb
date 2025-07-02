@@ -1,12 +1,10 @@
-import { useLanguage } from "@context/language/hooks";
+import { Title } from "@components/navbarPublic/languageDropdown/button/title";
 import React from "react";
 import { NavDropdown } from "react-bootstrap";
 
 export const Button: React.FC<React.PropsWithChildren<{}>> = ({ children }) => {
-    const { icon } = useLanguage()
-
     return (
-        <NavDropdown title={<span className="text-light">{icon} Languages</span>} id="collapsible-nav-dropdown">
+        <NavDropdown title={<Title />} id="collapsible-nav-dropdown">
             {children}
         </NavDropdown>
     )
