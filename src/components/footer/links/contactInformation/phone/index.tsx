@@ -5,7 +5,7 @@ import { Col } from "react-bootstrap"
 import { Link } from "react-router-dom"
 export const Phones: React.FC<TPhones & React.DetailedHTMLProps<React.LiHTMLAttributes<HTMLLIElement>, HTMLLIElement>> = ({ number, ...props }) => {
     return (
-        <Col md={6} sm={12} {...props}>
+        <Col md={4} sm={12} {...props}>
             <Link className="text-light text-decoration-none" to={`"tel:${number}"`}>
                 <Icon name="fa-brands fa-whatsapp" /> {number}
             </Link>
