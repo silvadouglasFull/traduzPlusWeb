@@ -9,6 +9,7 @@ export type ContentType = 'application/json'
 export type Headers = {
     'Api-Key': string
     'Content-Type'?: ContentType
+    'Accept': string
 }
 export type Options = {
     method: Methods
