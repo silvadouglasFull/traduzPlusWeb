@@ -5,7 +5,7 @@ import { links } from "@utils/linksHeader";
 import { useEffect, useState } from "react";
 
 export const useChangeLanguage = (): LinksProps => {
-    const [linksNavBar, setLinksNavbar] = useState<Array<LinkItem>>(links.filter(item => item.language === 'en'))
+    const [linksNavBar, setLinksNavbar] = useState<Array<LinkItem>>(links.filter(item => item.language === 'pt'))
     const { language } = useLanguage()
     useEffect(() => {
         setLinksNavbar(links.filter(item => item.language === language))

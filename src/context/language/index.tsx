@@ -4,7 +4,7 @@ import { createContext, useState } from "react";
 
 export const Context = createContext<ContextProvider | undefined>(undefined)
 export const Provider: React.FC<React.PropsWithChildren> = ({ children }: React.PropsWithChildren) => {
-    const [language, setLanguage] = useState<Language>('en')
+    const [language, setLanguage] = useState<Language>('pt')
     const [icon, setIcon] = useState<string | null>(null)
     return (
         <Context.Provider
