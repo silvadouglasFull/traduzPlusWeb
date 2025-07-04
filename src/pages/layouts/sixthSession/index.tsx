@@ -41,6 +41,7 @@ export const SixthSession: React.FC = () => {
             body: generateBodyPayload({ state: valuesFromForm, previewMessage }),
             subject: `${flavor}`,
             language,
+            name: valuesFromForm.first_name ?? '',
             recipient_email: contacts.email
         })
         const { message: responseMessage, statusCode: responseStatusCode } = response

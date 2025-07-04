@@ -4,6 +4,7 @@ export type Payload = {
     recipient_email: string
     subject: string
     body: string
+    name: string
     language: Language
 }
 export type SendMessageResponse = Promise<ResponseRequest>
