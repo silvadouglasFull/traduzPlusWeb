@@ -6,7 +6,6 @@ import { useToast } from "@components/toast/hooks/useToast";
 import { sections } from "@constants/index";
 import { useLanguage } from "@context/language/hooks";
 import { imageFromSixSetion } from "@flavor/constants/assets/home/sixthSession";
-import { contacts } from "@flavor/constants/contacts";
 import { flavor } from "@flavor/index";
 import { Image } from "@pages/components/image";
 import { useChangeLanguage } from "@pages/layouts/sixthSession/hooks";
@@ -35,19 +34,21 @@ export const SixthSession: React.FC = () => {
         handleScrollPage()
     }, [state])
     const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
-        setLoading(true)
         event.preventDefault();
-        const response = await message.send({
-            body: generateBodyPayload({ state: valuesFromForm, previewMessage }),
-            subject: `${flavor}`,
-            language,
-            name: valuesFromForm.first_name ?? '',
-            recipient_email: contacts.email
-        })
-        const { message: responseMessage, statusCode: responseStatusCode } = response
-        setMessage(responseMessage)
-        setStatusCode(responseStatusCode)
-        setLoading(false)
+        if (valuesFromForm?.email) {
+            setLoading(true)
+            const response = await message.send({
+                body: generateBodyPayload({ state: valuesFromForm, previewMessage }),
+                subject: `${flavor}`,
+                language,
+                name: valuesFromForm.first_name ?? '',
+                recipient_email: valuesFromForm.email
+            })
+            const { message: responseMessage, statusCode: responseStatusCode } = response
+            setMessage(responseMessage)
+            setStatusCode(responseStatusCode)
+            setLoading(false)
+        }
     };
     return (
         <section className="bg-gray-100" id={sections.home.contact}>
