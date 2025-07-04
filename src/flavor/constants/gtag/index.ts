@@ -1,0 +1,1 @@
+export const gtag: string = 'AW-17307632785'
