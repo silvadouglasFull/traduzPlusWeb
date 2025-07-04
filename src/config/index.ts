@@ -1,7 +1,7 @@
 import type { Config } from "@config/types";
 //@ts-ignore
 export const VITE_ENV = import.meta.env.VITE_ENV ?? 'develop';
-export const VITE_API_PORT = import.meta.env.VITE_API_PORT ?? '';
+export const VITE_API_PORT = (VITE_ENV === 'develop') ? (import.meta.env.VITE_API_PORT ?? '') : ('');
 export const VITE_X_API_KEY = import.meta.env.VITE_X_API_KEY ?? '';
 export const VITE_CLOUD_FLARE = import.meta.env.VITE_CLOUD_FLARE ?? '';
 

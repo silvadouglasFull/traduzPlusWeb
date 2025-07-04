@@ -4,5 +4,9 @@ export const hosts: Host[] = [
     {
         env: 'test',
         host: 'https://emailtraduzplusapi.fly.dev'
+    },
+    {
+        env: 'develop',
+        host: 'http://localhost'
     }
 ] 
