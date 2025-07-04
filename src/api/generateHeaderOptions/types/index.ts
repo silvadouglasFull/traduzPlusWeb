@@ -7,7 +7,7 @@ export type TGenerateHeaderProps = {
 }
 export type ContentType = 'application/json'
 export type Headers = {
-    'API-KEY': string
+    'Api-Key': string
     'Content-Type'?: ContentType
 }
 export type Options = {

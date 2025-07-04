@@ -11,7 +11,7 @@ export class GenerateHeaderOptions implements IGenerateHeaderOptions {
     setHeaders(method: Methods) {
         const headers: Headers = {
             "Content-Type": 'application/json',
-            'API-KEY': VITE_X_API_KEY
+            'Api-Key': VITE_X_API_KEY
         }
         if (method === 'get') {
             delete headers["Content-Type"]
