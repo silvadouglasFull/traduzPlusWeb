@@ -8,7 +8,7 @@ import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-export const ContactInformation: React.FC<Contact & React.DetailedHTMLProps<React.LiHTMLAttributes<HTMLLIElement>, HTMLLIElement>> = ({ email, phones, address }) => {
+export const ContactInformation: React.FC<Contact & React.DetailedHTMLProps<React.LiHTMLAttributes<HTMLLIElement>, HTMLLIElement>> = ({ email, phones }) => {
     const { title } = useChangeLanguage(titleSectionLink)
     return (
         <>
