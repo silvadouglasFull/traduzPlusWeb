@@ -5,5 +5,5 @@ export const contacts: Contact = {
     phones: [
         { key: 1, number: formatPhoneNumber('11961180165', 'pt') },
     ],
-    email: 'contactus@solucoesgreatwall.com.br'
+    email: 'marcio@solucoesgreatwall.com.br'
 }
