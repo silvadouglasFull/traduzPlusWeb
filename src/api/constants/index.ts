@@ -3,7 +3,7 @@ import type { Host } from "@api/constants/types";
 export const hosts: Host[] = [
     {
         env: 'test',
-        host: 'https://emailtraduzplusapi.fly.dev'
+        host: 'https://solucoeslinguisticas.fly.dev'
     },
     {
         env: 'develop',
