@@ -4,7 +4,7 @@ import React from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 export const FirstSection: React.FC = () => {
     return (
-        <section className="mb-3">
+        <section className="mb-3 mt-3">
             <Container>
                 <Row className="mt-5 justify-content-center align-items-center">
                     {contacts.phones.map(item => (
