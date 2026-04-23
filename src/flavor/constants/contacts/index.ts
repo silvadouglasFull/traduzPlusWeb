@@ -3,7 +3,7 @@ import { formatPhoneNumber } from "@utils/form/mask/phone"
 export const contacts: Contact = {
     address: '',
     phones: [
-        { key: 1, number: formatPhoneNumber('11961180165', 'pt') },
+        { key: 1, number: formatPhoneNumber('11969790051', 'pt') },
     ],
-    email: 'marcio@solucoesgreatwall.com.br'
+    email: 'contato@solucoesgreatwall.com.br'
 }
