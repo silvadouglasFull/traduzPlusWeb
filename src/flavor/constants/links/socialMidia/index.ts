@@ -10,7 +10,7 @@ export const socialMidia: Array<ItemSocialMidia> = [
     {
         id: 1,
         title: 'Whatsapp',
-        url: 'https://wa.me/5511961180165',
+        url: 'https://wa.me/5511969790051',
         icon: 'fa-brands fa-whatsapp',
     },
     {
