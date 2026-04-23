@@ -1,6 +1,6 @@
 import type { Sections } from "./types"
 
-export const linkDSWeb = "https://www.instagram.com/dswebdev"
+export const linkDSWeb = "https://dswebdev.com.br/"
 export const sections: Sections = {
     home: {
         aboutSection: 'aboutSection',
